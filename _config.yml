@@ -276,8 +276,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Sánchez Muñoz, Muñoz, Munoz, Sánchez-Munoz, S. Munoz, S. Muñoz]
+  first_name: [Carlos, C., C. S., Carlos S.]
 
   style: apa
   locale: en
