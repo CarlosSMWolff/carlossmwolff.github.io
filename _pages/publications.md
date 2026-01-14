@@ -11,33 +11,50 @@ nav_order: 2
 
 ## Citations per year
 
-{% assign cpy = site.data.scholar_metrics.citations_per_year %}
-{% assign years = "" | split: "" %}
-{% assign counts = "" | split: "" %}
-{% for pair in cpy %}
-  {% assign years = years | push: pair[0] %}
-  {% assign counts = counts | push: pair[1] %}
-{% endfor %}
-
-```echarts
+<!-- ```echarts
 {
   "title": { "text": "Citations per year" },
   "responsive": true,
   "tooltip": { "trigger": "axis" },
   "xAxis": {
     "type": "category",
-    "data": {{ years | jsonify }}
+    "data": {{ site.data.scholar_metrics.citations_per_year | keys | sort | jsonify }}
   },
   "yAxis": { "type": "value" },
   "series": [
     {
       "name": "Citations",
       "type": "bar",
-      "data": {{ counts | jsonify }}
+      "data": {{ site.data.scholar_metrics.citations_per_year | sort | map: "last" | jsonify }}
     }
   ]
 }
+``` -->
 
+```echarts
+{
+  "title": {
+    "text": "ECharts Getting Started Example"
+  },
+  "responsive": true,
+  "tooltip": {},
+  "legend": {
+    "top": "30px",
+    "data": ["sales"]
+  },
+  "xAxis": {
+    "data": ["Shirts", "Cardigans", "Chiffons", "Pants", "Heels", "Socks"]
+  },
+  "yAxis": {},
+  "series": [
+    {
+      "name": "sales",
+      "type": "bar",
+      "data": [5, 20, 36, 10, 10, 20]
+    }
+  ]
+}
+```
 
 
 <!-- Bibsearch Feature -->
