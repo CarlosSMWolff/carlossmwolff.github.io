@@ -13,26 +13,29 @@ chart:
 
 ## Citations per year
 
+{% assign cpy = site.data.scholar_metrics.citations_per_year %}
+{% assign years = "" | split: "" %}
+{% assign counts = "" | split: "" %}
+{% for pair in cpy %}
+  {% assign years = years | push: pair[0] %}
+  {% assign counts = counts | push: pair[1] %}
+{% endfor %}
+
 ```echarts
 {
-  "title": {
-    "text": "ECharts Getting Started Example"
-  },
+  "title": { "text": "Citations per year" },
   "responsive": true,
-  "tooltip": {},
-  "legend": {
-    "top": "30px",
-    "data": ["sales"]
-  },
+  "tooltip": { "trigger": "axis" },
   "xAxis": {
-    "data": ["Shirts", "Cardigans", "Chiffons", "Pants", "Heels", "Socks"]
+    "type": "category",
+    "data": {{ years | jsonify }}
   },
-  "yAxis": {},
+  "yAxis": { "type": "value" },
   "series": [
     {
-      "name": "sales",
+      "name": "Citations",
       "type": "bar",
-      "data": [5, 20, 36, 10, 10, 20]
+      "data": {{ counts | jsonify }}
     }
   ]
 }
