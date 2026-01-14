@@ -32,9 +32,9 @@ linkedin_username: carlossmwolff
 orcid_id: 0000-0001-8775-0135
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
-# publons_id: # your ID on Publons
+publons_id: Q-1509-2017
 # quora_username: # your Quora username
-research_gate_profile: # your profile on ResearchGate
+#research_gate_profile: # your profile on ResearchGate
 rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: -VPPZ8YAAAAJ # your Google Scholar ID
 scopus_id: 55080084800
