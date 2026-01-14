@@ -26,15 +26,13 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-Hello! 👋
+Hi there! 👋
 
-I am a **Científico Titular** (Permanent Researcher) at the Spanish National Research Council (CSIC).
+I am a **Científico Titular** (Permanent Researcher) at the Spanish National Research Council [(CSIC)](https://www.csic.es/es).
 
-I am a theoretical physicist working in quantum technologies.
+I am a theoretical **quantum** physicist: my background is in quantum optics, and my main interest is to exploit inherent quantum effects of light-matter interaction to develop quantum hardware (like new types of lasers, sources of quantum light, or quantum sensors).
 
-My main interest is to explore the generation of quantum states of light and matter and their application in technologies such as sensing or spectroscopy. ​More broadly, I wish to understand emergent quantum phenomena and criticality in driven-dissipative systems, and how they can be of use in quantum metrology.
-
-I obtained my PhD in December 2016 at Universidad Autónoma de Madrid, working on theoretical quantum optics under the supervision of Profs. Carlos Tejedor and Fabrice Laussy.  The title of my thesis was "Generation of Non-Classical States of Light". During this time, I also did two wonderful academic stays at Max Planck Institute for Quantum Optics in Garching, Germany, and at University of Sussex, UK.
+I obtained my PhD in December 2016 at [Universidad Autónoma de Madrid](https://www.uam.es/uam/inicio), working on theoretical quantum optics under the supervision of Profs. Carlos Tejedor and Fabrice Laussy.  The title of my thesis was "Generation of Non-Classical States of Light". During this time, I also did two wonderful academic stays at Max Planck Institute for Quantum Optics in Garching, Germany, and at University of Sussex, UK.
 
 I moved to Japan on January  2017 to join the group of Prof. Franco Nori at the Center of Emergent Matter Science (CEMS) in RIKEN (now rebranded to RIKEN Cluster for Pioneering Research), where I was awarded a fellowship from the Japanese Society for the Promotion of Science (JSPS) to do independent research in quantum optics. 
 ​
