@@ -440,8 +440,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-have-been-awarded-a-beca-leonardo-smile",
-          title: 'I have been awarded a Beca Leonardo! :smile:',
+            },},{id: "news-i-have-been-awarded-a-bbva-leonardo-grant-smile",
+          title: 'I have been awarded a BBVA Leonardo Grant! :smile:',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
