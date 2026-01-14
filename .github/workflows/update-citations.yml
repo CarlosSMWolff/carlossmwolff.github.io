@@ -45,11 +45,13 @@ jobs:
       - name: Run citation update script
         id: run_citation_update
         shell: bash
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
         run: |
           set +e
           echo "🚀 Running citation update script (single attempt)..."
           start_time=$(date)
-          timeout 600 python -u bin/update_scholar_citations.py
+          timeout 300 python -u bin/update_scholar_citations-SerpAPI.py
           status=$?
           end_time=$(date)
           if [ $status -eq 0 ]; then
