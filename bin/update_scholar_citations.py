@@ -52,9 +52,9 @@ def get_scholar_citations() -> None:
                 and "last_updated" in existing_data["metadata"]
             ):
                 print(f"Last updated on: {existing_data['metadata']['last_updated']}")
-                if existing_data["metadata"]["last_updated"] == today:
-                    print("Citations data is already up-to-date. Skipping fetch.")
-                    return
+#                if existing_data["metadata"]["last_updated"] == today:
+#                    print("Citations data is already up-to-date. Skipping fetch.")
+#                    return
         except Exception as e:
             print(
                 f"Warning: Could not read existing citation data from {OUTPUT_FILE}: {e}. The file may be missing or corrupted."
