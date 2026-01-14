@@ -2,12 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: Científico Titular at Institute of Fundamental Physics (IFF-CSIC), Spain.
+subtitle: "<strong>Científico Titular</strong> (Permanent Researcher) @ <a href='https://quinfog.hbar.es/'>QUINFOG group</a> in <a href='https://www.iff.csic.es/'>Institute of Fundamental Physics (IFF-CSIC)</a>, Spain."
 
 profile:
   align: right
   image: carlos-sanchez-pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>C/Serrano 113b</p>
     <p>Madrid, Spain</p>
@@ -21,7 +21,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
