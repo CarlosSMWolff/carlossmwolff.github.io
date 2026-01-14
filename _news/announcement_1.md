@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have been awarded a <a href="https://www.redleonardo.es/beneficiario/carlos-sanchez-munoz/">Beca Leonardo</a>! :smile:
+I have been awarded a <a href="https://www.redleonardo.es/beneficiario/carlos-sanchez-munoz/">BBVA Leonardo Grant</a>! :smile:
