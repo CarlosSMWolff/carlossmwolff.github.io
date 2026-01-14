@@ -1,74 +1,27 @@
 metadata:
   last_updated: '2026-01-14'
+  source: serpapi
 papers:
-  -VPPZ8YAAAAJ:-_dYPAW6P2MC:
-    citations: 27
-    title: Squeezed lasing
-    year: '2020'
   -VPPZ8YAAAAJ:5awf1xo2G04C:
     citations: 93
     title: First observation of the quantized exciton-polariton field and effect of interactions on a single polariton
     year: '2018'
-  -VPPZ8YAAAAJ:9Nmd_mFXekcC:
-    citations: 20
-    title: Two-photon resonance fluorescence of two interacting non-identical quantum emitters
-    year: '2021'
-  -VPPZ8YAAAAJ:9yKSN-GCB0IC:
-    citations: 12
-    title: Bichromatic dressing of a quantum dot detected by a remote second quantum dot
-    year: '2013'
-  -VPPZ8YAAAAJ:D_sINldO8mEC:
-    citations: 44
-    title: "The colored hanbury brown\u2013twiss effect"
-    year: '2016'
-  -VPPZ8YAAAAJ:EYYDruWGBe4C:
-    citations: 9
-    title: On the generality of symmetry breaking and dissipative freezing in quantum trajectories
-    year: '2023'
-  -VPPZ8YAAAAJ:ILKRHgRFtOwC:
-    citations: 17
-    title: Spontaneous scattering of Raman photons from cavity-QED systems in the ultrastrong coupling regime
-    year: '2022'
   -VPPZ8YAAAAJ:JQOojiI6XY0C:
     citations: 76
     title: Hybrid systems for the generation of nonclassical mechanical states via quadratic interactions
     year: '2018'
-  -VPPZ8YAAAAJ:L7CI7m0gUJcC:
-    citations: 16
-    title: Two-photon-absorption measurements in the presence of single-photon losses
-    year: '2022'
   -VPPZ8YAAAAJ:LjlpjdlvIbIC:
     citations: 65
     title: Macroscopic Two-Dimensional Polariton Condensates
     year: '2017'
-  -VPPZ8YAAAAJ:M7yex6snE4oC:
-    citations: 3
-    title: Frequency-resolved Purcell effect for the dissipative generation of steady-state entanglement
-    year: '2024'
-  -VPPZ8YAAAAJ:MLfJN-KU85MC:
-    citations: 20
-    title: Resolving nonclassical magnon composition of a magnetic ground state via a qubit
-    year: '2023'
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
     citations: 116
     title: 'Engineering and harnessing giant atoms in high-dimensional baths: A proposal for implementation with cold atoms'
     year: '2019'
-  -VPPZ8YAAAAJ:PVjk1bu6vJQC:
-    citations: 0
-    title: Squeezed Lasing via Cavity-Assisted Raman Transitions
-    year: Unknown Year
-  -VPPZ8YAAAAJ:Tiz5es2fbqcC:
-    citations: 41
-    title: Degenerate parametric oscillation in quantum membrane optomechanics
-    year: '2015'
   -VPPZ8YAAAAJ:W5xh706n7nkC:
     citations: 50
     title: Violation of classical inequalities by photon frequency-filtering
     year: '2014'
-  -VPPZ8YAAAAJ:WZBGuue-350C:
-    citations: 13
-    title: Parameter estimation from quantum-jump data using neural networks
-    year: '2024'
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
     citations: 81
     title: Resolution of superluminal signalling in non-perturbative cavity quantum electrodynamics
@@ -85,10 +38,6 @@ papers:
     citations: 73
     title: 'Symmetries and conservation laws in quantum trajectories: Dissipative freezing'
     year: '2019'
-  -VPPZ8YAAAAJ:_axFR9aDTf0C:
-    citations: 0
-    title: Quantum metrology through spectral measurements in quantum optics
-    year: '2025'
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
     citations: 243
     title: Emitters of N-photon bundles
@@ -97,41 +46,17 @@ papers:
     citations: 147
     title: Topological order and thermal equilibrium in polariton condensates
     year: '2018'
-  -VPPZ8YAAAAJ:evX43VCCuoAC:
-    citations: 44
-    title: Photon correlation spectroscopy as a witness for quantum coherence
-    year: '2020'
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
     citations: 223
     title: Quantum state tomography with conditional generative adversarial networks
     year: '2021'
-  -VPPZ8YAAAAJ:g3aElNc5_aQC:
-    citations: 20
-    title: Nonlinear interferometry for quantum-enhanced measurements of multiphoton absorption
-    year: '2023'
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
     citations: 55
     title: Interaction between giant atoms in a one-dimensional structured environment
     year: '2023'
-  -VPPZ8YAAAAJ:j8SEvjWlNXcC:
-    citations: 35
-    title: Simulating ultrastrong-coupling processes breaking parity conservation in Jaynes-Cummings systems
-    year: '2019'
-  -VPPZ8YAAAAJ:k8Z6L05lTy4C:
-    citations: 5
-    title: Nonlinear acoustic spin pumping caused by temperature-dependent frequency shifts of surface acoustic waves
-    year: '2023'
-  -VPPZ8YAAAAJ:kh2fBNsKQNwC:
-    citations: 0
-    title: Enabling ultrastrong-coupling phenomena with single-drive Jaynes--Cummings models
-    year: '2020'
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
     citations: 49
     title: Strongly coupled spin waves and surface acoustic waves at room temperature
-    year: '2024'
-  -VPPZ8YAAAAJ:lmc2jWPfTJgC:
-    citations: 5
-    title: Dissipative stabilization of maximal entanglement between nonidentical emitters via two-photon excitation
     year: '2024'
   -VPPZ8YAAAAJ:nb7KW1ujOQ8C:
     citations: 54
@@ -141,14 +66,6 @@ papers:
     citations: 113
     title: Quantum amplification and simulation of strong and ultrastrong coupling of light and matter
     year: '2024'
-  -VPPZ8YAAAAJ:rmuvC79q63oC:
-    citations: 1
-    title: Deterministic single-photon source over the terahertz regime
-    year: '2025'
-  -VPPZ8YAAAAJ:ruyezt5ZtCIC:
-    citations: 7
-    title: Photon antibunching in single-molecule vibrational sum-frequency generation
-    year: '2025'
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
     citations: 59
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
@@ -157,34 +74,10 @@ papers:
     citations: 96
     title: Quantum synchronisation enabled by dynamical symmetries and dissipation
     year: '2020'
-  -VPPZ8YAAAAJ:tuHXwOkdijsC:
-    citations: 14
-    title: Single-photon source over the terahertz regime
-    year: '2024'
-  -VPPZ8YAAAAJ:u5HHmVD_uO8C:
-    citations: 20
-    title: Plasmon-polariton emission from a coherently -excited quantum dot near a metal interface
-    year: '2012'
-  -VPPZ8YAAAAJ:vbGhcppDl1QC:
-    citations: 11
-    title: Unconventional mechanism of virtual-state population through dissipation
-    year: '2022'
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
     citations: 91
     title: Exciting polaritons with quantum light
     year: '2015'
-  -VPPZ8YAAAAJ:xtoqd-5pKcoC:
-    citations: 4
-    title: Entanglement of photonic modes from a continuously driven two-level system
-    year: '2025'
-  -VPPZ8YAAAAJ:yB1At4FlUx8C:
-    citations: 44
-    title: Quantum metrology of two-photon absorption
-    year: '2021'
-  -VPPZ8YAAAAJ:ye4kPcJQO24C:
-    citations: 49
-    title: Excitation with quantum light. II. Exciting a two-level system
-    year: '2016'
   -VPPZ8YAAAAJ:z_wVstp3MssC:
     citations: 105
     title: Classification and reconstruction of optical quantum states with deep neural networks
