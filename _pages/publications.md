@@ -9,6 +9,29 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+## Citations per year
+
+```echarts
+{
+  "title": { "text": "Citations per year" },
+  "responsive": true,
+  "tooltip": { "trigger": "axis" },
+  "xAxis": {
+    "type": "category",
+    "data": {{ site.data.scholar_metrics.citations_per_year | keys | sort | jsonify }}
+  },
+  "yAxis": { "type": "value" },
+  "series": [
+    {
+      "name": "Citations",
+      "type": "bar",
+      "data": {{ site.data.scholar_metrics.citations_per_year | sort | map: "last" | jsonify }}
+    }
+  ]
+}
+```
+
+
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
