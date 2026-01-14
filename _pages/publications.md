@@ -11,6 +11,14 @@ nav_order: 2
 
 ## Citations per year
 
+{% assign cpy = site.data.scholar_metrics.citations_per_year %}
+{% assign years = "" | split: "" %}
+{% assign counts = "" | split: "" %}
+{% for pair in cpy %}
+  {% assign years = years | push: pair[0] %}
+  {% assign counts = counts | push: pair[1] %}
+{% endfor %}
+
 ```echarts
 {
   "title": { "text": "Citations per year" },
@@ -18,18 +26,18 @@ nav_order: 2
   "tooltip": { "trigger": "axis" },
   "xAxis": {
     "type": "category",
-    "data": {{ site.data.scholar_metrics.citations_per_year | keys | sort | jsonify }}
+    "data": {{ years | jsonify }}
   },
   "yAxis": { "type": "value" },
   "series": [
     {
       "name": "Citations",
       "type": "bar",
-      "data": {{ site.data.scholar_metrics.citations_per_year | sort | map: "last" | jsonify }}
+      "data": {{ counts | jsonify }}
     }
   ]
 }
-```
+
 
 
 <!-- Bibsearch Feature -->
