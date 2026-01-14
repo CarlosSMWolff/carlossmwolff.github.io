@@ -17,6 +17,9 @@ def log(msg: str):
 AUTHOR_ID = "-VPPZ8YAAAAJ"   # your Google Scholar user id
 OUTPUT_FILE = "_data/citations.yml"
 API_KEY = os.getenv("SERPAPI_API_KEY")
+METRICS_FILE = "_data/scholar_metrics.yml"
+
+
 log("Script started")
 
 if not API_KEY:
@@ -123,6 +126,101 @@ try:
 except Exception as e:
     log(f"ERROR writing citation file: {e}")
     sys.exit(1)
+
+
+# -------------------------------------------------
+# Fetch author-level metrics + citations-per-year (1 extra API call)
+# -------------------------------------------------
+# -------------------------------------------------
+# Fetch author-level metrics + citations-per-year (1 extra API call)
+# -------------------------------------------------
+try:
+    log("Fetching author metrics (citations, h-index, i10-index) + citations-per-year graph...")
+
+    metrics_params = {
+        "engine": "google_scholar_author",
+        "author_id": AUTHOR_ID,
+        "view_op": "cited_by",
+        "api_key": API_KEY,
+    }
+
+    log("Sending request for cited_by table/graph...")
+    metrics_resp = requests.get(url, params=metrics_params, timeout=30)
+    log(f"HTTP response received (status={metrics_resp.status_code})")
+    metrics_resp.raise_for_status()
+
+    log("Parsing JSON response for metrics...")
+    metrics_data = metrics_resp.json()
+
+    cited_by = metrics_data.get("cited_by", {})
+
+
+
+    # ---- Table: citations / h-index / i10-index (usually "table")
+    table = cited_by.get("table", [])
+
+
+    # Convert table rows into a nice dict like:
+    # {"citations": {"all": 1234, "since_2019": 567}, "h_index": {...}, "i10_index": {...}}
+    metrics = {}
+
+    for row in table:
+        # Each row looks like: {"citations": {...}} or {"h_index": {...}} etc.
+        if not isinstance(row, dict) or len(row) != 1:
+            continue
+
+        metric_name, values = next(iter(row.items()))
+        if not isinstance(values, dict):
+            continue
+
+        metrics[metric_name] = values
+
+
+    # ---- Graph: citations per year (usually "graph")
+    graph = cited_by.get("graph", [])
+    citations_per_year = {}
+    for p in graph:
+        y = p.get("year")
+        c = p.get("citations")
+        if isinstance(y, int):
+            try:
+                citations_per_year[str(y)] = int(c)
+            except Exception:
+                pass
+    citations_per_year = dict(sorted(citations_per_year.items(), key=lambda kv: int(kv[0])))
+
+    metrics_payload = {
+        "metadata": {"last_updated": today, "source": "serpapi"},
+        "author_id": AUTHOR_ID,
+        "metrics": metrics,
+        "citations_per_year": citations_per_year,
+    }
+
+    log(f"Writing metrics to {METRICS_FILE}...")
+    with open(METRICS_FILE, "w") as f:
+        yaml.dump(metrics_payload, f, sort_keys=True, width=1000)
+
+    # Debug summary
+    if "citations" in metrics:
+        log(f"Total citations (table): {metrics['citations']}")
+    if "h_index" in metrics:
+        log(f"h-index (table): {metrics['h_index']}")
+    if "i10_index" in metrics:
+        log(f"i10-index (table): {metrics['i10_index']}")
+    if citations_per_year:
+        last5 = list(citations_per_year.items())[-5:]
+        log("Latest years (graph): " + ", ".join([f"{yy}:{cc}" for yy, cc in last5]))
+    else:
+        log("WARNING: No citations-per-year graph returned (graph empty).")
+
+    log("Author metrics file written successfully")
+
+except Exception as e:
+    log(f"ERROR fetching/writing author metrics: {e}")
+    # Keep your workflow running even if the metrics call fails
+    # sys.exit(1)
+
+
 
 
 log("Script completed successfully")

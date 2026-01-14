@@ -2,13 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: "<strong>Científico Titular</strong> (Permanent Researcher) @ <a href='https://quinfog.hbar.es/'>QUINFOG group</a> in <a href='https://www.iff.csic.es/'>Institute of Fundamental Physics (IFF-CSIC)</a>, Spain."
+subtitle: "<strong>Científico Titular</strong> (Permanent Researcher) @ <a href='https://quinfog.hbar.es/'>QUINFOG group</a>, <a href='https://www.iff.csic.es/'>Institute of Fundamental Physics (IFF-CSIC)</a>, Spain."
 
 profile:
   align: right
   image: carlos-sanchez-pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
+    <p>Office Location</p>
     <p>C/Serrano 113b</p>
     <p>Madrid, Spain</p>
 
