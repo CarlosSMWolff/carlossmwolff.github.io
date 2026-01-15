@@ -12,8 +12,7 @@ def log(msg: str):
     """Timestamped log output (flushes immediately)."""
     print(f"[{datetime.utcnow().isoformat()}] {msg}", flush=True)
 
-SKIP_EXISTING_PAPERS = True  # set False to force refresh everything
-
+SKIP_EXISTING_PAPERS = True  # set True to only update citations, False to refresh all data of existing papers
 
 # -------------------------------------------------
 # Define Crossref search tools
@@ -238,6 +237,7 @@ if not articles:
 # Build citation data
 # -------------------------------------------------
 
+# Load existing citations file (if any)
 existing_papers = {}
 if os.path.exists(OUTPUT_FILE):
     try:
@@ -269,15 +269,29 @@ skipped_existing = 0
 for idx, art in enumerate(articles, start=1):
     try:
         paper_id = art.get("citation_id") or art.get("link") or f"paper_{idx}"
+        citations = art.get("cited_by", {}).get("value", 0)
 
-        if SKIP_EXISTING_PAPERS and paper_id in existing_papers:
-            # Already have this paper stored; skip any API work for it
+
+        existing_entry = existing_papers.get(paper_id)
+
+        if existing_entry:
+            entry = dict(existing_entry)
+        else:
+            entry = {}
+
+        # Update citations
+        entry["citations"] = citations
+
+        if SKIP_EXISTING_PAPERS and existing_entry:
+            # Already have this paper stored; skip any API work for it and just update citations
             skipped_existing += 1
+            citation_data["papers"][paper_id] = entry
             continue
 
+        # If we do not skip, proceed to fetch more data
+        
         title = art.get("title", "Unknown title")
         year = art.get("year", "Unknown")
-        citations = art.get("cited_by", {}).get("value", 0)
         link = art.get("link")
         authors = art.get("authors")
         venue = art.get("publication") or art.get("journal") or art.get("source")
@@ -310,21 +324,25 @@ for idx, art in enumerate(articles, start=1):
             except Exception as e:
                 log(f"  ↳ Crossref full-metadata fetch failed for {doi}: {e}")
                 crossref = {}
-
-
-        citation_data["papers"][paper_id] = {
+        
+        entry.update({
             "title": title,
             "year": year,
-            "citations": citations,
             "authors": authors,
             "venue": venue,
             "link": link,
             "cited_by_link": cited_by_link,
             "snippet": snippet,
             "resources": resources,
-            "doi": doi,
-            "crossref": crossref
-        }
+        })
+
+        if doi:
+            entry["doi"] = doi
+        if crossref:
+            entry["crossref"] = crossref
+
+
+        citation_data["papers"][paper_id] = entry
 
 
     except Exception as e:
