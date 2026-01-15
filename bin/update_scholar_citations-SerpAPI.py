@@ -25,6 +25,8 @@ CROSSREF_ROWS = 3                    # how many candidates to consider
 CROSSREF_SLEEP = 0.2                 # be polite; avoids hammering
 TITLE_MATCH_THRESHOLD = 0.85         # 0..1, higher = stricter
 
+# Write clarifying comment here to test commits.
+
 def crossref_fetch_work(doi: str) -> dict:
     """Fetch full Crossref metadata for a DOI. Returns the Crossref 'message' dict."""
     time.sleep(CROSSREF_SLEEP)
