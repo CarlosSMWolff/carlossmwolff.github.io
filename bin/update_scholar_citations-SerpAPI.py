@@ -99,14 +99,31 @@ for idx, art in enumerate(articles, start=1):
         title = art.get("title", "Unknown title")
         year = art.get("year", "Unknown")
         citations = art.get("cited_by", {}).get("value", 0)
+        link = art.get("link")
+        authors = art.get("authors")
+        venue = art.get("publication") or art.get("journal") or art.get("source")
+        snippet = art.get("snippet")
+        resources = art.get("resources")
+        cited_by_link = art.get("cited_by", {}).get("link")
+
 
         log(f"[{idx}/{len(articles)}] {title} ({year}) → {citations} citations")
+        if idx == 1:
+            log(f"Sample extra fields: authors={authors}, venue={venue}, link={link}")
+
 
         citation_data["papers"][paper_id] = {
             "title": title,
             "year": year,
             "citations": citations,
+            "authors": authors,
+            "venue": venue,
+            "link": link,
+            "cited_by_link": cited_by_link,
+            "snippet": snippet,
+            "resources": resources,
         }
+
     except Exception as e:
         log(f"ERROR processing article #{idx}: {e}")
 
@@ -120,7 +137,8 @@ try:
 
     log(f"Writing citation data to {OUTPUT_FILE}...")
     with open(OUTPUT_FILE, "w") as f:
-        yaml.dump(citation_data, f, sort_keys=True, width=1000)
+        yaml.dump(citation_data, f, sort_keys=False, width=1000)
+
 
     log("Citation data written successfully")
 except Exception as e:

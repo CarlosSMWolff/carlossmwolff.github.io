@@ -1,84 +1,204 @@
 metadata:
-  last_updated: '2026-01-14'
+  last_updated: '2026-01-15'
   source: serpapi
 papers:
-  -VPPZ8YAAAAJ:5awf1xo2G04C:
-    citations: 93
-    title: First observation of the quantized exciton-polariton field and effect of interactions on a single polariton
-    year: '2018'
-  -VPPZ8YAAAAJ:JQOojiI6XY0C:
-    citations: 76
-    title: Hybrid systems for the generation of nonclassical mechanical states via quadratic interactions
-    year: '2018'
-  -VPPZ8YAAAAJ:LjlpjdlvIbIC:
-    citations: 65
-    title: Macroscopic Two-Dimensional Polariton Condensates
-    year: '2017'
-  -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 116
-    title: 'Engineering and harnessing giant atoms in high-dimensional baths: A proposal for implementation with cold atoms'
-    year: '2019'
-  -VPPZ8YAAAAJ:W5xh706n7nkC:
-    citations: 50
-    title: Violation of classical inequalities by photon frequency-filtering
-    year: '2014'
-  -VPPZ8YAAAAJ:WqliGbK-hY8C:
-    citations: 81
-    title: Resolution of superluminal signalling in non-perturbative cavity quantum electrodynamics
-    year: '2018'
-  -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 193
-    title: Coherent generation of nonclassical light on chip via detuned photon blockade
-    year: '2015'
-  -VPPZ8YAAAAJ:Y5dfb0dijaUC:
-    citations: 77
-    title: Filtering multiphoton emission from state-of-the-art cavity quantum electrodynamics
-    year: '2018'
-  -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
-    citations: 73
-    title: 'Symmetries and conservation laws in quantum trajectories: Dissipative freezing'
-    year: '2019'
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 243
     title: Emitters of N-photon bundles
     year: '2014'
-  -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 147
-    title: Topological order and thermal equilibrium in polariton condensates
-    year: '2018'
+    citations: 243
+    authors: "CS Mu\xF1oz, E Del Valle, AG Tudela, K M\xFCller, S Lichtmannecker, ..."
+    venue: Nature photonics 8 (7), 550-555, 2014
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:bFI3QPDXJZMC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2408324031478078431
+    snippet: null
+    resources: null
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 223
     title: Quantum state tomography with conditional generative adversarial networks
     year: '2021'
-  -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 55
-    title: Interaction between giant atoms in a one-dimensional structured environment
-    year: '2023'
-  -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 49
-    title: Strongly coupled spin waves and surface acoustic waves at room temperature
-    year: '2024'
-  -VPPZ8YAAAAJ:nb7KW1ujOQ8C:
-    citations: 54
-    title: Enhanced two-photon emission from a dressed biexciton
+    citations: 223
+    authors: S Ahmed, C Sanchez Munoz, F Nori, AF Kockum
+    venue: Physical review letters 127 (14), 140502, 2021
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:fEOibwPWpKIC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2291816998396686848
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:XiSMed-E-HIC:
+    title: Coherent generation of nonclassical light on chip via detuned photon blockade
     year: '2015'
+    citations: 194
+    authors: "K M\xFCller, A Rundquist, KA Fischer, T Sarmiento, KG Lagoudakis, ..."
+    venue: Physical review letters 114 (23), 233601, 2015
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:XiSMed-E-HIC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17375941096358685692,6449883634479489785
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:eMMeJKvmdy0C:
+    title: Topological order and thermal equilibrium in polariton condensates
+    year: '2018'
+    citations: 147
+    authors: "D Caputo, D Ballarini, G Dagvadorj, C S\xE1nchez Mu\xF1oz, M De Giorgi, ..."
+    venue: Nature materials 17 (2), 145-151, 2018
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:eMMeJKvmdy0C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15168206937389312548,9201288260306297876
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:NJ774b8OgUMC:
+    title: 'Engineering and harnessing giant atoms in high-dimensional baths: A proposal for implementation with cold atoms'
+    year: '2019'
+    citations: 117
+    authors: "A Gonz\xE1lez-Tudela, CS Mu\xF1oz, JI Cirac"
+    venue: Physical review letters 122 (20), 203603, 2019
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:NJ774b8OgUMC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15071974376374541943,3324579831678047814,10701067560025294809
+    snippet: null
+    resources: null
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 113
     title: Quantum amplification and simulation of strong and ultrastrong coupling of light and matter
     year: '2024'
-  -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 59
-    title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
-    year: '2015'
-  -VPPZ8YAAAAJ:tKAzc9rXhukC:
-    citations: 96
-    title: Quantum synchronisation enabled by dynamical symmetries and dissipation
-    year: '2020'
-  -VPPZ8YAAAAJ:xtRiw3GOFMkC:
-    citations: 91
-    title: Exciting polaritons with quantum light
-    year: '2015'
+    citations: 113
+    authors: "W Qin, AF Kockum, CS Mu\xF1oz, A Miranowicz, F Nori"
+    venue: Physics Reports 1078, 1-59, 2024
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:oNZyr7d5Mn4C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14835796195277699809
+    snippet: null
+    resources: null
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 105
     title: Classification and reconstruction of optical quantum states with deep neural networks
     year: '2021'
+    citations: 105
+    authors: "S Ahmed, C S\xE1nchez Mu\xF1oz, F Nori, AF Kockum"
+    venue: Physical Review Research 3 (3), 033278, 2021
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:z_wVstp3MssC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6734917460936663929
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:tKAzc9rXhukC:
+    title: Quantum synchronisation enabled by dynamical symmetries and dissipation
+    year: '2020'
+    citations: 96
+    authors: "J Tindall, CS Mu\xF1oz, B Bu\u010Da, D Jaksch"
+    venue: New Journal of Physics 22 (1), 013026, 2020
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:tKAzc9rXhukC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10560464567260945779
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:5awf1xo2G04C:
+    title: First observation of the quantized exciton-polariton field and effect of interactions on a single polariton
+    year: '2018'
+    citations: 93
+    authors: "\xC1 Cuevas, JC L\xF3pez Carre\xF1o, B Silva, M De Giorgi, DG Su\xE1rez-Forero, ..."
+    venue: Science Advances 4 (4), eaao6814, 2018
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:5awf1xo2G04C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=160528570835223157,7575812511141405390,17393410380749744055
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:xtRiw3GOFMkC:
+    title: Exciting polaritons with quantum light
+    year: '2015'
+    citations: 92
+    authors: "JC L\xF3pez Carre\xF1o, C S\xE1nchez Mu\xF1oz, D Sanvitto, E Del Valle, FP Laussy"
+    venue: Physical Review Letters 115 (19), 196402, 2015
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:xtRiw3GOFMkC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14997762096347034402
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:WqliGbK-hY8C:
+    title: Resolution of superluminal signalling in non-perturbative cavity quantum electrodynamics
+    year: '2018'
+    citations: 81
+    authors: "C S\xE1nchez Mu\xF1oz, F Nori, S De Liberato"
+    venue: Nature communications 9 (1), 1924, 2018
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:WqliGbK-hY8C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17623310551900714769,15039711289413402155
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:Y5dfb0dijaUC:
+    title: Filtering multiphoton emission from state-of-the-art cavity quantum electrodynamics
+    year: '2018'
+    citations: 77
+    authors: "C S\xE1nchez Mu\xF1oz, FP Laussy, E Valle, C Tejedor, A Gonz\xE1lez-Tudela"
+    venue: Optica 5 (1), 14-26, 2018
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:Y5dfb0dijaUC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6355155626912923788,303287398800855669,3137085925825240661
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:JQOojiI6XY0C:
+    title: Hybrid systems for the generation of nonclassical mechanical states via quadratic interactions
+    year: '2018'
+    citations: 76
+    authors: "C S\xE1nchez Mu\xF1oz, A Lara, J Puebla, F Nori"
+    venue: Physical review letters 121 (12), 123604, 2018
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:JQOojiI6XY0C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14127614224477331024,11330791388073242753
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
+    title: 'Symmetries and conservation laws in quantum trajectories: Dissipative freezing'
+    year: '2019'
+    citations: 73
+    authors: "CS Munoz, B Buca, J Tindall, A Gonz\xE1lez-Tudela, D Jaksch, D Porras"
+    venue: arXiv preprint arXiv:1908.11862, 2019
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:ZfRJV9d4-WMC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=415228903107299102,7333920961353562223,11653268892873039183
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:LjlpjdlvIbIC:
+    title: Macroscopic Two-Dimensional Polariton Condensates
+    year: '2017'
+    citations: 65
+    authors: "D Ballarini, D Caputo, CS Mu\xF1oz, M De Giorgi, L Dominici, ..."
+    venue: Physical review letters 118 (21), 215301, 2017
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:LjlpjdlvIbIC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8202980116723596343,16542498984582380133
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:sSrBHYA8nusC:
+    title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
+    year: '2015'
+    citations: 59
+    authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
+    venue: arXiv preprint arXiv:1510.07307, 2015
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:sSrBHYA8nusC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6474967238897010054
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:hMsQuOkrut0C:
+    title: Interaction between giant atoms in a one-dimensional structured environment
+    year: '2023'
+    citations: 55
+    authors: A Soro, CS Munoz, AF Kockum
+    venue: Physical Review A 107 (1), 013710, 2023
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:hMsQuOkrut0C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16549343588483776530
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:nb7KW1ujOQ8C:
+    title: Enhanced two-photon emission from a dressed biexciton
+    year: '2015'
+    citations: 54
+    authors: "CS Mu\xF1oz, FP Laussy, C Tejedor, E del Valle"
+    venue: New Journal of Physics 17 (12), 123021, 2015
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:nb7KW1ujOQ8C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13526477188916088285
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:W5xh706n7nkC:
+    title: Violation of classical inequalities by photon frequency-filtering
+    year: '2014'
+    citations: 50
+    authors: "CS Mu\xF1oz, E del Valle, C Tejedor, FP Laussy"
+    venue: arXiv preprint arXiv:1403.6182, 2014
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:W5xh706n7nkC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16489893427477805404
+    snippet: null
+    resources: null
+  -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
+    title: Strongly coupled spin waves and surface acoustic waves at room temperature
+    year: '2024'
+    citations: 49
+    authors: Y Hwang, J Puebla, K Kondou, C Gonzalez-Ballestero, H Isshiki, ...
+    venue: Physical Review Letters 132 (5), 056704, 2024
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:kz9GbA2Ns4gC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14688216103818861413
+    snippet: null
+    resources: null
