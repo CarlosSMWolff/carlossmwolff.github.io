@@ -12,6 +12,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2408324031478078431
     snippet: null
     resources: null
+    doi: 10.1038/nphoton.2014.114
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
     title: Quantum state tomography with conditional generative adversarial networks
     year: '2021'
@@ -22,6 +23,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2291816998396686848
     snippet: null
     resources: null
+    doi: 10.1103/physrevlett.127.140502
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
     title: Coherent generation of nonclassical light on chip via detuned photon blockade
     year: '2015'
@@ -32,6 +34,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17375941096358685692,6449883634479489785
     snippet: null
     resources: null
+    doi: 10.1103/physrevlett.114.233601
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
     title: Topological order and thermal equilibrium in polariton condensates
     year: '2018'
@@ -42,6 +45,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15168206937389312548,9201288260306297876
     snippet: null
     resources: null
+    doi: 10.1038/nmat5039
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
     title: 'Engineering and harnessing giant atoms in high-dimensional baths: A proposal for implementation with cold atoms'
     year: '2019'
@@ -52,6 +56,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15071974376374541943,3324579831678047814,10701067560025294809
     snippet: null
     resources: null
+    doi: 10.1103/physrevlett.122.203603
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
     title: Quantum amplification and simulation of strong and ultrastrong coupling of light and matter
     year: '2024'
@@ -62,6 +67,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14835796195277699809
     snippet: null
     resources: null
+    doi: 10.1016/j.physrep.2024.05.003
   -VPPZ8YAAAAJ:z_wVstp3MssC:
     title: Classification and reconstruction of optical quantum states with deep neural networks
     year: '2021'
@@ -72,6 +78,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6734917460936663929
     snippet: null
     resources: null
+    doi: 10.1103/physrevresearch.3.033278
   -VPPZ8YAAAAJ:tKAzc9rXhukC:
     title: Quantum synchronisation enabled by dynamical symmetries and dissipation
     year: '2020'
@@ -82,6 +89,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10560464567260945779
     snippet: null
     resources: null
+    doi: 10.1088/1367-2630/ab60f5
   -VPPZ8YAAAAJ:5awf1xo2G04C:
     title: First observation of the quantized exciton-polariton field and effect of interactions on a single polariton
     year: '2018'
@@ -92,6 +100,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=160528570835223157,7575812511141405390,17393410380749744055
     snippet: null
     resources: null
+    doi: 10.1126/sciadv.aao6814
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
     title: Exciting polaritons with quantum light
     year: '2015'
@@ -102,6 +111,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14997762096347034402
     snippet: null
     resources: null
+    doi: 10.1103/physrevlett.115.196402
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
     title: Resolution of superluminal signalling in non-perturbative cavity quantum electrodynamics
     year: '2018'
@@ -112,6 +122,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17623310551900714769,15039711289413402155
     snippet: null
     resources: null
+    doi: 10.1038/s41467-018-04339-w
   -VPPZ8YAAAAJ:Y5dfb0dijaUC:
     title: Filtering multiphoton emission from state-of-the-art cavity quantum electrodynamics
     year: '2018'
@@ -122,6 +133,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6355155626912923788,303287398800855669,3137085925825240661
     snippet: null
     resources: null
+    doi: 10.1364/optica.5.000014
   -VPPZ8YAAAAJ:JQOojiI6XY0C:
     title: Hybrid systems for the generation of nonclassical mechanical states via quadratic interactions
     year: '2018'
@@ -132,6 +144,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14127614224477331024,11330791388073242753
     snippet: null
     resources: null
+    doi: 10.1103/physrevlett.121.123604
   -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
     title: 'Symmetries and conservation laws in quantum trajectories: Dissipative freezing'
     year: '2019'
@@ -142,6 +155,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=415228903107299102,7333920961353562223,11653268892873039183
     snippet: null
     resources: null
+    doi: 10.1103/physreva.100.042113
   -VPPZ8YAAAAJ:LjlpjdlvIbIC:
     title: Macroscopic Two-Dimensional Polariton Condensates
     year: '2017'
@@ -152,6 +166,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8202980116723596343,16542498984582380133
     snippet: null
     resources: null
+    doi: 10.1103/physrevlett.118.215301
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
@@ -162,6 +177,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6474967238897010054
     snippet: null
     resources: null
+    doi: null
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
     title: Interaction between giant atoms in a one-dimensional structured environment
     year: '2023'
@@ -172,6 +188,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16549343588483776530
     snippet: null
     resources: null
+    doi: 10.1103/physreva.107.013710
   -VPPZ8YAAAAJ:nb7KW1ujOQ8C:
     title: Enhanced two-photon emission from a dressed biexciton
     year: '2015'
@@ -182,6 +199,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13526477188916088285
     snippet: null
     resources: null
+    doi: 10.1088/1367-2630/17/12/123021
   -VPPZ8YAAAAJ:W5xh706n7nkC:
     title: Violation of classical inequalities by photon frequency-filtering
     year: '2014'
@@ -192,6 +210,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16489893427477805404
     snippet: null
     resources: null
+    doi: 10.1103/physreva.90.052111
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
     title: Strongly coupled spin waves and surface acoustic waves at room temperature
     year: '2024'
@@ -202,3 +221,4 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14688216103818861413
     snippet: null
     resources: null
+    doi: 10.1103/physrevlett.132.056704

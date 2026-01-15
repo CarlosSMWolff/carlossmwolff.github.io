@@ -12,6 +12,8 @@ def log(msg: str):
     """Timestamped log output (flushes immediately)."""
     print(f"[{datetime.utcnow().isoformat()}] {msg}", flush=True)
 
+SKIP_EXISTING_PAPERS = False  # set False to force refresh everything
+
 
 # -------------------------------------------------
 # Define Crossref search tools
@@ -163,20 +165,44 @@ if not articles:
 # -------------------------------------------------
 # Build citation data
 # -------------------------------------------------
+
+existing_papers = {}
+if os.path.exists(OUTPUT_FILE):
+    try:
+        with open(OUTPUT_FILE, "r") as f:
+            existing_yaml = yaml.safe_load(f) or {}
+        existing_papers = existing_yaml.get("papers", {}) or {}
+        log(f"Loaded existing citations.yml with {len(existing_papers)} papers")
+    except Exception as e:
+        log(f"WARNING: Could not read existing {OUTPUT_FILE}: {e}")
+        existing_papers = {}
+else:
+    log("No existing citations.yml found (first run)")
+
+
 today = datetime.utcnow().strftime("%Y-%m-%d")
 citation_data = {
     "metadata": {
         "last_updated": today,
         "source": "serpapi",
     },
-    "papers": {},
+    "papers": dict(existing_papers),  # start from what we already have
 }
 
+
 log("Building citation entries...")
+
+skipped_existing = 0
 
 for idx, art in enumerate(articles, start=1):
     try:
         paper_id = art.get("citation_id") or art.get("link") or f"paper_{idx}"
+
+        if SKIP_EXISTING_PAPERS and paper_id in existing_papers:
+            # Already have this paper stored; skip any API work for it
+            skipped_existing += 1
+            continue
+
         title = art.get("title", "Unknown title")
         year = art.get("year", "Unknown")
         citations = art.get("cited_by", {}).get("value", 0)
@@ -221,6 +247,8 @@ for idx, art in enumerate(articles, start=1):
 
     except Exception as e:
         log(f"ERROR processing article #{idx}: {e}")
+
+log(f"Skipped {skipped_existing} existing papers")
 
 
 # -------------------------------------------------
