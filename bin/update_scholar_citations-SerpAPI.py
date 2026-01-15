@@ -270,6 +270,7 @@ for idx, art in enumerate(articles, start=1):
     try:
         paper_id = art.get("citation_id") or art.get("link") or f"paper_{idx}"
         citations = art.get("cited_by", {}).get("value", 0)
+        venue = art.get("publication") or art.get("journal") or art.get("source")
 
 
         existing_entry = existing_papers.get(paper_id)
@@ -281,6 +282,13 @@ for idx, art in enumerate(articles, start=1):
 
         # Update citations
         entry["citations"] = citations
+
+        # Update preprint status
+        venue_l = (venue or "").lower()
+        is_arxiv = "arxiv" in venue_l
+        entry["is_arxiv"] = is_arxiv
+
+
 
         if SKIP_EXISTING_PAPERS and existing_entry:
             # Already have this paper stored; skip any API work for it and just update citations
@@ -294,7 +302,6 @@ for idx, art in enumerate(articles, start=1):
         year = art.get("year", "Unknown")
         link = art.get("link")
         authors = art.get("authors")
-        venue = art.get("publication") or art.get("journal") or art.get("source")
         snippet = art.get("snippet")
         resources = art.get("resources")
         cited_by_link = art.get("cited_by", {}).get("link")
@@ -433,6 +440,7 @@ try:
     metrics_payload = {
         "metadata": {"last_updated": today, "source": "serpapi"},
         "author_id": AUTHOR_ID,
+        "total_papers": len(articles),
         "metrics": metrics,
         "citations_per_year": citations_per_year,
     }
