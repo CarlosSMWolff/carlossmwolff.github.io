@@ -12,7 +12,7 @@ def log(msg: str):
     """Timestamped log output (flushes immediately)."""
     print(f"[{datetime.utcnow().isoformat()}] {msg}", flush=True)
 
-SKIP_EXISTING_PAPERS = False  # set False to force refresh everything
+SKIP_EXISTING_PAPERS = True  # set False to force refresh everything
 
 
 # -------------------------------------------------
@@ -25,6 +25,53 @@ CROSSREF_MAILTO = "carlossmwolff@gmail.com"  # optional but recommended
 CROSSREF_ROWS = 3                    # how many candidates to consider
 CROSSREF_SLEEP = 0.2                 # be polite; avoids hammering
 TITLE_MATCH_THRESHOLD = 0.85         # 0..1, higher = stricter
+
+def crossref_fetch_work(doi: str) -> dict:
+    """Fetch full Crossref metadata for a DOI. Returns the Crossref 'message' dict."""
+    time.sleep(CROSSREF_SLEEP)
+    r = requests.get(f"{CROSSREF_WORKS_URL}/{doi}", timeout=20)
+    r.raise_for_status()
+    return (r.json() or {}).get("message", {})
+
+def crossref_compact(msg: dict) -> dict:
+    """Keep a compact subset of Crossref fields (enough to build BibTeX later)."""
+    if not msg:
+        return {}
+
+    def first(x):
+        return x[0] if isinstance(x, list) and x else x
+
+    issued = msg.get("issued", {}).get("date-parts", [])
+    issued_ymd = issued[0] if issued and issued[0] else []
+
+    out = {
+        "DOI": msg.get("DOI"),
+        "type": msg.get("type"),
+        "title": first(msg.get("title")),
+        "container_title": first(msg.get("container-title")),
+        "short_container_title": first(msg.get("short-container-title")),
+        "publisher": msg.get("publisher"),
+        "publisher_location": msg.get("publisher-location"),
+        "volume": msg.get("volume"),
+        "issue": msg.get("issue"),
+        "page": msg.get("page"),
+        "article_number": msg.get("article-number"),
+        "ISSN": msg.get("ISSN"),
+        "ISBN": msg.get("ISBN"),
+        "URL": msg.get("URL"),
+        "issued": issued_ymd,
+        "subject": msg.get("subject"),
+        "author": msg.get("author"),
+        "link": msg.get("link"),
+        "license": msg.get("license"),
+    }
+
+    # Abstract is often absent; include if present
+    if msg.get("abstract"):
+        out["abstract"] = msg.get("abstract")
+
+    return {k: v for k, v in out.items() if v not in (None, "", [], {})}
+
 
 def crossref_lookup_doi(title: str, year: str | None = None, author_hint: str | None = None) -> str | None:
     """Return a DOI string if we find a good match in Crossref, else None."""
@@ -155,7 +202,32 @@ log("JSON parsed successfully")
 # -------------------------------------------------
 # Extract articles
 # -------------------------------------------------
-articles = data.get("articles", [])
+
+all_articles = []
+start = 0
+PAGE_SIZE = 20
+
+while True:
+    params["start"] = start
+    params["num"] = PAGE_SIZE
+
+    log(f"Fetching Scholar articles: start={start}")
+    response = requests.get(url, params=params, timeout=30)
+    response.raise_for_status()
+    data = response.json()
+
+    page_articles = data.get("articles", []) or []
+    log(f"Received {len(page_articles)} articles")
+
+    if not page_articles:
+        break
+
+    all_articles.extend(page_articles)
+    start += PAGE_SIZE
+
+
+articles = all_articles
+
 log(f"Number of articles found: {len(articles)}")
 
 if not articles:
@@ -228,8 +300,17 @@ for idx, art in enumerate(articles, start=1):
             doi = crossref_lookup_doi(title=title, year=str(year), author_hint=author_hint)
         except Exception as e:
             log(f"  ↳ Crossref lookup failed: {e}")
+
+        crossref = {}
         if doi:
             log(f"  ↳ DOI: {doi}")
+            try:
+                full_msg = crossref_fetch_work(doi)
+                crossref = crossref_compact(full_msg)
+            except Exception as e:
+                log(f"  ↳ Crossref full-metadata fetch failed for {doi}: {e}")
+                crossref = {}
+
 
         citation_data["papers"][paper_id] = {
             "title": title,
@@ -241,7 +322,8 @@ for idx, art in enumerate(articles, start=1):
             "cited_by_link": cited_by_link,
             "snippet": snippet,
             "resources": resources,
-            "doi": doi
+            "doi": doi,
+            "crossref": crossref
         }
 
 
