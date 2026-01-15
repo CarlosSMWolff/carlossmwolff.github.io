@@ -5,10 +5,91 @@ import sys
 import yaml
 import requests
 from datetime import datetime
+import urllib.parse
+import time
 
 def log(msg: str):
     """Timestamped log output (flushes immediately)."""
     print(f"[{datetime.utcnow().isoformat()}] {msg}", flush=True)
+
+
+# -------------------------------------------------
+# Define Crossref search tools
+# -------------------------------------------------
+
+
+CROSSREF_WORKS_URL = "https://api.crossref.org/works"
+CROSSREF_MAILTO = "carlossmwolff@gmail.com"  # optional but recommended
+CROSSREF_ROWS = 3                    # how many candidates to consider
+CROSSREF_SLEEP = 0.2                 # be polite; avoids hammering
+TITLE_MATCH_THRESHOLD = 0.85         # 0..1, higher = stricter
+
+def crossref_lookup_doi(title: str, year: str | None = None, author_hint: str | None = None) -> str | None:
+    """Return a DOI string if we find a good match in Crossref, else None."""
+    if not title:
+        return None
+
+    # Crossref recommends identifying your tool via User-Agent/mailto
+    headers = {
+        "User-Agent": f"al-folio-doi-lookup/1.0 (mailto:{CROSSREF_MAILTO})"
+    }
+
+    # A simple bibliographic query works well in practice
+    query = title
+    if author_hint:
+        query = f"{title} {author_hint}"
+
+    params = {
+        "query.bibliographic": query,
+        "rows": CROSSREF_ROWS,
+    }
+
+    time.sleep(CROSSREF_SLEEP)
+    r = requests.get(CROSSREF_WORKS_URL, params=params, headers=headers, timeout=20)
+    r.raise_for_status()
+    items = r.json().get("message", {}).get("items", []) or []
+    if not items:
+        return None
+
+    # Lightweight title similarity (no extra deps)
+    def norm(s: str) -> str:
+        return "".join(ch.lower() if ch.isalnum() or ch.isspace() else " " for ch in (s or "")).split()
+
+    def sim(a: str, b: str) -> float:
+        a_set, b_set = set(norm(a)), set(norm(b))
+        if not a_set or not b_set:
+            return 0.0
+        return len(a_set & b_set) / len(a_set | b_set)
+
+    best = None
+    best_score = -1.0
+
+    for it in items:
+        cr_title = (it.get("title") or [""])[0]
+        doi = it.get("DOI")
+        if not doi:
+            continue
+
+        score = sim(title, cr_title)
+
+        # Optional small year check: penalize if year disagrees
+        if year:
+            try:
+                y = int(str(year))
+                issued = it.get("issued", {}).get("date-parts", [[None]])[0][0]
+                if issued and issued != y:
+                    score -= 0.05
+            except Exception:
+                pass
+
+        if score > best_score:
+            best_score = score
+            best = doi
+
+    if best and best_score >= TITLE_MATCH_THRESHOLD:
+        return best
+
+    return None
 
 
 # -------------------------------------------------
@@ -111,6 +192,18 @@ for idx, art in enumerate(articles, start=1):
         if idx == 1:
             log(f"Sample extra fields: authors={authors}, venue={venue}, link={link}")
 
+        # DOI lookup via Crossref (adds API calls)
+        author_hint = None
+        if isinstance(authors, str) and authors.strip():
+            author_hint = authors.split(",")[0].strip()  # first author token
+
+        doi = None
+        try:
+            doi = crossref_lookup_doi(title=title, year=str(year), author_hint=author_hint)
+        except Exception as e:
+            log(f"  ↳ Crossref lookup failed: {e}")
+        if doi:
+            log(f"  ↳ DOI: {doi}")
 
         citation_data["papers"][paper_id] = {
             "title": title,
@@ -122,7 +215,9 @@ for idx, art in enumerate(articles, start=1):
             "cited_by_link": cited_by_link,
             "snippet": snippet,
             "resources": resources,
+            "doi": doi
         }
+
 
     except Exception as e:
         log(f"ERROR processing article #{idx}: {e}")
@@ -242,3 +337,9 @@ except Exception as e:
 
 
 log("Script completed successfully")
+
+
+
+
+
+
