@@ -37,18 +37,25 @@ I work in **theoretical quantum physics**. As a quantum optician by background, 
 
 <!-- Make a list with a header "Research Topics" -->
 ### Research Topics
-- Novel sources of quantum light
+- Cavity-QED for novel sources of quantum light 
   - Multi-photon states
   - Squeezed lasers
   - Single-photons in the THz
+- Open Quantum Systems
+  - Driven-dissipative phase transitions
+  - Steady-state entanglement via dissipation 
 - Sensing and metrology
   - Spectroscopy with quantum light
   - Machine-learning for tomography and parameter estimation
   - Metrological protocols in quantum optics
-- Open Quantum Systems
-  - Driven-dissipative phase transitions
-  - Steady-state entanglement via dissipation 
+- Quantum computing
+  - Bosonic codes
+- Quantum technologies with solid-state platforms
+  - Quantum dots in microcavities
+  - Color centers in diamond and SiC
+  - Superconducting circuits
+
 
 ### Short bio
 
-I defended [my PhD thesis](https://drive.google.com/file/d/1Vb79KvJMuATDxIW9kbVOCZjUVZaDF4BD/view) in December 2016 at [Universidad Autónoma de Madrid](https://www.uam.es/uam/inicio), under the supervisions of Prof. Carlos Tejedor and Prof. Fabrice P. Laussy. In 2017, I moved to Japan to join the group of Prof. Franco Nori at [RIKEN](https://dml.riken.jp/). There, I lived in [Wako-shi](https://en.wikipedia.org/wiki/Wak%C5%8D,_Saitama), where I enjoyed practicing Kendo at a local dojo. In 2018, I moved to University of Oxford to enjoy a Marie-Slodowska Curie Fellowship in the group of Prof. Dieter Jaksch. In March 2020 I was awarded a La Caixa Junior Leader Fellowship, bringing me back to UAM. Finally, on Dec. 2023 I joined [IFF-CSIC](https://www.iff.csic.es) with a permanent position.
+I defended [my PhD thesis](https://drive.google.com/file/d/1Vb79KvJMuATDxIW9kbVOCZjUVZaDF4BD/view) in December 2016 at [Universidad Autónoma de Madrid](https://www.uam.es/uam/inicio), under the supervisions of Prof. Carlos Tejedor and Prof. Fabrice P. Laussy. In 2017, I moved to Japan to join the group of Prof. Franco Nori at [RIKEN](https://dml.riken.jp/), funded by a [JSPS Short-term Fellowship](https://www.jsps.go.jp/english/e-inv/index.html). There, I lived in [Wako-shi](https://en.wikipedia.org/wiki/Wak%C5%8D,_Saitama), where I enjoyed practicing Kendo at a local dojo. In 2018, I moved to the group of Prof. Dieter Jaksch at [University of Oxford](https://www.physics.ox.ac.uk/), supported by a Marie-Slodowska Curie Fellowship. In March 2020 I was awarded a [La Caixa Junior Leader Fellowship](https://fundacionlacaixa.org/es/becas-posdoctorado-junior-leader), bringing me back to UAM in Madrid. On Dec. 2023 I joined [IFF-CSIC](https://www.iff.csic.es) with a permanent position.
