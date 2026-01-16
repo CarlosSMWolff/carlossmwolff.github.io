@@ -36,6 +36,15 @@ def crossref_fetch_work(doi: str) -> dict:
     r.raise_for_status()
     return (r.json() or {}).get("message", {})
 
+def clean_crossref_abstract(a: str | None) -> str:
+    if not a:
+        return ""
+    # remove very common JATS tags without regex
+    for tag in ("<jats:p>", "</jats:p>", "<p>", "</p>"):
+        a = a.replace(tag, "")
+    return " ".join(a.split())
+
+
 def crossref_compact(msg: dict) -> dict:
     """Keep a compact subset of Crossref fields (enough to build BibTeX later)."""
     if not msg:
@@ -575,7 +584,7 @@ def bib_article_entry(e: dict, doi: str) -> str:
         issn_val = esc(issn[0])
     elif isinstance(issn, str):
         issn_val = esc(issn)
-    abstract = esc(cr.get("abstract") or "")
+    abstract = esc(clean_crossref_abstract(cr.get("abstract")))
 
     urldate = datetime.utcnow().strftime("%Y-%m-%d")
 
