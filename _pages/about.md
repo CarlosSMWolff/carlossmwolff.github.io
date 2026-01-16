@@ -30,12 +30,22 @@ Hi there! 👋
 
 I am a **Científico Titular** (Permanent Researcher) at the Spanish National Research Council [(CSIC)](https://www.csic.es/es).
 
-I am a theoretical **quantum** physicist: my background is in quantum optics, and my main interest is to exploit inherent quantum effects of light-matter interaction to develop quantum hardware (like new types of lasers, sources of quantum light, or quantum sensors).
+I work in **theoretical quantum physics**. As a quantum optician by background, my main interest is exploring quantum effects arising from *engineered* light-matter interactions (such as in quantum electrodynamics) and exploit them for the development of quantum hardware (e.g. new types of lasers, sources of quantum light, or quantum sensors). Here is a list of research topics.
 
-I obtained my PhD in December 2016 at [Universidad Autónoma de Madrid](https://www.uam.es/uam/inicio), working on theoretical quantum optics under the supervision of Profs. Carlos Tejedor and Fabrice Laussy.  The title of my thesis was "Generation of Non-Classical States of Light". During this time, I also did two wonderful academic stays at Max Planck Institute for Quantum Optics in Garching, Germany, and at University of Sussex, UK.
+<!-- Make a list with a header "Research Topics" -->
+### Research Topics
+- Novel sources of quantum light
+  - Multi-photon states
+  - Squeezed lasers
+  - Single-photons in the THz
+- Sensing and metrology
+  - Spectroscopy with quantum light
+  - Machine-learning for tomography and parameter estimation
+  - Metrological protocols in quantum optics
+- Open Quantum Systems
+  - Driven-dissipative phase transitions
+  - Steady-state entanglement via dissipation 
 
-I moved to Japan on January  2017 to join the group of Prof. Franco Nori at the Center of Emergent Matter Science (CEMS) in RIKEN (now rebranded to RIKEN Cluster for Pioneering Research), where I was awarded a fellowship from the Japanese Society for the Promotion of Science (JSPS) to do independent research in quantum optics. 
-​
-In June 2018, I moved to University of Oxford to enjoy a Marie-Slodowska Curie Fellowship in the group of Prof. Dieter Jaksch, were I worked implementing the project QUSON oriented to sensing and quantum optical networks. 
+### Short bio
 
-In March 2020 I was awarded a La Caixa Junior Leader Fellowship, which will bring me back to Universidad Autónoma de Madrid in August 2020 to start an independent theory group working on quantum optics, open quantum systems and sensing. Please contact me if you are interested in joining my group as a PhD candidate!
+I defended [my PhD thesis](https://drive.google.com/file/d/1Vb79KvJMuATDxIW9kbVOCZjUVZaDF4BD/view) in December 2016 at [Universidad Autónoma de Madrid](https://www.uam.es/uam/inicio), under the supervisions of Prof. Carlos Tejedor and Prof. Fabrice P. Laussy. In 2017, I moved to Japan to join the group of Prof. Franco Nori at RIKEN . I lived in [Wako-shi](https://en.wikipedia.org/wiki/Wak%C5%8D,_Saitama) and enjoyed practicing Kendo at a local dojo. In 2018, I moved to University of Oxford to enjoy a Marie-Slodowska Curie Fellowship in the group of Prof. Dieter Jaksch. In March 2020 I was awarded a La Caixa Junior Leader Fellowship, bringing me back to UAM. Finally, on Dec. 2023 I joined CSIC with a permanent position.
