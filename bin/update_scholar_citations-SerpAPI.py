@@ -7,6 +7,8 @@ import requests
 from datetime import datetime
 import urllib.parse
 import time
+import re
+
 
 def log(msg: str):
     """Timestamped log output (flushes immediately)."""
@@ -285,13 +287,6 @@ for idx, art in enumerate(articles, start=1):
         # Update citations
         entry["citations"] = citations
 
-        # Update preprint status
-        venue_l = (venue or "").lower()
-        is_arxiv = "arxiv" in venue_l
-        entry["is_arxiv"] = is_arxiv
-
-
-
         if SKIP_EXISTING_PAPERS and existing_entry:
             # Already have this paper stored; skip any API work for it and just update citations
             skipped_existing += 1
@@ -347,6 +342,25 @@ for idx, art in enumerate(articles, start=1):
 
         if doi:
             entry["doi"] = doi
+            entry["is_arxiv"] = False
+            entry["arxiv_id"] = None
+        else:
+            # No DOI: fall back to Scholar signals
+            venue_l = (venue or "").lower()
+            arxiv_id = venue.split("arXiv:")[1].split(",")[0] if "arXiv:" in venue else None
+            if arxiv_id:
+                entry["is_arxiv"] = True
+                entry["arxiv_id"] = arxiv_id
+                entry["doi"] = None
+            else:
+                # If we cannot extract an id, keep heuristic flag
+                entry["is_arxiv"] = ("arxiv" in venue_l)
+                entry["arxiv_id"] = None
+                entry["doi"] = None
+
+        # Create a unique id which is either doi (if not null or arxiv id (if not null) or paper_id
+        entry["unique_id"] = doi or arxiv_id or paper_id
+
         if crossref:
             entry["crossref"] = crossref
 
@@ -472,6 +486,244 @@ except Exception as e:
     # sys.exit(1)
 
 
+
+
+# -------------------------------------------------
+# Write/append BibTeX: _bibliography/papers.bib and _bibliography/preprints.bib (simple, no regex)
+# -------------------------------------------------
+from pathlib import Path
+
+PAPERS_BIB = Path("_bibliography/papers.bib")
+PREPRINTS_BIB = Path("_bibliography/preprints.bib")
+
+log("Writing BibTeX files...")
+
+def read_text(p: Path) -> str:
+    return p.read_text(encoding="utf-8") if p.exists() else ""
+
+def write_text(p: Path, s: str):
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(s, encoding="utf-8")
+
+def bib_rhs_value(line: str) -> str | None:
+    '''
+    Extract RHS value from a BibTeX field line.
+    Examples:
+      '  title = {A Great Paper},'  --> 'A Great Paper'
+      '  doi = "10.1234/abcd",'     --> '10.1234/abcd'
+    Returns None if not found.
+    '''
+    # expects: field = {VALUE},  or field = "VALUE",
+    if "=" not in line:
+        return None
+    rhs = line.split("=", 1)[1].strip().rstrip(",").strip()
+    if rhs.startswith("{") and rhs.endswith("}"):
+        return rhs[1:-1].strip()
+    if rhs.startswith('"') and rhs.endswith('"'):
+        return rhs[1:-1].strip()
+    return None
+
+def existing_field_values(bib_text: str, field: str) -> set[str]:
+    '''
+    Extract all values of a given field from BibTeX text.
+    Returns a set of values (lowercased for DOI).
+    '''
+    vals = set()
+    for ln in bib_text.splitlines():
+        s = ln.strip()
+        if s.lower().startswith(field.lower()):
+            v = bib_rhs_value(s)
+            if v:
+                vals.add(v.strip().lower() if field.lower() == "doi" else v.strip())
+    return vals
+
+def make_citekey(e: dict, suffix: str) -> str:
+    '''
+    Create a simple BibTeX citekey for entry e with given suffix.
+    Uses first author's last name + first word of title + year + suffix.
+    '''
+    authors = (e.get("authors") or "")
+    first_author = (authors.split(",")[0].strip().split()[-1] if authors else "unknown").lower()
+    first_word = ((e.get("title") or "paper").split()[0]).lower()
+    year = str(e.get("year") or "yyyy")
+    return f"{first_author}{first_word}{year}{suffix}"
+
+def esc(s: str | None) -> str:
+    # minimal escaping; keeps your BibTeX readable
+    s = (s or "").strip().replace("\n", " ")
+    return " ".join(s.split())
+
+def bib_article_entry(e: dict, doi: str) -> str:
+    """Create a BibTeX @article entry from citation entry e and doi."""
+    cr = e.get("crossref") or {}
+    citekey = make_citekey(e, "")
+    gs_id = (e.get("citation_id") or "").split(":")[-1]  # if present like -VPP...:bFI...
+
+    # Prefer Crossref fields if present, fall back to Scholar fields
+    title = esc(e.get("title"))
+    author = esc(e.get("authors"))
+    year = esc(str(e.get("year") or ""))
+    journal = esc(cr.get("container_title") or e.get("venue") or "")
+    abbr = esc(cr.get("short_container_title") or "")
+    volume = esc(str(cr.get("volume") or ""))
+    number = esc(str(cr.get("issue") or ""))
+    pages = esc(cr.get("page") or "")
+    publisher = esc(cr.get("publisher") or "")
+    issn = cr.get("ISSN")
+    issn_val = ""
+    if isinstance(issn, list) and issn:
+        issn_val = esc(issn[0])
+    elif isinstance(issn, str):
+        issn_val = esc(issn)
+    abstract = esc(cr.get("abstract") or "")
+
+    urldate = datetime.utcnow().strftime("%Y-%m-%d")
+
+    lines = []
+    lines.append(f"@article{{{citekey},")
+    if abbr:      lines.append(f"  abbr = {{{abbr}}},")
+    lines.append(f"  title = {{{title}}},")
+    if author:    lines.append(f"  author = {{{author}}},")
+    if year:      lines.append(f"  year = {year},")
+    if journal:   lines.append(f"  journal = {{{journal}}},")
+    if volume:    lines.append(f"  volume = {{{volume}}},")
+    if number:    lines.append(f"  number = {{{number}}},")
+    if pages:     lines.append(f"  pages = {{{pages}}},")
+    if publisher: lines.append(f"  publisher = {{{publisher}}},")
+    lines.append(f"  dimensions = {{true}},")
+    if issn_val:  lines.append(f"  issn = {{{issn_val}}},")
+    lines.append(f"  doi = {{{doi}}},")
+    lines.append(f"  urldate = {{{urldate}}},")
+    if abstract:  lines.append(f"  abstract = {{{abstract}}},")
+    if gs_id:     lines.append(f"  google_scholar_id = {{{gs_id}}},")
+    # keep your style
+    lines.append(f"  selected={{true}}")
+    lines.append(f"}}\n")
+    return "\n".join(lines)
+
+
+
+def bib_preprint_entry(e: dict, arxiv_id: str) -> str:
+    """Create a BibTeX @misc entry for arXiv preprint from citation entry e and arxiv_id."""
+    citekey = make_citekey(e, "")
+    gs_id = (e.get("citation_id") or "").split(":")[-1]
+    title = esc(e.get("title"))
+    author = esc(e.get("authors"))
+    year = esc(str(e.get("year") or ""))
+    lines = []
+    lines.append(f"@misc{{{citekey},")
+    lines.append(f"  title = {{{title}}},")
+    if author: lines.append(f"  author = {{{author}}},")
+    if year:   lines.append(f"  year = {year},")
+    lines.append(f"  archivePrefix = {{arXiv}},")
+    lines.append(f"  eprint = {{{arxiv_id}}},")
+    if gs_id:  lines.append(f"  google_scholar_id = {{{gs_id}}},")
+    lines.append(f"  selected={{true}}")
+    lines.append(f"}}\n")
+    return "\n".join(lines)
+
+
+def comment_out_removed_preprints(bib_text: str, keep_eprints: set[str]) -> tuple[str, int]:
+    '''Comment out BibTeX entries with eprint IDs not in keep_eprints set.
+    Returns modified BibTeX text and number of entries commented out.
+    '''
+    # assumes entries start with '@' at beginning of line and end on a line containing only '}'
+    out, buf = [], []
+    in_entry = False
+    eprint = None
+    commented = 0
+
+    def flush():
+        nonlocal buf, eprint, commented
+        if not buf:
+            return
+        if eprint and (eprint not in keep_eprints):
+            commented += 1
+            out.extend([("% " + ln) if not ln.lstrip().startswith("%") else ln for ln in buf])
+        else:
+            out.extend(buf)
+        buf, eprint = [], None
+
+    for ln in bib_text.splitlines(True):
+        if ln.startswith("@"):
+            flush()
+            in_entry = True
+            buf.append(ln)
+            continue
+
+        if in_entry:
+            buf.append(ln)
+            s = ln.strip()
+            if s.lower().startswith("eprint"):
+                v = bib_rhs_value(s)
+                if v:
+                    eprint = v.strip()
+            if s == "}":
+                in_entry = False
+                flush()
+        else:
+            out.append(ln)
+
+    flush()
+    return "".join(out), commented
+
+
+# ---- Collect current DOIs and arXiv ids from citations.yml data ----
+papers = (citation_data or {}).get("papers", {}) or {}
+
+current_dois = set()
+current_arxivs = set()
+for k, e in papers.items():
+    # ensure citation_id exists for google_scholar_id field
+    e["citation_id"] = e.get("citation_id") or k
+
+    doi = (e.get("doi") or "").strip().lower()
+    arx = (e.get("arxiv_id") or "").strip()
+    if doi and not e.get("is_arxiv", False):
+        current_dois.add(doi)
+    if (not doi) and arx:
+        current_arxivs.add(arx)
+
+# ---- Published: append only new DOIs ----
+papers_text = read_text(PAPERS_BIB)
+existing_dois = existing_field_values(papers_text, "doi")
+
+new_pub = []
+for e in papers.values():
+    doi = (e.get("doi") or "").strip().lower()
+    if not doi or e.get("is_arxiv", False):
+        continue
+    if doi in existing_dois:
+        continue
+    new_pub.append(bib_article_entry(e, doi))
+    existing_dois.add(doi)
+
+if new_pub:
+    papers_text = papers_text.rstrip() + ("\n\n" if papers_text.strip() else "")
+    papers_text += "\n".join(new_pub) + "\n"
+    write_text(PAPERS_BIB, papers_text)
+log(f"papers.bib: added {len(new_pub)} new entries")
+
+# ---- Preprints: comment out removed + append only new eprints ----
+pre_text = read_text(PREPRINTS_BIB)
+pre_text2, commented = comment_out_removed_preprints(pre_text, current_arxivs)
+existing_eprints = existing_field_values(pre_text2, "eprint")
+
+new_pre = []
+for e in papers.values():
+    doi = (e.get("doi") or "").strip().lower()
+    arx = (e.get("arxiv_id") or "").strip()
+    if doi or not arx:
+        continue
+    if arx in existing_eprints:
+        continue
+    new_pre.append(bib_preprint_entry(e, arx))
+    existing_eprints.add(arx)
+
+pre_text2 = pre_text2.rstrip() + ("\n\n" if pre_text2.strip() else "")
+pre_text2 += "\n".join(new_pre) + "\n"
+write_text(PREPRINTS_BIB, pre_text2)
+log(f"preprints.bib: added {len(new_pre)} new entries; commented out {commented} old entries")
 
 
 log("Script completed successfully")
