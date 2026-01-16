@@ -30,7 +30,7 @@ Hi there! 👋
 
 I am a **Científico Titular** (Permanent Researcher) at the Spanish National Research Council [(CSIC)](https://www.csic.es/es).
 
-I work in **theoretical quantum physics**. As a quantum optician by background, my main interest is exploring quantum effects arising from *engineered* light-matter interactions (such as in quantum electrodynamics) and exploit them for the development of quantum hardware (e.g. new types of lasers, sources of quantum light, or quantum sensors). Here is a list of research topics.
+I work in **theoretical quantum physics**. As a quantum optician by background, my main interest is exploring quantum effects arising from *engineered* light-matter interactions (such as in quantum electrodynamics) and exploit them for the development of quantum hardware (e.g. new types of lasers, sources of quantum light, or quantum sensors). Here is a more specific list of research topics I am currently working on.
 
 <!-- Make a list with a header "Research Topics" -->
 ### Research Topics
