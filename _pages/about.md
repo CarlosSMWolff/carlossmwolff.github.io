@@ -14,6 +14,7 @@ profile:
     <p>C/Serrano 113b</p>
     <p>28006, Madrid, Spain</p>
     <p>Office 110</p>
+    <p>Email: <a href="mailto:carlossmwolff@gmail.com">carlossmwolff@gmail.com</a></p>    
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
