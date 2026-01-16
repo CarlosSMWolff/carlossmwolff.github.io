@@ -1,0 +1,162 @@
+metadata:
+  generated_on: '2026-01-16'
+  sources:
+    citations_yml: _data/citations.yml
+    scholar_metrics_yml: _data/scholar_metrics.yml
+    config_yml: _config.yml
+  paper_entries_detected: 45
+author:
+  name: Carlos Sánchez Muñoz
+  match_tokens:
+  - carlos sanchez munoz
+  - carlos munoz
+  - carlos sanchezmunoz
+  - carlos s munoz
+  - c sanchez munoz
+  - c munoz
+  - c sanchezmunoz
+  - c s munoz
+  - c s sanchez munoz
+  - c s sanchezmunoz
+  - c s s munoz
+  - carlos s sanchez munoz
+  - carlos s sanchezmunoz
+  - carlos s s munoz
+  author_id: -VPPZ8YAAAAJ
+stats:
+  peer_reviewed:
+    count: 42
+    first_author: 6
+    last_author: 3
+    total_citations_from_entries: 2487
+    h_index_from_entries: 26
+  preprints:
+    count: 3
+    first_author: 0
+    last_author: 0
+  journal_summary:
+  - journal: Nature Photonics
+    count: 1
+    first_author: 0
+    last_author: 0
+  - journal: Nature Communications
+    count: 1
+    first_author: 1
+    last_author: 0
+  - journal: Nature Materials
+    count: 1
+    first_author: 0
+    last_author: 0
+  - journal: Science Advances
+    count: 1
+    first_author: 0
+    last_author: 0
+  - journal: Physical Review Letters
+    count: 12
+    first_author: 2
+    last_author: 1
+  - journal: PRX
+    count: 1
+    first_author: 0
+    last_author: 0
+scholar:
+  metadata:
+    last_updated: '2026-01-16'
+    source: serpapi
+  metrics:
+    citations:
+      all: 2547
+      since_2021: 1843
+    h_index:
+      all: 27
+      since_2021: 24
+    i10_index:
+      all: 37
+      since_2021: 35
+  citations_per_year:
+    '2014': 8
+    '2015': 36
+    '2016': 69
+    '2017': 101
+    '2018': 137
+    '2019': 171
+    '2020': 165
+    '2021': 258
+    '2022': 268
+    '2023': 274
+    '2024': 439
+    '2025': 583
+    '2026': 18
+  total_papers: 45
+highlights:
+  top_cited_peer_reviewed:
+  - title: Emitters of N-photon bundles
+    year: '2014'
+    citations: 243
+    venue: Nature Photonics
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:bFI3QPDXJZMC
+    unique_id: 10.1038/nphoton.2014.114
+    paper_key: papers:-VPPZ8YAAAAJ:bFI3QPDXJZMC
+  - title: Quantum state tomography with conditional generative adversarial networks
+    year: '2021'
+    citations: 223
+    venue: Physical Review Letters
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:fEOibwPWpKIC
+    unique_id: 10.1103/physrevlett.127.140502
+    paper_key: papers:-VPPZ8YAAAAJ:fEOibwPWpKIC
+  - title: Coherent generation of nonclassical light on chip via detuned photon blockade
+    year: '2015'
+    citations: 195
+    venue: Physical Review Letters
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:XiSMed-E-HIC
+    unique_id: 10.1103/physrevlett.114.233601
+    paper_key: papers:-VPPZ8YAAAAJ:XiSMed-E-HIC
+  - title: Topological order and thermal equilibrium in polariton condensates
+    year: '2018'
+    citations: 147
+    venue: Nature Materials
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:eMMeJKvmdy0C
+    unique_id: 10.1038/nmat5039
+    paper_key: papers:-VPPZ8YAAAAJ:eMMeJKvmdy0C
+  - title: 'Engineering and harnessing giant atoms in high-dimensional baths: A proposal for implementation with cold atoms'
+    year: '2019'
+    citations: 117
+    venue: Physical Review Letters
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:NJ774b8OgUMC
+    unique_id: 10.1103/physrevlett.122.203603
+    paper_key: papers:-VPPZ8YAAAAJ:NJ774b8OgUMC
+  - title: Quantum amplification and simulation of strong and ultrastrong coupling of light and matter
+    year: '2024'
+    citations: 113
+    venue: Physics Reports
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:oNZyr7d5Mn4C
+    unique_id: 10.1016/j.physrep.2024.05.003
+    paper_key: papers:-VPPZ8YAAAAJ:oNZyr7d5Mn4C
+  - title: Classification and reconstruction of optical quantum states with deep neural networks
+    year: '2021'
+    citations: 105
+    venue: Physical Review Research
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:z_wVstp3MssC
+    unique_id: 10.1103/physrevresearch.3.033278
+    paper_key: papers:-VPPZ8YAAAAJ:z_wVstp3MssC
+  - title: Quantum synchronisation enabled by dynamical symmetries and dissipation
+    year: '2020'
+    citations: 96
+    venue: New Journal of Physics
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:tKAzc9rXhukC
+    unique_id: 10.1088/1367-2630/ab60f5
+    paper_key: papers:-VPPZ8YAAAAJ:tKAzc9rXhukC
+  - title: First observation of the quantized exciton-polariton field and effect of interactions on a single polariton
+    year: '2018'
+    citations: 93
+    venue: Science Advances
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:5awf1xo2G04C
+    unique_id: 10.1126/sciadv.aao6814
+    paper_key: papers:-VPPZ8YAAAAJ:5awf1xo2G04C
+  - title: Exciting polaritons with quantum light
+    year: '2015'
+    citations: 92
+    venue: Physical Review Letters
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&citation_for_view=-VPPZ8YAAAAJ:xtRiw3GOFMkC
+    unique_id: 10.1103/physrevlett.115.196402
+    paper_key: papers:-VPPZ8YAAAAJ:xtRiw3GOFMkC
