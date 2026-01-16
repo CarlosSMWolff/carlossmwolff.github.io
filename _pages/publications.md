@@ -11,7 +11,25 @@ chart:
 
 <!-- _pages/publications.md -->
 
-## Citations per year
+<!-- Table of contents -->
+## Table of Contents
+- [Publication List](#publication-list)
+- [Publication metrics](#publication-metrics)
+
+## Publication List
+
+<!-- Bibsearch Feature -->
+
+{% include bib_search.liquid %}
+
+<div class="publications">
+
+{% bibliography %}
+
+</div>
+
+
+## Publication metrics
 
 {% assign cpy = site.data.scholar_metrics.citations_per_year %}
 {% assign years = "" | split: "" %}
@@ -40,14 +58,3 @@ chart:
   ]
 }
 ```
-
-
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
-<div class="publications">
-
-{% bibliography %}
-
-</div>
