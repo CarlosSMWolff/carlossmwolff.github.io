@@ -824,11 +824,12 @@ def bib_article_entry(e: dict, doi: str) -> str:
 
     # Prefer Crossref fields if present, fall back to Scholar fields
     # Prefer Crossref title when available (often better capitalization / punctuation)
-    title = esc((cr.get("title") or e.get("title")))
+    title = esc((cr.get("title") or e.get("title")))    
     author = esc(best_bibtex_authors(e))
     year = esc(str(e.get("year") or ""))
     journal = esc(cr.get("container_title") or e.get("venue") or "")
-    abbr = esc(cr.get("short_container_title") or "")
+    # Make abbr cr.get("short_container_title") or cr.get("container_title") or "arXiV" if "arxiv" in venue.lower() else ""
+    abbr = esc(cr.get("short_container_title") or cr.get("container_title") or "arXiv" if (e.get("venue")).lower().find("arxiv") != -1 else "")
     volume = esc(str(cr.get("volume") or ""))
     number = esc(str(cr.get("issue") or ""))
     pages = esc(cr.get("page") or "")
