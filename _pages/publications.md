@@ -17,10 +17,6 @@ chart:
 - [Publication List](#publication-list)
 
 
-<!-- Bibsearch Feature -->
-
-<!-- {% include bib_search.liquid %} -->
-
 ## Publication metrics
 
 {% assign cpy = site.data.author_metrics.citations_per_year %}
@@ -91,8 +87,10 @@ These include {{ journal_clauses | join: ", " }}.
 ```
 
 ## Publication List
+
+<!-- Bibsearch Feature -->
+
+<!-- {% include bib_search.liquid %} -->
 <div class="publications">
-
 {% bibliography %}
-
 </div>
