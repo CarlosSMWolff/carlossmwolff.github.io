@@ -2363,9 +2363,71 @@ papers:
         content-version: vor
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
+  -VPPZ8YAAAAJ:-_dYPAW6P2MC:
+    citations: 28
+    author: &id027
+    - ORCID: https://orcid.org/0000-0001-8775-0135
+      authenticated-orcid: false
+      given: "Carlos S\xE1nchez"
+      family: "Mu\xF1oz"
+      sequence: first
+      affiliation:
+      - name: "Universidad Aut\xF3noma de Madrid"
+    - ORCID: https://orcid.org/0000-0002-9704-3941
+      authenticated-orcid: false
+      given: Dieter
+      family: Jaksch
+      sequence: additional
+      affiliation:
+      - name: University of Oxford
+    title: Squeezed lasing
+    year: '2020'
+    authors: "CS Mu\xF1oz, D Jaksch"
+    venue: arXiv preprint arXiv:2008.02813, 2020
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=20&citation_for_view=-VPPZ8YAAAAJ:-_dYPAW6P2MC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12040182741737432684,6298182515571075406
+    snippet: null
+    resources: null
+    author_position: first
+    doi: 10.21203/rs.3.rs-69491/v1
+    is_arxiv: false
+    arxiv_id: null
+    unique_id: 10.21203/rs.3.rs-69491/v1
+    crossref:
+      DOI: 10.21203/rs.3.rs-69491/v1
+      type: posted-content
+      title: Squeezed lasing
+      publisher: Springer Science and Business Media LLC
+      URL: https://doi.org/10.21203/rs.3.rs-69491/v1
+      issued:
+      - 2020
+      - 9
+      - 11
+      author: *id027
+      link:
+      - URL: https://www.researchsquare.com/article/rs-69491/v1
+        content-type: text/html
+        content-version: vor
+        intended-application: text-mining
+      - URL: https://www.researchsquare.com/article/rs-69491/v1.html
+        content-type: unspecified
+        content-version: vor
+        intended-application: similarity-checking
+      license:
+      - start:
+          date-parts:
+          - - 2020
+            - 9
+            - 11
+          date-time: '2020-09-11T00:00:00Z'
+          timestamp: 1599782400000
+        content-version: unspecified
+        delay-in-days: 0
+        URL: https://creativecommons.org/licenses/by/4.0/
+      abstract: "<title>Abstract</title>\n        <p>We introduce the idea of a squeezed laser, in which a squeezed cavity mode develops a macroscopic photonic occupation powered by stimulated emission. Above the lasing threshold, the emitted light retains both the spectral purity inherent of a laser and the photon correlations characteristic of a photonic mode with squeezed quadratures. Our proposal, which can be implemented in optical setups, relies on the parametric driving of the cavity and dissipative stabilization by a broadband squeezed vacuum. We show that the squeezed laser can find applications going beyond those of standard lasers thanks to the squeezed character, such as enhanced operation in multi-photon microscopy or Heisenberg scaling of the Fisher information in quantum parameter estimation.</p>"
   -VPPZ8YAAAAJ:MLfJN-KU85MC:
     citations: 20
-    author: &id027
+    author: &id028
     - ORCID: https://orcid.org/0009-0000-5336-5677
       authenticated-orcid: true
       given: Anna-Luisa E.
@@ -2421,7 +2483,7 @@ papers:
       - 2023
       - 10
       - 3
-      author: *id027
+      author: *id028
       link:
       - URL: https://link.aps.org/article/10.1103/PhysRevLett.131.143602
         content-type: unspecified
@@ -2444,7 +2506,7 @@ papers:
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:g3aElNc5_aQC:
     citations: 20
-    author: &id028
+    author: &id029
     - ORCID: https://orcid.org/0000-0003-0021-6293
       authenticated-orcid: true
       given: Shahram
@@ -2498,7 +2560,7 @@ papers:
       - 2023
       - 5
       - 19
-      author: *id028
+      author: *id029
       link:
       - URL: https://link.aps.org/article/10.1103/PhysRevLett.130.203604
         content-type: unspecified
@@ -2551,7 +2613,7 @@ papers:
     unique_id: -VPPZ8YAAAAJ:u5HHmVD_uO8C
   -VPPZ8YAAAAJ:ILKRHgRFtOwC:
     citations: 17
-    author: &id029
+    author: &id030
     - ORCID: https://orcid.org/0000-0002-6232-4110
       authenticated-orcid: true
       given: Vincenzo
@@ -2618,7 +2680,7 @@ papers:
       - 2022
       - 12
       - 29
-      author: *id029
+      author: *id030
       link:
       - URL: https://link.aps.org/accepted/10.1103/PhysRevLett.129.273602
         content-type: application/pdf
@@ -2655,7 +2717,7 @@ papers:
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:L7CI7m0gUJcC:
     citations: 16
-    author: &id030
+    author: &id031
     - given: Shahram
       family: Panahiyan
       sequence: first
@@ -2707,7 +2769,7 @@ papers:
       - 2022
       - 10
       - 11
-      author: *id030
+      author: *id031
       link:
       - URL: https://link.aps.org/article/10.1103/PhysRevA.106.043706
         content-type: unspecified
@@ -2730,7 +2792,7 @@ papers:
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:tuHXwOkdijsC:
     citations: 14
-    author: &id031
+    author: &id032
     - ORCID: https://orcid.org/0000-0003-4200-7545
       authenticated-orcid: true
       given: Caspar
@@ -2785,7 +2847,7 @@ papers:
       - 2024
       - 1
       - 29
-      author: *id031
+      author: *id032
       link:
       - URL: https://link.aps.org/article/10.1103/PRXQuantum.5.010312
         content-type: unspecified
@@ -2810,7 +2872,7 @@ papers:
         \              </jats:permissions>\n            </jats:supplementary-material>\n          </jats:sec>"
   -VPPZ8YAAAAJ:WZBGuue-350C:
     citations: 13
-    author: &id032
+    author: &id033
     - ORCID: https://orcid.org/0000-0003-4134-809X
       authenticated-orcid: false
       given: Enrico
@@ -2883,7 +2945,7 @@ papers:
       - 2024
       - 4
       - 26
-      author: *id032
+      author: *id033
       link:
       - URL: https://iopscience.iop.org/article/10.1088/2058-9565/ad3c68
         content-type: text/html
@@ -2942,7 +3004,7 @@ papers:
         \ with photon-counting data, relevant for applications such as quantum sensing or quantum imaging, as well as robust calibration tasks in laboratory-based settings.</jats:p>"
   -VPPZ8YAAAAJ:9yKSN-GCB0IC:
     citations: 12
-    author: &id033
+    author: &id034
     - given: M.
       family: Maragkou
       sequence: first
@@ -3018,7 +3080,7 @@ papers:
       - 2013
       - 8
       - 20
-      author: *id033
+      author: *id034
       link:
       - URL: http://link.aps.org/article/10.1103/PhysRevB.88.075309
         content-type: unspecified
@@ -3041,7 +3103,7 @@ papers:
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:vbGhcppDl1QC:
     citations: 11
-    author: &id034
+    author: &id035
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
       given: Alejandro
@@ -3091,7 +3153,7 @@ papers:
       - 2022
       - 7
       - 22
-      author: *id034
+      author: *id035
       link:
       - URL: https://link.aps.org/article/10.1103/PhysRevA.106.012217
         content-type: unspecified
@@ -3114,7 +3176,7 @@ papers:
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:EYYDruWGBe4C:
     citations: 9
-    author: &id035
+    author: &id036
     - given: Joseph
       family: Tindall
       sequence: first
@@ -3163,7 +3225,7 @@ papers:
       - 2023
       - 1
       - 25
-      author: *id035
+      author: *id036
       link:
       - URL: https://scipost.org/10.21468/SciPostPhysCore.6.1.004/pdf
         content-type: application/pdf
@@ -3188,7 +3250,7 @@ papers:
         of information and coherences between symmetry sectors of the system and\ncan lead to phenomena such as non-stationarity and synchronisation. The\nabsence of freezing at the level of a single quantum trajectory provides\na simple, computationally efficient way of identifying these traceless\nmodes.</jats:p>"
   -VPPZ8YAAAAJ:ruyezt5ZtCIC:
     citations: 7
-    author: &id036
+    author: &id037
     - given: Fatemeh
       family: Moradi Kalarde
       sequence: first
@@ -3254,7 +3316,7 @@ papers:
       - 2025
       - 1
       - 1
-      author: *id036
+      author: *id037
       link:
       - URL: https://www.degruyter.com/document/doi/10.1515/nanoph-2024-0469/xml
         content-type: application/xml
@@ -3279,7 +3341,7 @@ papers:
         \ as required in quantum applications. On the other hand, we show that an anharmonic molecular potential can lead to antibunching of the upconverted photons under coherent, Poisson-distributed mid-infrared and visible drives. Our results therefore open a path toward bright and tunable source of indistinguishable single photons by leveraging \u201Cvibrational blockade\u201D in a resonantly and parametrically driven molecule, without the need for strong light-matter coupling.</jats:p>"
   -VPPZ8YAAAAJ:lmc2jWPfTJgC:
     citations: 5
-    author: &id037
+    author: &id038
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
       given: Alejandro
@@ -3351,7 +3413,7 @@ papers:
       - 2024
       - 10
       - 22
-      author: *id037
+      author: *id038
       link:
       - URL: https://link.aps.org/article/10.1103/PhysRevResearch.6.043051
         content-type: unspecified
@@ -3376,7 +3438,7 @@ papers:
         \ one among a complex family of phenomena that can generate both stationary and metastable entanglement when driving the emitters at the two-photon resonance. We provide a global perspective of this landscape of mechanisms and contribute analytical characterizations and insights into these phenomena, establishing connections with previous reports in the literature and discussing how some of these effects can be optically detected.</jats:p>\n          <jats:sec>\n            <jats:title/>\n            <jats:supplementary-material>\n              <jats:permissions>\n                <jats:copyright-statement>Published by the American Physical Society</jats:copyright-statement>\n                <jats:copyright-year>2024</jats:copyright-year>\n              </jats:permissions>\n            </jats:supplementary-material>\n          </jats:sec>"
   -VPPZ8YAAAAJ:k8Z6L05lTy4C:
     citations: 5
-    author: &id038
+    author: &id039
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: false
       given: Yunyoung
@@ -3445,7 +3507,7 @@ papers:
       - 2023
       - 9
       - 15
-      author: *id038
+      author: *id039
       link:
       - URL: https://journals.jps.jp/doi/pdf/10.7566/JPSJ.92.094702
         content-type: unspecified
@@ -3453,7 +3515,7 @@ papers:
         intended-application: similarity-checking
   -VPPZ8YAAAAJ:xtoqd-5pKcoC:
     citations: 4
-    author: &id039
+    author: &id040
     - ORCID: https://orcid.org/0009-0004-6995-3763
       authenticated-orcid: false
       given: Jiaying
@@ -3536,7 +3598,7 @@ papers:
       - 2025
       - 4
       - 28
-      author: *id039
+      author: *id040
       link:
       - URL: https://www.nature.com/articles/s41534-025-00995-1.pdf
         content-type: application/pdf
@@ -3575,7 +3637,7 @@ papers:
         \ various physical platforms, with applications in waveguide quantum electrodynamics, distributed quantum computing, and quantum networks.</jats:p>"
   -VPPZ8YAAAAJ:M7yex6snE4oC:
     citations: 4
-    author: &id040
+    author: &id041
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
       given: Alejandro
@@ -3650,7 +3712,7 @@ papers:
       - 2024
       - 10
       - 22
-      author: *id040
+      author: *id041
       link:
       - URL: https://link.aps.org/article/10.1103/PhysRevLett.133.173601
         content-type: unspecified
@@ -3727,68 +3789,3 @@ papers:
       sequence: additional
       affiliation: []
     unique_id: '2509.04300'
-  -VPPZ8YAAAAJ:-_dYPAW6P2MC:
-    citations: 28
-    author: &id041
-    - ORCID: https://orcid.org/0000-0001-8775-0135
-      authenticated-orcid: true
-      given: Carlos
-      family: "S\xE1nchez Mu\xF1oz"
-      sequence: first
-      affiliation: []
-    - given: Dieter
-      family: Jaksch
-      sequence: additional
-      affiliation: []
-    title: Squeezed lasing
-    year: '2020'
-    authors: "CS Mu\xF1oz, D Jaksch"
-    venue: arXiv preprint arXiv:2008.02813, 2020
-    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=20&citation_for_view=-VPPZ8YAAAAJ:-_dYPAW6P2MC
-    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12040182741737432684,6298182515571075406
-    snippet: null
-    resources: null
-    author_position: first
-    doi: 10.1103/physrevlett.127.183603
-    is_arxiv: false
-    arxiv_id: null
-    unique_id: 10.1103/physrevlett.127.183603
-    crossref:
-      DOI: 10.1103/physrevlett.127.183603
-      type: journal-article
-      title: Squeezed Lasing
-      container_title: Physical Review Letters
-      short_container_title: Phys. Rev. Lett.
-      publisher: American Physical Society (APS)
-      volume: '127'
-      issue: '18'
-      article_number: '183603'
-      ISSN:
-      - 0031-9007
-      - 1079-7114
-      URL: https://doi.org/10.1103/physrevlett.127.183603
-      issued:
-      - 2021
-      - 10
-      - 29
-      author: *id041
-      link:
-      - URL: https://link.aps.org/article/10.1103/PhysRevLett.127.183603
-        content-type: unspecified
-        content-version: vor
-        intended-application: syndication
-      - URL: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.127.183603/fulltext
-        content-type: unspecified
-        content-version: vor
-        intended-application: similarity-checking
-      license:
-      - start:
-          date-parts:
-          - - 2021
-            - 10
-            - 29
-          date-time: '2021-10-29T00:00:00Z'
-          timestamp: 1635465600000
-        content-version: vor
-        delay-in-days: 0
-        URL: https://link.aps.org/licenses/aps-default-license

@@ -174,6 +174,9 @@ def crossref_lookup_doi(title: str, year: str | None = None, author_hint: str | 
     best_score = -1.0
 
     for it in items:
+        cr_type = (it.get("type") or "").strip().lower()
+        if cr_type != "journal-article":
+            continue
         cr_title = (it.get("title") or [""])[0]
         doi = it.get("DOI")
         if not doi:
@@ -1045,7 +1048,6 @@ def bib_article_entry(e: dict, doi: str) -> str:
     author = esc(best_bibtex_authors(e))
     year = esc(str(e.get("year") or ""))
     journal = esc(cr.get("container_title") or e.get("venue") or "")
-    # Make abbr cr.get("short_container_title") or cr.get("container_title") or "arXiV" if "arxiv" in venue.lower() else ""
     abbr = esc(cr.get("short_container_title") or cr.get("container_title") or "arXiv" if (e.get("venue")).lower().find("arxiv") != -1 else "")
     volume = esc(str(cr.get("volume") or ""))
     number = esc(str(cr.get("issue") or ""))
