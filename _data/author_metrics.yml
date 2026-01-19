@@ -1,4 +1,18 @@
+metadata:
+  last_updated: '2026-01-19'
+  source: serpapi
 author_id: -VPPZ8YAAAAJ
+total_papers: 45
+metrics:
+  citations:
+    all: 2548
+    since_2021: 1844
+  h_index:
+    all: 27
+    since_2021: 24
+  i10_index:
+    all: 37
+    since_2021: 35
 citations_per_year:
   '2014': 8
   '2015': 36
@@ -14,55 +28,67 @@ citations_per_year:
   '2025': 580
   '2026': 22
 journal_summary:
-- count: 1
+- journal: Nature Photonics
+  count: 1
   first_author: 1
-  journal: Nature Photonics
   last_author: 0
-- count: 1
+  titles:
+  - Emitters of N-photon bundles
+- journal: Nature Communications
+  count: 1
   first_author: 1
-  journal: Nature Communications
   last_author: 0
-- count: 1
+  titles:
+  - Resolution of superluminal signalling in non-perturbative cavity quantum electrodynamics
+- journal: Science Advances
+  count: 1
   first_author: 0
-  journal: Science Advances
   last_author: 0
-- count: 13
+  titles:
+  - First observation of the quantized exciton-polariton field and effect of interactions on a single polariton
+- journal: Physical Review Letters
+  count: 14
   first_author: 3
-  journal: Physical Review Letters
   last_author: 2
-- count: 1
+  titles:
+  - Coherent generation of nonclassical light on chip via detuned photon blockade
+  - Deterministic Generation of Photon Pairs within the Bad Cavity Limit
+  - 'Engineering and harnessing giant atoms in high-dimensional baths: A proposal for implementation with cold atoms'
+  - Exciting polaritons with quantum light
+  - Frequency-resolved Purcell effect for the dissipative generation of steady-state entanglement
+  - Hybrid systems for the generation of nonclassical mechanical states via quadratic interactions
+  - Macroscopic Two-Dimensional Polariton Condensates
+  - Nonlinear interferometry for quantum-enhanced measurements of multiphoton absorption
+  - Photon correlation spectroscopy as a witness for quantum coherence
+  - Quantum state tomography with conditional generative adversarial networks
+  - Resolving nonclassical magnon composition of a magnetic ground state via a qubit
+  - Spontaneous scattering of Raman photons from cavity-QED systems in the ultrastrong coupling regime
+  - Squeezed lasing
+  - Strongly coupled spin waves and surface acoustic waves at room temperature
+- journal: Nature Materials
+  count: 1
   first_author: 0
-  journal: Nature Materials
   last_author: 0
-- count: 0
+  titles:
+  - Topological order and thermal equilibrium in polariton condensates
+- journal: PRX
+  count: 0
   first_author: 0
-  journal: PRX
   last_author: 0
-- count: 1
+  titles: []
+- journal: PRX Quantum
+  count: 1
   first_author: 0
-  journal: PRX Quantum
   last_author: 1
-metadata:
-  last_updated: '2026-01-19'
-  source: serpapi
-metrics:
-  citations:
-    all: 2548
-    since_2021: 1844
-  h_index:
-    all: 27
-    since_2021: 24
-  i10_index:
-    all: 37
-    since_2021: 35
+  titles:
+  - Single-photon source over the terahertz regime
 stats:
   peer_reviewed:
-    count: 42
-    first_author: 12
-    last_author: 8
-    total_citations_from_entries: 2488
+    count: 41
+    first_author: 11
+    last_author: 7
+    total_citations_from_entries: 2507
   preprints:
-    count: 3
-    first_author: 0
-    last_author: 2
-total_papers: 45
+    count: 4
+    first_author: 1
+    last_author: 3

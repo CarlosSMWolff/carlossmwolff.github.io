@@ -728,7 +728,15 @@ def compute_metrics_summaries(citation_data: dict, target_journals: list[str]) -
     pre  = {"count": 0, "first_author": 0, "last_author": 0}
 
     for _, e in papers.items():
-        is_preprint = bool(e.get("is_arxiv", False)) or bool(e.get("arxiv_id"))
+        # Treat as peer-reviewed if we have a DOI or Crossref journal-article,
+        # even if Scholar venue includes an arXiv id.
+        cr = e.get("crossref") or {}
+        cr_type = (cr.get("type") or "").strip().lower()
+        has_doi = bool((e.get("doi") or "").strip())
+        is_peer_reviewed = has_doi or (cr_type == "journal-article")
+
+        is_preprint = not is_peer_reviewed
+
         pos = e.get("author_position")  # "first"/"middle"/"last"/None
         c = e.get("citations", 0)
         try:

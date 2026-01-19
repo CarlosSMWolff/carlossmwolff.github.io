@@ -12,7 +12,6 @@ chart:
 <!-- _pages/publications.md -->
 
 <!-- Table of contents -->
-## Table of Contents
 - [Publication List](#publication-list)
 - [Publication metrics](#publication-metrics)
 
@@ -39,6 +38,46 @@ chart:
   {% assign counts = counts | push: pair[1] %}
 {% endfor %}
 
+
+{%- comment -%}
+Auto-summary from _data/author_metrics.yml
+Paste this near the TOP of publications.md
+{%- endcomment -%}
+
+{%- assign m = site.data.author_metrics -%}
+{%- assign peer = m.stats.peer_reviewed -%}
+{%- assign js = m.journal_summary -%}
+
+{%- assign peer_count = peer.count | default: 0 -%}
+{%- assign peer_first = peer.first_author | default: 0 -%}
+{%- assign peer_last  = peer.last_author  | default: 0 -%}
+
+{%- comment -%} Build the per-journal clause list, skipping zero-count journals {%- endcomment -%}
+{%- assign journal_clauses = "" | split: "|" -%}
+{%- for j in js -%}
+  {%- assign c = j.count | default: 0 -%}
+  {%- if c and c > 0 -%}
+    {%- assign fa = j.first_author | default: 0 -%}
+    {%- assign la = j.last_author  | default: 0 -%}
+    {%- capture extra -%}
+      {%- if fa > 0 or la > 0 -%}
+        ({%- if fa > 0 -%}{{ fa }} first author{%- if fa != 1 -%}s{%- endif -%}{%- endif -%}
+        {%- if fa > 0 and la > 0 -%}, {%- endif -%}
+        {%- if la > 0 -%}{{ la }} last author{%- if la != 1 -%}s{%- endif -%}{%- endif -%})
+      {%- endif -%}
+    {%- endcapture -%}
+    {%- capture clause -%}{{ c }} {{ j.journal }}{{ extra | strip }}{%- endcapture -%}
+    {%- assign journal_clauses = journal_clauses | push: clause -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{{ peer_count }} peer-reviewed publication{%- if peer_count != 1 -%}s{%- endif -%}, {{ peer_first }} paper{%- if peer_first != 1 -%}s{%- endif -%} as first author, {{ peer_last }} paper{%- if peer_last != 1 -%}s{%- endif -%} as last author.
+{%- if journal_clauses.size > 0 -%}
+These include {{ journal_clauses | join: ", " }}.
+{%- endif -%}
+
+
+<div style="max-width: 700px; margin: 0 auto;">
 ```echarts
 {
   "title": { "text": "Citations per year" },
@@ -58,3 +97,4 @@ chart:
   ]
 }
 ```
+</div>
