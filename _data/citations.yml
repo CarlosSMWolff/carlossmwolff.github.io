@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-16'
+  last_updated: '2026-01-19'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -96,7 +96,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 223
+    citations: 224
     title: Quantum state tomography with conditional generative adversarial networks
     year: '2021'
     authors: S Ahmed, C Sanchez Munoz, F Nori, AF Kockum
