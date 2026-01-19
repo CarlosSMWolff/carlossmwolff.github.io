@@ -823,7 +823,8 @@ def bib_article_entry(e: dict, doi: str) -> str:
     gs_id = (e.get("citation_id") or "").split(":")[-1]  # if present like -VPP...:bFI...
 
     # Prefer Crossref fields if present, fall back to Scholar fields
-    title = esc(e.get("title"))
+    # Prefer Crossref title when available (often better capitalization / punctuation)
+    title = esc((cr.get("title") or e.get("title")))
     author = esc(best_bibtex_authors(e))
     year = esc(str(e.get("year") or ""))
     journal = esc(cr.get("container_title") or e.get("venue") or "")
