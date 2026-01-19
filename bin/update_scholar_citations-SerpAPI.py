@@ -546,16 +546,96 @@ def existing_field_values(bib_text: str, field: str) -> set[str]:
                 vals.add(v.strip().lower() if field.lower() == "doi" else v.strip())
     return vals
 
+
+def _norm_space(s: str) -> str:
+    return " ".join((s or "").strip().split())
+
+def bibtex_author_from_crossref_person(p: dict) -> str:
+    """Crossref person -> 'Family, Given' (BibTeX-friendly)."""
+    family = _norm_space(p.get("family", ""))
+    given = _norm_space(p.get("given", ""))
+    if not family and not given:
+        return ""
+    if family and given:
+        return f"{family}, {given}"
+    return family or given
+
+def authors_from_crossref(cr: dict, max_authors: int | None = None) -> str:
+    """Crossref author list -> BibTeX 'A and B and C' (optionally 'and others')."""
+    alist = cr.get("author")
+    if not isinstance(alist, list) or not alist:
+        return ""
+    names = []
+    for p in alist:
+        if isinstance(p, dict):
+            nm = bibtex_author_from_crossref_person(p)
+            if nm:
+                names.append(nm)
+    if not names:
+        return ""
+    if max_authors is not None and len(names) > max_authors:
+        names = names[:max_authors] + ["others"]
+    return " and ".join(names)
+
+def authors_from_scholar_string(authors: str) -> str:
+    """
+    Scholar gives: 'A, B, C, ...'  ->  BibTeX: 'A and B and C and others'
+    """
+    s = _norm_space(authors)
+    if not s:
+        return ""
+
+    parts = [p.strip() for p in s.split(",") if p.strip()]
+
+    has_ellipsis = False
+    cleaned = []
+    for p in parts:
+        if p in {"...", "…"}:
+            has_ellipsis = True
+            continue
+        if p.endswith("...") or p.endswith("…"):
+            has_ellipsis = True
+            p = p.rstrip(".…").strip()
+            if p:
+                cleaned.append(p)
+            continue
+        cleaned.append(p)
+
+    if not cleaned:
+        return ""
+
+    if has_ellipsis:
+        cleaned.append("others")
+
+    return " and ".join(cleaned)
+
+def best_bibtex_authors(e: dict) -> str:
+    """Prefer Crossref authors; fallback to repaired Scholar author string."""
+    cr = e.get("crossref") or {}
+    cr_auth = authors_from_crossref(cr, max_authors=None)  # set e.g. 10 if you want truncation
+    if cr_auth:
+        return cr_auth
+    return authors_from_scholar_string(e.get("authors") or "")
+
+
 def make_citekey(e: dict, suffix: str) -> str:
     '''
     Create a simple BibTeX citekey for entry e with given suffix.
-    Uses first author's last name + first word of title + year + suffix.
+    Uses first author's family name (prefer Crossref) + first word of title + year + suffix.
     '''
-    authors = (e.get("authors") or "")
-    first_author = (authors.split(",")[0].strip().split()[-1] if authors else "unknown").lower()
+    cr = e.get("crossref") or {}
+    alist = cr.get("author")
+    if isinstance(alist, list) and alist and isinstance(alist[0], dict):
+        first_author = (alist[0].get("family") or "unknown").strip().split()[-1].lower()
+    else:
+        authors = (e.get("authors") or "")
+        first_chunk = (authors.split(",")[0].strip() if authors else "unknown")
+        first_author = (first_chunk.split()[-1] if first_chunk else "unknown").lower()
+
     first_word = ((e.get("title") or "paper").split()[0]).lower()
     year = str(e.get("year") or "yyyy")
     return f"{first_author}{first_word}{year}{suffix}"
+
 
 def esc(s: str | None) -> str:
     # minimal escaping; keeps your BibTeX readable
@@ -570,7 +650,7 @@ def bib_article_entry(e: dict, doi: str) -> str:
 
     # Prefer Crossref fields if present, fall back to Scholar fields
     title = esc(e.get("title"))
-    author = esc(e.get("authors"))
+    author = esc(best_bibtex_authors(e))
     year = esc(str(e.get("year") or ""))
     journal = esc(cr.get("container_title") or e.get("venue") or "")
     abbr = esc(cr.get("short_container_title") or "")

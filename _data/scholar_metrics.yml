@@ -11,15 +11,15 @@ citations_per_year:
   '2022': 268
   '2023': 274
   '2024': 439
-  '2025': 583
-  '2026': 18
+  '2025': 580
+  '2026': 22
 metadata:
-  last_updated: '2026-01-16'
+  last_updated: '2026-01-19'
   source: serpapi
 metrics:
   citations:
-    all: 2547
-    since_2021: 1843
+    all: 2548
+    since_2021: 1844
   h_index:
     all: 27
     since_2021: 24
