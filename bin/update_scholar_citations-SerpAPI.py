@@ -718,9 +718,10 @@ def compute_metrics_summaries(citation_data: dict, target_journals: list[str]) -
     # --- Journal summary (only target journals)
     # initialize counts for every target journal (so they always show up)
     summary_map = {
-        j: {"journal": j, "count": 0, "first_author": 0, "last_author": 0}
+        j: {"journal": j, "count": 0, "first_author": 0, "last_author": 0, "titles": []}
         for j in target_journals
     }
+
 
     # --- Global stats buckets
     peer = {"count": 0, "first_author": 0, "last_author": 0, "total_citations_from_entries": 0}
@@ -756,10 +757,18 @@ def compute_metrics_summaries(citation_data: dict, target_journals: list[str]) -
             jname = get_container_title(e)
             if jname in summary_map:
                 summary_map[jname]["count"] += 1
+
+                t = (e.get("title") or "").strip()
+                if t:
+                    summary_map[jname]["titles"].append(t)
+
                 if pos == "first":
                     summary_map[jname]["first_author"] += 1
                 elif pos == "last":
                     summary_map[jname]["last_author"] += 1
+
+    for j in target_journals:
+        summary_map[j]["titles"] = sorted(set(summary_map[j]["titles"]))
 
     journal_summary = [summary_map[j] for j in target_journals]
 
@@ -841,7 +850,7 @@ try:
 
     log(f"Writing metrics to {METRICS_FILE}...")
     with open(METRICS_FILE, "w") as f:
-        yaml.dump(metrics_payload, f, sort_keys=True, width=1000)
+        yaml.dump(metrics_payload, f, sort_keys=False, width=1000)
 
     # Debug summary
     if "citations" in metrics:
