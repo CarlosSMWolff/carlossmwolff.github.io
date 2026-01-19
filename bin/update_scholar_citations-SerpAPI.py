@@ -9,14 +9,51 @@ import urllib.parse
 import time
 import re
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
 
 def log(msg: str):
     """Timestamped log output (flushes immediately)."""
     print(f"[{datetime.utcnow().isoformat()}] {msg}", flush=True)
 
-SKIP_EXISTING_PAPERS = False  # set True to only update citations, False to refresh all data of existing papers
+def read_author_alias():
+    '''Read author alias from _config.yml and return it as a string.
+    '''
+    # Path to _config.yml in repo root
+    config_path = Path(__file__).resolve().parents[1] / "_config.yml"
 
+    if not config_path.exists():
+        raise FileNotFoundError(f"Could not find {config_path}")
+
+    with open(config_path, "r", encoding="utf-8") as f:
+        config = yaml.safe_load(f) or {}
+
+    first = config.get("first_name", "")
+    middle = config.get("middle_name", "")
+    last = config.get("last_name", "")
+
+    # Collect initials:
+    # - first letter of first name
+    # - first letter of middle name (if present)
+    # - first letter of each last-name component
+    initials = []
+
+    if first:
+        initials.append(first.strip()[0])
+
+    if middle:
+        initials.append(middle.strip()[0])
+
+    for part in last.split():
+        if part:
+            initials.append(part[0])
+
+    alias = "".join(initials).upper()
+    log(f"Author alias: {alias}")
+    return alias
+
+SKIP_EXISTING_PAPERS = True  # set True to only update citations, False to refresh all data of existing papers
+AUTHOR_ALIAS = read_author_alias()
 # -------------------------------------------------
 # Define Crossref search tools
 # -------------------------------------------------
@@ -373,6 +410,83 @@ log("Building citation entries...")
 
 skipped_existing = 0
 
+def alias_from_given_family(given: str | None, family: str | None) -> str:
+    """
+    Build alias by joining given+family and removing all lowercase letters.
+    Keeps only uppercase letters (including accented uppercase).
+    Example: given="C. Sánchez", family="Muñoz" -> "CSM"
+    """
+    s = f"{given or ''}{family or ''}"
+    return "".join(ch for ch in s if ch.isupper())
+
+
+def author_position_from_crossref_or_scholar(crossref: dict, authors_str: str | None, author_alias: str) -> str | None:
+    """
+    Returns "first" / "middle" / "last" if author_alias is found, else None.
+
+    Preference:
+      1) Crossref 'author' list (structured given/family)
+      2) Scholar 'authors' string (comma-separated)
+    """
+    target = (author_alias or "").strip().upper()
+    if not target:
+        return None
+
+    # ---- 1) Crossref structured authors
+    cr_authors = (crossref or {}).get("author")
+    if isinstance(cr_authors, list) and cr_authors:
+        aliases = []
+        for p in cr_authors:
+            if not isinstance(p, dict):
+                continue
+            a = alias_from_given_family(p.get("given"), p.get("family"))
+            if a:
+                aliases.append(a)
+
+        if aliases:
+            try:
+                i = aliases.index(target)
+                if len(aliases) == 1:
+                    return "first"  # single-author paper
+                if i == 0:
+                    return "first"
+                if i == len(aliases) - 1:
+                    return "last"
+                return "middle"
+            except ValueError:
+                pass  # not found -> fallback
+
+    # ---- 2) Scholar authors string fallback
+    s = (authors_str or "").strip()
+    if s:
+        parts = [p.strip() for p in s.split(",") if p.strip()]
+        # drop ellipsis tokens like "..." or "…"
+        parts = [p for p in parts if p not in {"...", "…"}]
+
+        aliases = []
+        for name in parts:
+            # Join name token and keep uppercase letters only
+            a = "".join(ch for ch in name if ch.isupper())
+            if a:
+                aliases.append(a)
+
+        if aliases:
+            try:
+                i = aliases.index(target)
+                if len(aliases) == 1:
+                    return "first"
+                if i == 0:
+                    return "first"
+                if i == len(aliases) - 1:
+                    return "last"
+                return "middle"
+            except ValueError:
+                return None
+
+    return None
+
+
+
 for idx, art in enumerate(articles, start=1):
     try:
         paper_id = art.get("citation_id") or art.get("link") or f"paper_{idx}"
@@ -438,6 +552,12 @@ for idx, art in enumerate(articles, start=1):
             except Exception as e:
                 log(f"  ↳ Crossref full-metadata fetch failed for {doi}: {e}")
                 crossref = {}
+
+        author_position = author_position_from_crossref_or_scholar(
+        crossref=crossref,
+        authors_str=authors,
+        author_alias=AUTHOR_ALIAS)
+
         
         entry.update({
             "title": title,
@@ -448,6 +568,7 @@ for idx, art in enumerate(articles, start=1):
             "cited_by_link": cited_by_link,
             "snippet": snippet,
             "resources": resources,
+            "author_position": author_position,   
         })
 
         arxiv_id = None
