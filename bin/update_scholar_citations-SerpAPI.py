@@ -8,13 +8,14 @@ from datetime import datetime
 import urllib.parse
 import time
 import re
+import xml.etree.ElementTree as ET
 
 
 def log(msg: str):
     """Timestamped log output (flushes immediately)."""
     print(f"[{datetime.utcnow().isoformat()}] {msg}", flush=True)
 
-SKIP_EXISTING_PAPERS = True  # set True to only update citations, False to refresh all data of existing papers
+SKIP_EXISTING_PAPERS = False  # set True to only update citations, False to refresh all data of existing papers
 
 # -------------------------------------------------
 # Define Crossref search tools
@@ -151,6 +152,99 @@ def crossref_lookup_doi(title: str, year: str | None = None, author_hint: str | 
         return best
 
     return None
+
+ARXIV_API_URL = "https://export.arxiv.org/api/query"
+
+def is_arxiv_doi(doi: str | None) -> bool:
+    """True if DOI looks like the arXiv DOI minted by arXiv (10.48550/arXiv.*)."""
+    if not doi:
+        return False
+    d = doi.strip().lower()
+    return d.startswith("10.48550/arxiv.")
+
+def split_name_to_given_family(name: str) -> tuple[str, str]:
+    """
+    Best-effort split 'First Middle Last' -> (given, family).
+    arXiv author names are usually in that format (sometimes with particles).
+    """
+    name = " ".join((name or "").strip().split())
+    if not name:
+        return ("", "")
+    parts = name.split()
+    if len(parts) == 1:
+        return ("", parts[0])
+    return (" ".join(parts[:-1]), parts[-1])
+
+def arxiv_fetch_metadata(arxiv_id: str) -> dict:
+    """
+    Fetch metadata for a single arXiv identifier using the arXiv Atom API.
+    Returns: {"arxiv_id", "title", "published", "updated", "doi", "journal_ref", "authors"}
+    where "authors" is a Crossref-like list of dicts with given/family/sequence/affiliation.
+    """
+    if not arxiv_id:
+        return {}
+
+    params = {"id_list": arxiv_id}
+    r = requests.get(ARXIV_API_URL, params=params, timeout=20)
+    r.raise_for_status()
+
+    # Parse Atom XML
+    root = ET.fromstring(r.text)
+
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "arxiv": "http://arxiv.org/schemas/atom",
+    }
+
+    entry = root.find("atom:entry", ns)
+    if entry is None:
+        return {"arxiv_id": arxiv_id}
+
+    title = (entry.findtext("atom:title", default="", namespaces=ns) or "").strip()
+    title = " ".join(title.split())
+
+    published = (entry.findtext("atom:published", default="", namespaces=ns) or "").strip()
+    updated = (entry.findtext("atom:updated", default="", namespaces=ns) or "").strip()
+
+    doi = (entry.findtext("arxiv:doi", default="", namespaces=ns) or "").strip() or None
+    journal_ref = (entry.findtext("arxiv:journal_ref", default="", namespaces=ns) or "").strip() or None
+
+    # Authors
+    author_nodes = entry.findall("atom:author", ns)
+    authors_struct = []
+    for i, an in enumerate(author_nodes):
+        name = (an.findtext("atom:name", default="", namespaces=ns) or "").strip()
+        given, family = split_name_to_given_family(name)
+        if not (given or family):
+            continue
+        authors_struct.append({
+            "given": given,
+            "family": family,
+            "sequence": "first" if i == 0 else "additional",
+            "affiliation": [],
+        })
+
+    return {
+        "arxiv_id": arxiv_id,
+        "title": title,
+        "published": published,
+        "updated": updated,
+        "doi": doi,
+        "journal_ref": journal_ref,
+        "authors": authors_struct,
+    }
+
+def extract_arxiv_id_from_venue(venue: str | None) -> str | None:
+    """
+    Robustly extract arXiv id from common Scholar venue strings like:
+      'arXiv:2301.01234' or 'arXiv:hep-th/9901001'
+    """
+    if not venue:
+        return None
+    m = re.search(r"\barxiv:\s*([0-9]{4}\.[0-9]{4,5}(?:v\d+)?|[a-z\-]+\/\d{7}(?:v\d+)?)\b", venue, re.IGNORECASE)
+    return m.group(1) if m else None
+
+
 
 
 # -------------------------------------------------
@@ -333,7 +427,14 @@ for idx, art in enumerate(articles, start=1):
             log(f"  ↳ DOI: {doi}")
             try:
                 full_msg = crossref_fetch_work(doi)
+
+                # put authors at top-level (not nested under crossref)
+                cr_auth = (full_msg or {}).get("author")
+                if isinstance(cr_auth, list) and cr_auth:
+                    entry["author"] = cr_auth
+
                 crossref = crossref_compact(full_msg)
+
             except Exception as e:
                 log(f"  ↳ Crossref full-metadata fetch failed for {doi}: {e}")
                 crossref = {}
@@ -349,6 +450,8 @@ for idx, art in enumerate(articles, start=1):
             "resources": resources,
         })
 
+        arxiv_id = None
+
         if doi:
             entry["doi"] = doi
             entry["is_arxiv"] = False
@@ -356,11 +459,57 @@ for idx, art in enumerate(articles, start=1):
         else:
             # No DOI: fall back to Scholar signals
             venue_l = (venue or "").lower()
-            arxiv_id = venue.split("arXiv:")[1].split(",")[0] if "arXiv:" in venue else None
+            arxiv_id = extract_arxiv_id_from_venue(venue)
+
             if arxiv_id:
                 entry["is_arxiv"] = True
                 entry["arxiv_id"] = arxiv_id
                 entry["doi"] = None
+
+                # --- Fetch arXiv metadata ---
+                arx = {}
+                try:
+                    arx = arxiv_fetch_metadata(arxiv_id)
+                except Exception as e:
+                    log(f"  ↳ arXiv metadata fetch failed for {arxiv_id}: {e}")
+                    arx = {}
+
+                # If arXiv reports a DOI and it's NOT the arXiv DOI, treat it as the real DOI.
+                arxiv_reported_doi = (arx.get("doi") or "").strip() or None
+
+                if arxiv_reported_doi and (not is_arxiv_doi(arxiv_reported_doi)):
+                    # We found a real DOI via arXiv -> fetch Crossref and treat as published.
+                    doi = arxiv_reported_doi
+                    entry["doi"] = doi
+                    entry["is_arxiv"] = None   # per your request: it was arXiv in Scholar, but we upgraded it
+                    # keep arxiv_id for traceability
+                    # entry["arxiv_id"] stays set
+
+                    try:
+                        full_msg = crossref_fetch_work(doi)
+                        crossref = crossref_compact(full_msg)
+                    except Exception as e:
+                        log(f"  ↳ Crossref full-metadata fetch failed for {doi}: {e}")
+                        crossref = {}
+
+                    if crossref:
+                        entry["crossref"] = crossref
+
+                    # Populate top-level structured authors from Crossref if available
+                    # (Crossref compact no longer contains 'author', so use full_msg if you want,
+                    #  or fetch authors before compacting. Easiest: re-use full_msg['author'] here.)
+                    try:
+                        cr_auth = (full_msg or {}).get("author")
+                        if isinstance(cr_auth, list) and cr_auth:
+                            entry["author"] = cr_auth
+                    except Exception:
+                        pass
+
+                else:
+                    # No usable DOI (or only arXiv DOI): keep as arXiv preprint and use arXiv authors
+                    if arx.get("authors"):
+                        entry["author"] = arx["authors"]
+
             else:
                 # If we cannot extract an id, keep heuristic flag
                 entry["is_arxiv"] = ("arxiv" in venue_l)
@@ -609,32 +758,57 @@ def authors_from_scholar_string(authors: str) -> str:
 
     return " and ".join(cleaned)
 
+def authors_from_struct_list(alist: list, max_authors: int | None = None) -> str:
+    """List of dicts with given/family -> BibTeX 'A and B and C'."""
+    if not isinstance(alist, list) or not alist:
+        return ""
+    names = []
+    for p in alist:
+        if isinstance(p, dict):
+            nm = bibtex_author_from_crossref_person(p)
+            if nm:
+                names.append(nm)
+    if not names:
+        return ""
+    if max_authors is not None and len(names) > max_authors:
+        names = names[:max_authors] + ["others"]
+    return " and ".join(names)
+
+
 def best_bibtex_authors(e: dict) -> str:
-    """Prefer Crossref authors; fallback to repaired Scholar author string."""
+    """Prefer structured authors at paper level; fallback to Crossref; then repaired Scholar string."""
+    top = e.get("author")
+    top_auth = authors_from_struct_list(top, max_authors=None)
+    if top_auth:
+        return top_auth
+
     cr = e.get("crossref") or {}
-    cr_auth = authors_from_crossref(cr, max_authors=None)  # set e.g. 10 if you want truncation
+    cr_auth = authors_from_crossref(cr, max_authors=None)
     if cr_auth:
         return cr_auth
+
     return authors_from_scholar_string(e.get("authors") or "")
 
 
+
 def make_citekey(e: dict, suffix: str) -> str:
-    '''
-    Create a simple BibTeX citekey for entry e with given suffix.
-    Uses first author's family name (prefer Crossref) + first word of title + year + suffix.
-    '''
-    cr = e.get("crossref") or {}
-    alist = cr.get("author")
-    if isinstance(alist, list) and alist and isinstance(alist[0], dict):
-        first_author = (alist[0].get("family") or "unknown").strip().split()[-1].lower()
+    top = e.get("author")
+    if isinstance(top, list) and top and isinstance(top[0], dict):
+        first_author = (top[0].get("family") or "unknown").strip().split()[-1].lower()
     else:
-        authors = (e.get("authors") or "")
-        first_chunk = (authors.split(",")[0].strip() if authors else "unknown")
-        first_author = (first_chunk.split()[-1] if first_chunk else "unknown").lower()
+        cr = e.get("crossref") or {}
+        alist = cr.get("author")
+        if isinstance(alist, list) and alist and isinstance(alist[0], dict):
+            first_author = (alist[0].get("family") or "unknown").strip().split()[-1].lower()
+        else:
+            authors = (e.get("authors") or "")
+            first_chunk = (authors.split(",")[0].strip() if authors else "unknown")
+            first_author = (first_chunk.split()[-1] if first_chunk else "unknown").lower()
 
     first_word = ((e.get("title") or "paper").split()[0]).lower()
     year = str(e.get("year") or "yyyy")
     return f"{first_author}{first_word}{year}{suffix}"
+
 
 
 def esc(s: str | None) -> str:
@@ -697,7 +871,7 @@ def bib_preprint_entry(e: dict, arxiv_id: str) -> str:
     citekey = make_citekey(e, "")
     gs_id = (e.get("citation_id") or "").split(":")[-1]
     title = esc(e.get("title"))
-    author = esc(e.get("authors"))
+    author = esc(best_bibtex_authors(e))
     year = esc(str(e.get("year") or ""))
     lines = []
     lines.append(f"@misc{{{citekey},")
