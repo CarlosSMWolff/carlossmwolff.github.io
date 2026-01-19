@@ -12,10 +12,10 @@ chart:
 <!-- _pages/publications.md -->
 
 <!-- Table of contents -->
-- [Publication List](#publication-list)
-- [Publication metrics](#publication-metrics)
 
-## Publication List
+- [Publication metrics](#publication-metrics)
+- [Publication List](#publication-list)
+
 
 <!-- Bibsearch Feature -->
 
@@ -90,7 +90,7 @@ These include {{ journal_clauses | join: ", " }}.
 }
 ```
 
-
+## Publication List
 <div class="publications">
 
 {% bibliography %}
