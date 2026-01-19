@@ -277,7 +277,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Sánchez Muñoz, Muñoz, Munoz, Sánchez-Munoz, S. Munoz, S. Muñoz, Sanchez Muñoz, Sanchez-Munoz]
-  first_name: [Carlos, C., C. S., Carlos S., C, C S]
+  first_name: [Carlos, C., C. S., Carlos S., C, C S, C. Sánchez, C Sánchez, C Sanchez]
 
   style: apa
   locale: en
