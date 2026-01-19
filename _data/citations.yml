@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 117
+    citations: 118
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -774,7 +774,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>In nature, instances of synchronisation abound across a diverse range of environments. In the quantum regime, however, synchronisation is typically observed by identifying an appropriate parameter regime in a specific system. In this work we show that this need not be the case, identifying conditions which, when satisfied, guarantee that the individual constituents of a generic open quantum system will undergo completely synchronous limit cycles which are, to first order, robust to symmetry-breaking perturbations. We then describe how these conditions can be satisfied by the interplay between several elements: interactions, local dephasing and the presence of a strong dynamical symmetry\u2014an operator which guarantees long-time non-stationary dynamics. These elements cause the formation of entanglement and off-diagonal long-range order which drive the synchronised response of the system. To illustrate these ideas\
         \ we present two central examples: a chain of quadratically dephased spin-1s and the many-body charge-dephased Hubbard model. In both cases perfect phase-locking occurs throughout the system, regardless of the specific microscopic parameters or initial states. Furthermore, when these systems are perturbed, their nonlinear responses elicit long-lived signatures of both phase and frequency-locking.</jats:p>"
   -VPPZ8YAAAAJ:5awf1xo2G04C:
-    citations: 93
+    citations: 94
     author: &id009
     - ORCID: https://orcid.org/0000-0002-3390-2954
       authenticated-orcid: true
@@ -3772,6 +3772,71 @@ papers:
       - 10
       - 29
       author: *id041
+      link:
+      - URL: https://link.aps.org/article/10.1103/PhysRevLett.127.183603
+        content-type: unspecified
+        content-version: vor
+        intended-application: syndication
+      - URL: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.127.183603/fulltext
+        content-type: unspecified
+        content-version: vor
+        intended-application: similarity-checking
+      license:
+      - start:
+          date-parts:
+          - - 2021
+            - 10
+            - 29
+          date-time: '2021-10-29T00:00:00Z'
+          timestamp: 1635465600000
+        content-version: vor
+        delay-in-days: 0
+        URL: https://link.aps.org/licenses/aps-default-license
+  -VPPZ8YAAAAJ:9pM33mqn1YgC:
+    citations: 28
+    author: &id042
+    - ORCID: https://orcid.org/0000-0001-8775-0135
+      authenticated-orcid: true
+      given: Carlos
+      family: "S\xE1nchez Mu\xF1oz"
+      sequence: first
+      affiliation: []
+    - given: Dieter
+      family: Jaksch
+      sequence: additional
+      affiliation: []
+    title: Squeezed lasing
+    year: '2021'
+    authors: "DH Jaksch, C S\xE1nchez Mu\xF1oz"
+    venue: Physical Review Letters 127 (18), 2021
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=20&citation_for_view=-VPPZ8YAAAAJ:9pM33mqn1YgC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12040182741737432684,6298182515571075406
+    snippet: null
+    resources: null
+    author_position: first
+    doi: 10.1103/physrevlett.127.183603
+    is_arxiv: false
+    arxiv_id: null
+    unique_id: 10.1103/physrevlett.127.183603
+    crossref:
+      DOI: 10.1103/physrevlett.127.183603
+      type: journal-article
+      title: Squeezed Lasing
+      container_title: Physical Review Letters
+      short_container_title: Phys. Rev. Lett.
+      publisher: American Physical Society (APS)
+      volume: '127'
+      issue: '18'
+      article_number: '183603'
+      ISSN:
+      - 0031-9007
+      - 1079-7114
+      URL: https://doi.org/10.1103/physrevlett.127.183603
+      issued:
+      - 2021
+      - 10
+      - 29
+      author: *id042
       link:
       - URL: https://link.aps.org/article/10.1103/PhysRevLett.127.183603
         content-type: unspecified
