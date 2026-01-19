@@ -49,6 +49,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2408324031478078431
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1038/nphoton.2014.114
     is_arxiv: false
     arxiv_id: null
@@ -131,6 +132,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2291816998396686848
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevlett.127.140502
     is_arxiv: false
     arxiv_id: null
@@ -225,6 +227,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17375941096358685692,6449883634479489785
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevlett.114.233601
     is_arxiv: false
     arxiv_id: null
@@ -347,6 +350,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15168206937389312548,9201288260306297876
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1038/nmat5039
     is_arxiv: false
     arxiv_id: null
@@ -431,6 +435,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15071974376374541943,3324579831678047814,10701067560025294809
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevlett.122.203603
     is_arxiv: false
     arxiv_id: null
@@ -505,6 +510,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14835796195277699809
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1016/j.physrep.2024.05.003
     is_arxiv: false
     arxiv_id: null
@@ -600,6 +606,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6734917460936663929
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevresearch.3.033278
     is_arxiv: false
     arxiv_id: null
@@ -671,6 +678,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10560464567260945779
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1088/1367-2630/ab60f5
     is_arxiv: false
     arxiv_id: null
@@ -900,6 +908,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=160528570835223157,7575812511141405390,17393410380749744055
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1126/sciadv.aao6814
     is_arxiv: false
     arxiv_id: null
@@ -959,6 +968,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14997762096347034402
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevlett.115.196402
     is_arxiv: false
     arxiv_id: null
@@ -1031,6 +1041,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17623310551900714769,15039711289413402155
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1038/s41467-018-04339-w
     is_arxiv: false
     arxiv_id: null
@@ -1120,6 +1131,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6355155626912923788,303287398800855669,3137085925825240661
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1364/optica.5.000014
     is_arxiv: false
     arxiv_id: null
@@ -1195,6 +1207,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14127614224477331024,11330791388073242753
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1103/physrevlett.121.123604
     is_arxiv: false
     arxiv_id: null
@@ -1293,6 +1306,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=415228903107299102,7333920961353562223,11653268892873039183
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1103/physreva.100.042113
     is_arxiv: false
     arxiv_id: null
@@ -1391,6 +1405,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8202980116723596343,16542498984582380133
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevlett.118.215301
     is_arxiv: false
     arxiv_id: null
@@ -1444,6 +1459,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6474967238897010054
     snippet: null
     resources: null
+    author_position: middle
     is_arxiv: null
     arxiv_id: '1510.07307'
     doi: 10.1103/PhysRevLett.117.203602
@@ -1537,6 +1553,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16549343588483776530
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physreva.107.013710
     is_arxiv: false
     arxiv_id: null
@@ -1607,6 +1624,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13526477188916088285
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1088/1367-2630/17/12/123021
     is_arxiv: false
     arxiv_id: null
@@ -1694,6 +1712,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16489893427477805404
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1103/physreva.90.052111
     is_arxiv: false
     arxiv_id: null
@@ -1830,6 +1849,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14688216103818861413
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevlett.132.056704
     is_arxiv: false
     arxiv_id: null
@@ -1900,6 +1920,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16800069361384668435
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physreva.94.063826
     is_arxiv: false
     arxiv_id: null
@@ -1972,6 +1993,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8005073135468498427
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1103/physrevresearch.3.033250
     is_arxiv: false
     arxiv_id: null
@@ -2037,6 +2059,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5519090249232860046
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1103/physrevlett.124.203601
     is_arxiv: false
     arxiv_id: null
@@ -2135,6 +2158,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3619972079600316875,2646726234338329465,551717374355948484
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1038/srep37980
     is_arxiv: false
     arxiv_id: null
@@ -2216,6 +2240,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4870092857408010710
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physreva.93.023846
     is_arxiv: false
     arxiv_id: null
@@ -2294,6 +2319,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1526818043317190544,17992426404633660861
     snippet: null
     resources: null
+    author_position: first
     doi: 10.1103/physreva.102.033716
     is_arxiv: false
     arxiv_id: null
@@ -2362,6 +2388,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12040182741737432684,6298182515571075406
     snippet: null
     resources: null
+    author_position: first
     doi: 10.21203/rs.3.rs-69491/v1
     is_arxiv: false
     arxiv_id: null
@@ -2433,6 +2460,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8477516254099606046
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevlett.131.143602
     is_arxiv: false
     arxiv_id: null
@@ -2509,6 +2537,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8749190871097727877
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevlett.130.203604
     is_arxiv: false
     arxiv_id: null
@@ -2562,6 +2591,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2163583113575625164
     snippet: null
     resources: null
+    author_position: last
     is_arxiv: false
     arxiv_id: null
     doi: null
@@ -2576,6 +2606,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12298668247424104530
     snippet: null
     resources: null
+    author_position: first
     is_arxiv: false
     arxiv_id: null
     doi: null
@@ -2626,6 +2657,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13827591882934808855
     snippet: null
     resources: null
+    author_position: last
     doi: 10.1103/physrevlett.129.273602
     is_arxiv: false
     arxiv_id: null
@@ -2714,6 +2746,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12299340287886716945
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physreva.106.043706
     is_arxiv: false
     arxiv_id: null
@@ -2792,6 +2825,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15740966736683377879
     snippet: null
     resources: null
+    author_position: last
     doi: 10.1103/prxquantum.5.010312
     is_arxiv: false
     arxiv_id: null
@@ -2889,6 +2923,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11632140134594056467,7609161848870019335
     snippet: null
     resources: null
+    author_position: last
     doi: 10.1088/2058-9565/ad3c68
     is_arxiv: false
     arxiv_id: null
@@ -3022,6 +3057,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4396026849334250029
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1103/physrevb.88.075309
     is_arxiv: false
     arxiv_id: null
@@ -3094,6 +3130,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10483607837204822602
     snippet: null
     resources: null
+    author_position: last
     doi: 10.1103/physreva.106.012217
     is_arxiv: false
     arxiv_id: null
@@ -3166,6 +3203,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9493302874902328515
     snippet: null
     resources: null
+    author_position: last
     doi: 10.21468/scipostphyscore.6.1.004
     is_arxiv: false
     arxiv_id: null
@@ -3257,6 +3295,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=803461483112044835
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1515/nanoph-2024-0469
     is_arxiv: false
     arxiv_id: null
@@ -3352,6 +3391,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=335678985259926564
     snippet: null
     resources: null
+    author_position: last
     doi: 10.1103/physrevresearch.6.043051
     is_arxiv: false
     arxiv_id: null
@@ -3444,6 +3484,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12655185788128396750
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.7566/jpsj.92.094702
     is_arxiv: false
     arxiv_id: null
@@ -3535,6 +3576,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6307634577996745201
     snippet: null
     resources: null
+    author_position: middle
     doi: 10.1038/s41534-025-00995-1
     is_arxiv: false
     arxiv_id: null
@@ -3647,6 +3689,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12898146183037530051
     snippet: null
     resources: null
+    author_position: last
     doi: 10.1103/physrevlett.133.173601
     is_arxiv: false
     arxiv_id: null
@@ -3700,6 +3743,7 @@ papers:
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17127917558923740437
     snippet: null
     resources: null
+    author_position: last
     is_arxiv: true
     arxiv_id: '2509.26486'
     doi: null
@@ -3731,6 +3775,7 @@ papers:
     cited_by_link: null
     snippet: null
     resources: null
+    author_position: last
     is_arxiv: true
     arxiv_id: '2509.04300'
     doi: null

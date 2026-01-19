@@ -11,6 +11,17 @@ import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+SKIP_EXISTING_PAPERS = True  # set True to only update citations, False to refresh all data of existing papers
+TARGET_JOURNALS_METRICS = [
+    "Nature Photonics",
+    "Nature Communications",
+    "Science Advances",
+    "Physical Review Letters",
+    "Nature Materials",
+    "PRX",
+    "PRX Quantum",
+]
+
 
 def log(msg: str):
     """Timestamped log output (flushes immediately)."""
@@ -52,7 +63,6 @@ def read_author_alias():
     log(f"Author alias: {alias}")
     return alias
 
-SKIP_EXISTING_PAPERS = True  # set True to only update citations, False to refresh all data of existing papers
 AUTHOR_ALIAS = read_author_alias()
 # -------------------------------------------------
 # Define Crossref search tools
@@ -290,7 +300,7 @@ def extract_arxiv_id_from_venue(venue: str | None) -> str | None:
 AUTHOR_ID = "-VPPZ8YAAAAJ"   # your Google Scholar user id
 OUTPUT_FILE = "_data/citations.yml"
 API_KEY = os.getenv("SERPAPI_API_KEY")
-METRICS_FILE = "_data/scholar_metrics.yml"
+METRICS_FILE = "_data/author_metrics.yml"
 
 
 log("Script started")
@@ -677,6 +687,86 @@ except Exception as e:
 # -------------------------------------------------
 # Fetch author-level metrics + citations-per-year (1 extra API call)
 # -------------------------------------------------
+
+def compute_metrics_summaries(citation_data: dict, target_journals: list[str]) -> tuple[list[dict], dict]:
+    """
+    Builds:
+      - journal_summary: list of dicts per target journal
+      - stats: peer_reviewed + preprints aggregates
+
+    Uses per-entry fields:
+      - is_arxiv (bool)
+      - arxiv_id
+      - doi
+      - citations (int)
+      - author_position ("first"/"middle"/"last"/None)
+      - crossref.container_title (preferred) OR crossref.short_container_title (fallback)
+    """
+    papers = (citation_data or {}).get("papers", {}) or {}
+
+    def norm_journal(s: str | None) -> str:
+        return " ".join((s or "").strip().split())
+
+    def get_container_title(e: dict) -> str:
+        cr = e.get("crossref") or {}
+        # Prefer full container title; fallback to short
+        return norm_journal(cr.get("container_title") or cr.get("short_container_title") or "")
+
+    # --- Journal summary (only target journals)
+    # initialize counts for every target journal (so they always show up)
+    summary_map = {
+        j: {"journal": j, "count": 0, "first_author": 0, "last_author": 0}
+        for j in target_journals
+    }
+
+    # --- Global stats buckets
+    peer = {"count": 0, "first_author": 0, "last_author": 0, "total_citations_from_entries": 0}
+    pre  = {"count": 0, "first_author": 0, "last_author": 0}
+
+    for _, e in papers.items():
+        is_preprint = bool(e.get("is_arxiv", False)) or bool(e.get("arxiv_id"))
+        pos = e.get("author_position")  # "first"/"middle"/"last"/None
+        c = e.get("citations", 0)
+        try:
+            c = int(c) if c is not None else 0
+        except Exception:
+            c = 0
+
+        # global totals
+        if is_preprint:
+            pre["count"] += 1
+            if pos == "first":
+                pre["first_author"] += 1
+            elif pos == "last":
+                pre["last_author"] += 1
+        else:
+            peer["count"] += 1
+            peer["total_citations_from_entries"] += c
+            if pos == "first":
+                peer["first_author"] += 1
+            elif pos == "last":
+                peer["last_author"] += 1
+
+        # per-journal target summary (peer-reviewed only makes most sense, but
+        # if you want preprints included too, remove the is_preprint check)
+        if not is_preprint:
+            jname = get_container_title(e)
+            if jname in summary_map:
+                summary_map[jname]["count"] += 1
+                if pos == "first":
+                    summary_map[jname]["first_author"] += 1
+                elif pos == "last":
+                    summary_map[jname]["last_author"] += 1
+
+    journal_summary = [summary_map[j] for j in target_journals]
+
+    stats = {
+        "peer_reviewed": peer,
+        "preprints": pre,
+    }
+    return journal_summary, stats
+
+
 try:
     log("Fetching author metrics (citations, h-index, i10-index) + citations-per-year graph...")
 
@@ -732,13 +822,19 @@ try:
                 pass
     citations_per_year = dict(sorted(citations_per_year.items(), key=lambda kv: int(kv[0])))
 
+
+    journal_summary, stats = compute_metrics_summaries(citation_data, TARGET_JOURNALS_METRICS)
+
     metrics_payload = {
         "metadata": {"last_updated": today, "source": "serpapi"},
         "author_id": AUTHOR_ID,
         "total_papers": len(articles),
         "metrics": metrics,
         "citations_per_year": citations_per_year,
+        "journal_summary": journal_summary,  
+        "stats": stats,                      
     }
+
 
     log(f"Writing metrics to {METRICS_FILE}...")
     with open(METRICS_FILE, "w") as f:

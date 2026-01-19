@@ -31,7 +31,7 @@ chart:
 
 ## Publication metrics
 
-{% assign cpy = site.data.scholar_metrics.citations_per_year %}
+{% assign cpy = site.data.author_metrics.citations_per_year %}
 {% assign years = "" | split: "" %}
 {% assign counts = "" | split: "" %}
 {% for pair in cpy %}
