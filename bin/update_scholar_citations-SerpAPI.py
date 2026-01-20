@@ -1079,7 +1079,7 @@ def bib_article_entry(e: dict, doi: str) -> str:
     if abstract:  lines.append(f"  abstract = {{{abstract}}},")
     if gs_id:     lines.append(f"  google_scholar_id = {{{gs_id}}},")
     # keep your style
-    lines.append(f"  selected={{true}}")
+    lines.append(f"  selected={{false}}")
     lines.append(f"}}\n")
     return "\n".join(lines)
 
@@ -1100,7 +1100,7 @@ def bib_preprint_entry(e: dict, arxiv_id: str) -> str:
     lines.append(f"  archivePrefix = {{arXiv}},")
     lines.append(f"  eprint = {{{arxiv_id}}},")
     if gs_id:  lines.append(f"  google_scholar_id = {{{gs_id}}},")
-    lines.append(f"  selected={{true}}")
+    lines.append(f"  selected={{false}}")
     lines.append(f"}}\n")
     return "\n".join(lines)
 
