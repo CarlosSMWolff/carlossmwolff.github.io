@@ -42,7 +42,7 @@ I work in **theoretical quantum physics**. As a quantum optician by background, 
 <!-- Make a list with a header "Research Topics" -->
 ### Research Topics
 - Cavity-QED for novel sources of quantum light 
-  - Multi-photon states {% cite muñozemitters2014 %}.
+  - Multi-photon states
   - Squeezed lasers
   - Single-photons in the THz
 - Open Quantum Systems
