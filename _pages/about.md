@@ -9,7 +9,7 @@ profile:
   image: carlos-sanchez-pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Office Location:</p>
+    <strong><p>Contact:</p> </strong>
     <p>Institute of Fundamental Physics, CSIC</p>
     <p>C/Serrano 113b</p>
     <p>28006, Madrid, Spain</p>
