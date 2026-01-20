@@ -2,8 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publication list and metrics, automatically updated every day by fetching and enritching data from my <a href="https://scholar.google.com/citations?hl=es&user=-VPPZ8YAAAAJ"
-     style="color:#b509ac ;"> Google Scholar profile  </a>.
+description: Publication list and metrics, automatically updated every day by fetching and enriching data from my <a href='https://scholar.google.com/citations?hl=es&user=-VPPZ8YAAAAJ' style='color:#b509ac;'>Google Scholar profile</a>.
 nav: true
 nav_order: 2
 chart:
