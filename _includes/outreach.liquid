@@ -1,0 +1,24 @@
+{% assign items = data[1] %}
+
+{% if items and items.size > 0 %}
+  <ul class="cv-list">
+    {% for item in items %}
+      <li class="cv-item">
+        <div class="d-flex justify-content-between">
+          <div>
+            <strong>{{ item.name }}</strong>
+            {% if item.summary %}
+              <div class="text-muted">{{ item.summary }}</div>
+            {% endif %}
+          </div>
+
+          {% if item.date %}
+            <div class="text-nowrap text-muted">
+              {{ item.date | date: "%Y" }}
+            </div>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

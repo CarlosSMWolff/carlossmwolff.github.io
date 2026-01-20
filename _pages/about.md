@@ -9,7 +9,7 @@ profile:
   image: carlos-sanchez-pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Office Location:</p>
+    <strong><p>Contact:</p> </strong>
     <p>Institute of Fundamental Physics, CSIC</p>
     <p>C/Serrano 113b</p>
     <p>28006, Madrid, Spain</p>
@@ -18,6 +18,10 @@ profile:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+
+scholar:
+  sort_by: year
+  order: descending   # newest first; use ascending for oldest first
 
 announcements:
   enabled: true # includes a list of news items
@@ -33,7 +37,7 @@ Hi there! 👋
 
 I am a **Científico Titular** (Permanent Researcher) at the Spanish National Research Council [(CSIC)](https://www.csic.es/es).
 
-I work in **theoretical quantum physics**. As a quantum optician by background, my main interest is exploring quantum effects arising from *engineered* light-matter interactions (such as in cavity quantum-electrodynamics) and exploit them for the development of quantum hardware (e.g. new types of lasers, sources of quantum light, or quantum sensors). Here is a more specific list of research topics I am currently working on.
+I work in **theoretical quantum physics**. As a quantum optician, my main interest is exploring quantum effects arising from *engineered* light-matter interactions (such as in cavity quantum-electrodynamics) and exploit them for the development of quantum hardware (e.g. new types of lasers, sources of quantum light, or quantum sensors). Here is a more specific list of research topics I am currently working on.
 
 <!-- Make a list with a header "Research Topics" -->
 ### Research Topics

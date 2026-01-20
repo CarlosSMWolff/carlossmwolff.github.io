@@ -174,9 +174,6 @@ def crossref_lookup_doi(title: str, year: str | None = None, author_hint: str | 
     best_score = -1.0
 
     for it in items:
-        cr_type = (it.get("type") or "").strip().lower()
-        if cr_type != "journal-article":
-            continue
         cr_title = (it.get("title") or [""])[0]
         doi = it.get("DOI")
         if not doi:
@@ -718,25 +715,16 @@ def compute_metrics_summaries(citation_data: dict, target_journals: list[str]) -
     # --- Journal summary (only target journals)
     # initialize counts for every target journal (so they always show up)
     summary_map = {
-        j: {"journal": j, "count": 0, "first_author": 0, "last_author": 0, "titles": []}
+        j: {"journal": j, "count": 0, "first_author": 0, "last_author": 0}
         for j in target_journals
     }
-
 
     # --- Global stats buckets
     peer = {"count": 0, "first_author": 0, "last_author": 0, "total_citations_from_entries": 0}
     pre  = {"count": 0, "first_author": 0, "last_author": 0}
 
     for _, e in papers.items():
-        # Treat as peer-reviewed if we have a DOI or Crossref journal-article,
-        # even if Scholar venue includes an arXiv id.
-        cr = e.get("crossref") or {}
-        cr_type = (cr.get("type") or "").strip().lower()
-        has_doi = bool((e.get("doi") or "").strip())
-        is_peer_reviewed = has_doi or (cr_type == "journal-article")
-
-        is_preprint = not is_peer_reviewed
-
+        is_preprint = bool(e.get("is_arxiv", False)) or bool(e.get("arxiv_id"))
         pos = e.get("author_position")  # "first"/"middle"/"last"/None
         c = e.get("citations", 0)
         try:
@@ -765,18 +753,10 @@ def compute_metrics_summaries(citation_data: dict, target_journals: list[str]) -
             jname = get_container_title(e)
             if jname in summary_map:
                 summary_map[jname]["count"] += 1
-
-                t = (e.get("title") or "").strip()
-                if t:
-                    summary_map[jname]["titles"].append(t)
-
                 if pos == "first":
                     summary_map[jname]["first_author"] += 1
                 elif pos == "last":
                     summary_map[jname]["last_author"] += 1
-
-    for j in target_journals:
-        summary_map[j]["titles"] = sorted(set(summary_map[j]["titles"]))
 
     journal_summary = [summary_map[j] for j in target_journals]
 
@@ -858,7 +838,7 @@ try:
 
     log(f"Writing metrics to {METRICS_FILE}...")
     with open(METRICS_FILE, "w") as f:
-        yaml.dump(metrics_payload, f, sort_keys=False, width=1000)
+        yaml.dump(metrics_payload, f, sort_keys=True, width=1000)
 
     # Debug summary
     if "citations" in metrics:
@@ -1065,7 +1045,7 @@ def bib_article_entry(e: dict, doi: str) -> str:
     author = esc(best_bibtex_authors(e))
     year = esc(str(e.get("year") or ""))
     journal = esc(cr.get("container_title") or e.get("venue") or "")
-    abbr = esc(cr.get("short_container_title") or cr.get("container_title") or "arXiv" if (e.get("venue")).lower().find("arxiv") != -1 else "")
+    abbr = cr.get("short_container_title") or cr.get("container_title")
     volume = esc(str(cr.get("volume") or ""))
     number = esc(str(cr.get("issue") or ""))
     pages = esc(cr.get("page") or "")
@@ -1082,7 +1062,8 @@ def bib_article_entry(e: dict, doi: str) -> str:
 
     lines = []
     lines.append(f"@article{{{citekey},")
-    if abbr:      lines.append(f"  abbr = {{{abbr}}},")
+    if abbr:  
+        lines.append(f"  abbr = {{{abbr}}},")
     lines.append(f"  title = {{{title}}},")
     if author:    lines.append(f"  author = {{{author}}},")
     if year:      lines.append(f"  year = {year},")
@@ -1098,7 +1079,7 @@ def bib_article_entry(e: dict, doi: str) -> str:
     if abstract:  lines.append(f"  abstract = {{{abstract}}},")
     if gs_id:     lines.append(f"  google_scholar_id = {{{gs_id}}},")
     # keep your style
-    lines.append(f"  selected={{true}}")
+    lines.append(f"  selected={{false}}")
     lines.append(f"}}\n")
     return "\n".join(lines)
 
@@ -1119,7 +1100,7 @@ def bib_preprint_entry(e: dict, arxiv_id: str) -> str:
     lines.append(f"  archivePrefix = {{arXiv}},")
     lines.append(f"  eprint = {{{arxiv_id}}},")
     if gs_id:  lines.append(f"  google_scholar_id = {{{gs_id}}},")
-    lines.append(f"  selected={{true}}")
+    lines.append(f"  selected={{false}}")
     lines.append(f"}}\n")
     return "\n".join(lines)
 
