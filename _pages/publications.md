@@ -22,6 +22,7 @@ Auto-summary from _data/author_metrics.yml
 {% assign peer = m.stats.peer_reviewed %}
 {% assign js = m.journal_summary %}
 {% assign h_index = m.metrics.h_index.all %}
+{% assign citation_counts =  m.metrics.citations.all %}
 
 {% assign peer_count = peer.count | default: 0 %}
 {% assign peer_first = peer.first_author | default: 0 %}
@@ -49,6 +50,7 @@ Auto-summary from _data/author_metrics.yml
 {% endfor %}
 
 - **h-index:** {{ h_index }}
+- **Total citations:** {{citation_counts}}
 
 - **{{ peer_count }} peer-reviewed publication{% if peer_count != 1 %}s{% endif %}**.
   - {{ peer_first }} paper{% if peer_first != 1 %}s{% endif %} as first author.

@@ -17,11 +17,4 @@ profiles:
     image: yanis_pic.jpg
     content: about_yanis.md
     image_circular: false
-  - section: Former group members
-    align: right
-    image: avivas_pic.jpg
-    content: about_alejandrovivas.md
-    image_circular: false
-    
-
 ---
