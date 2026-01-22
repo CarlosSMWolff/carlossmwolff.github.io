@@ -398,6 +398,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "news-alejandro-vivas-successfully-defended-his-phd-thesis",
+          title: 'Alejandro Vivas successfully defended his PhD thesis.',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/alejandro-tesis/";
             },},{id: "news-i-have-been-awarded-a-bbva-leonardo-grant-smile",
           title: 'I have been awarded a BBVA Leonardo Grant! :smile:',
           description: "",
