@@ -23,9 +23,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-",
-          title: "",
-          description: "",
+        },{id: "nav-people",
+          title: "people",
+          description: "members of the lab or group",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
@@ -358,6 +358,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2015/math/";
+          
+        },
+      },{id: "post-strange-blender-things",
+        
+          title: "strange blender things",
+        
+        description: "notes on the seminar on Blender organized by Alan Santos",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/strange-blender-things/";
           
         },
       },{id: "post-a-post-with-code",
