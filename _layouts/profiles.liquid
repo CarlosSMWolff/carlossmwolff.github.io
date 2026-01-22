@@ -4,7 +4,15 @@ layout: page
 <div class="post">
   <article>
     {% if page.profiles %}
-      {% for profile in page.profiles %}
+
+
+    {% assign grouped = page.profiles | group_by: "section" %}
+
+    {% for group in grouped %}
+      <hr>
+      <h2 class="people-section-title">{{ group.name }}</h2>
+
+      {% for profile in group.items %}
         <hr>
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
@@ -31,6 +39,17 @@ layout: page
           {% endif %}
         </div>
       {% endfor %}
+    {% endfor %}
+
+
+
+
+
+
+
     {% endif %}
   </article>
 </div>
+
+
+
