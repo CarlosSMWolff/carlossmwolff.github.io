@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-22'
+  last_updated: '2026-01-23'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 224
+    citations: 225
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -572,7 +572,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 105
+    citations: 107
     author: &id007
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -1598,7 +1598,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:nb7KW1ujOQ8C:
-    citations: 54
+    citations: 55
     author: &id018
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -2520,7 +2520,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:9Nmd_mFXekcC:
-    citations: 20
+    citations: 21
     title: Two-photon resonance fluorescence of two interacting non-identical quantum emitters
     year: '2021'
     authors: "A Vivas-Via\xF1a, C S\xE1nchez Mu\xF1oz"
@@ -3452,7 +3452,7 @@ papers:
         content-version: vor
         intended-application: similarity-checking
   -VPPZ8YAAAAJ:xtoqd-5pKcoC:
-    citations: 4
+    citations: 5
     author: &id039
     - ORCID: https://orcid.org/0009-0004-6995-3763
       authenticated-orcid: false
