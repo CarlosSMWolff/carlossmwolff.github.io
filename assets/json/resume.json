@@ -527,9 +527,22 @@
     }
   ],
   "projects": [
+
     {
-      "name": "Sensores con Correlaciones Cuánticas en Sistemas Luz Materia Abiertos (SEQUOIA)",
-      "summary": "Competitive research project (PID2023-149969NA-I00).",
+      "name": "BBVA Leonardo 2025",
+      "summary": "“Tecnologías cuánticas en la frontera del terahercio”",
+      "highlights": ["Role: Principal Investigator (PI)", "Funding: ~50k€"],
+      "startDate": "2025-07-01",
+      "endDate": "2026-07-01",
+      "url": "https://www.redleonardo.es/beneficiario/carlos-sanchez-munoz/",
+      "entity": {
+        "fundingAgency": "Fundación BBVA "
+      }
+    } ,    
+
+    {
+       "name": "Proyectos de Generación de Conocimiento 2023 (PID2023-149969NA-I00).",
+      "summary": "Sensores con Correlaciones Cuánticas en Sistemas Luz Materia Abiertos (SEQUOIA)",
       "highlights": ["Role: Principal Investigator (PI)", "Funding: ~75k€"],
       "startDate": "2024-09-01",
       "endDate": "2027-09-30",
