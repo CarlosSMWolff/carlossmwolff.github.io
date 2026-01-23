@@ -527,10 +527,20 @@
     }
   ],
   "projects": [
-
+    {
+      "name": "BBVA Programa Fundamentos 2024",
+      "summary": "NanoPhotonic-based Quantum Sensing and Simulation (NPhoQuSS)",
+      "highlights": ["Role: Team member", "Funding: ~249.5k€"],
+      "startDate": "2028-10-31",
+      "endDate": "2028-10-31",
+      "url": "https://www.redleonardo.es/beneficiario/carlos-sanchez-munoz/",
+      "entity": {
+        "fundingAgency": "Fundación BBVA "
+      }
+    } ,   
     {
       "name": "BBVA Leonardo 2025",
-      "summary": "“Tecnologías cuánticas en la frontera del terahercio”",
+      "summary": "Tecnologías cuánticas en la frontera del terahercio",
       "highlights": ["Role: Principal Investigator (PI)", "Funding: ~50k€"],
       "startDate": "2025-07-01",
       "endDate": "2026-07-01",
