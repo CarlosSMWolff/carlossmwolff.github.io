@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-01-26'
+  last_updated: '2026-01-27'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 243
+    citations: 242
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 229
+    citations: 230
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 147
+    citations: 148
     author: &id004
     - given: Davide
       family: Caputo
@@ -572,7 +572,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 107
+    citations: 108
     author: &id007
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -1013,7 +1013,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
-    citations: 81
+    citations: 82
     author: &id011
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: false
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 49
+    citations: 50
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -3854,6 +3854,143 @@ papers:
             - 29
           date-time: '2021-10-29T00:00:00Z'
           timestamp: 1635465600000
+        content-version: vor
+        delay-in-days: 0
+        URL: https://link.aps.org/licenses/aps-default-license
+  -VPPZ8YAAAAJ:_FM0Bhl9EiAC:
+    citations: null
+    author: &id043
+    - ORCID: https://orcid.org/0000-0002-8379-8921
+      authenticated-orcid: true
+      given: Yunyoung
+      family: Hwang
+      sequence: first
+      affiliation:
+      - name: Institute for Solid State Physics, University of Tokyo, Kashiwa 277-8581, Japan
+      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
+    - ORCID: https://orcid.org/0000-0002-4364-5672
+      authenticated-orcid: true
+      given: Jorge
+      family: Puebla
+      sequence: additional
+      affiliation:
+      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
+    - ORCID: https://orcid.org/0000-0002-3020-3189
+      authenticated-orcid: true
+      given: Kouta
+      family: Kondou
+      sequence: additional
+      affiliation:
+      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
+    - ORCID: https://orcid.org/0000-0002-7639-0856
+      authenticated-orcid: true
+      given: Carlos
+      family: Gonzalez-Ballestero
+      sequence: additional
+      affiliation:
+      - name: Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, A-6020 Innsbruck, Austria
+      - name: Institute for Theoretical Physics, University of Innsbruck, A-6020 Innsbruck, Austria
+    - ORCID: https://orcid.org/0000-0001-8421-4484
+      authenticated-orcid: true
+      given: Hironari
+      family: Isshiki
+      sequence: additional
+      affiliation:
+      - name: Institute for Solid State Physics, University of Tokyo, Kashiwa 277-8581, Japan
+    - ORCID: https://orcid.org/0000-0001-8775-0135
+      authenticated-orcid: true
+      given: "Carlos S\xE1nchez"
+      family: "Mu\xF1oz"
+      sequence: additional
+      affiliation:
+      - name: "Departamento de F\xEDsica Te\xF3rica de la Materia Condensada and Condensed Matter Physics Center (IFIMAC), Universidad Aut\xF3noma de Madrid, 28049 Madrid, Spain"
+    - ORCID: https://orcid.org/0000-0003-1486-0442
+      authenticated-orcid: true
+      given: Liyang
+      family: Liao
+      sequence: additional
+      affiliation:
+      - name: Institute for Solid State Physics, University of Tokyo, Kashiwa 277-8581, Japan
+    - ORCID: https://orcid.org/0009-0004-9668-0465
+      authenticated-orcid: true
+      given: Fa
+      family: Chen
+      sequence: additional
+      affiliation:
+      - name: "School of Integrated Circuits, Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology, Wuhan 430074, People\u2019s Republic of China"
+    - ORCID: https://orcid.org/0000-0003-0836-9083
+      authenticated-orcid: true
+      given: Wei
+      family: Luo
+      sequence: additional
+      affiliation:
+      - name: "School of Integrated Circuits, Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology, Wuhan 430074, People\u2019s Republic of China"
+    - ORCID: https://orcid.org/0000-0002-4237-7741
+      authenticated-orcid: true
+      given: Sadamichi
+      family: Maekawa
+      sequence: additional
+      affiliation:
+      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
+      - name: Advanced Science Research Center, Japan Atomic Energy Agency, Tokai 319-1195, Japan
+      - name: "Kavli Institute for Theoretical Sciences, University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+    - ORCID: https://orcid.org/0000-0001-8008-1493
+      authenticated-orcid: true
+      given: Yoshichika
+      family: Otani
+      sequence: additional
+      affiliation:
+      - name: Institute for Solid State Physics, University of Tokyo, Kashiwa 277-8581, Japan
+      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
+    title: Strongly Coupled Spin Waves and Surface Acoustic Waves at Room Temperature
+    year: '2024'
+    authors: J Puebla, Y Hwang, K Kondou, C Gonzalez-Ballestero, H Isshiki, ...
+    venue: "\u65E5\u672C\u7269\u7406\u5B66\u4F1A\u8B1B\u6F14\u6982\u8981\u96C6 79.2, 1271-1271, 2024"
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:_FM0Bhl9EiAC
+    cited_by_link: null
+    snippet: null
+    resources: null
+    author_position: middle
+    doi: 10.1103/physrevlett.132.056704
+    is_arxiv: false
+    arxiv_id: null
+    unique_id: 10.1103/physrevlett.132.056704
+    crossref:
+      DOI: 10.1103/physrevlett.132.056704
+      type: journal-article
+      title: Strongly Coupled Spin Waves and Surface Acoustic Waves at Room Temperature
+      container_title: Physical Review Letters
+      short_container_title: Phys. Rev. Lett.
+      publisher: American Physical Society (APS)
+      volume: '132'
+      issue: '5'
+      article_number: '056704'
+      ISSN:
+      - 0031-9007
+      - 1079-7114
+      URL: https://doi.org/10.1103/physrevlett.132.056704
+      issued:
+      - 2024
+      - 1
+      - 31
+      author: *id043
+      link:
+      - URL: https://link.aps.org/article/10.1103/PhysRevLett.132.056704
+        content-type: unspecified
+        content-version: vor
+        intended-application: syndication
+      - URL: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.132.056704/fulltext
+        content-type: unspecified
+        content-version: vor
+        intended-application: similarity-checking
+      license:
+      - start:
+          date-parts:
+          - - 2024
+            - 1
+            - 31
+          date-time: '2024-01-31T00:00:00Z'
+          timestamp: 1706659200000
         content-version: vor
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
