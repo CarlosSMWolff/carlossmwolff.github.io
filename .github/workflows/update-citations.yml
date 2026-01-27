@@ -97,9 +97,16 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git add _data/citations.yml
+          git add \
+            _data/citations.yml \
+            _data/author_metrics.yml \
+            _bibliography/papers.bib \
+            _bibliography/preprints.bib
+
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
             git commit -m "Update Google Scholar citations"
             git push
           )
+
+
