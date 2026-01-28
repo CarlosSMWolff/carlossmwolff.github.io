@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-01-27'
+  last_updated: '2026-01-28'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 242
+    citations: 243
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 114
+    citations: 113
     author: &id006
     - given: Wei
       family: Qin
