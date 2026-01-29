@@ -35,7 +35,7 @@ latest_posts:
 ---
 Hi there! 👋 Thanks for stopping by!
 
-I am currently **Científico Titular** (Permanent Researcher) at the Spanish National Research Council [(CSIC)](https://www.csic.es/es).
+I am currently **Científico Titular** (Permanent Researcher) at the Institute of Fundamental Physics, Spanish National Research Council [(CSIC)](https://www.csic.es/es).
 
 I am a **theoretical quantum physics** specialized in the field of quantum optics. My main interest is to explore quantum effects arising from *engineered* light-matter interactions (such as in cavity quantum-electrodynamics) and exploit them for the development of quantum hardware (e.g. new types of lasers, sources of quantum light, or quantum sensors). Here is a more specific list of research topics I am currently working on.
 
