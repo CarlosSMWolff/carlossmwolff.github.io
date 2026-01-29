@@ -1093,9 +1093,9 @@ def bib_preprint_entry(e: dict, arxiv_id: str) -> str:
     author = esc(best_bibtex_authors(e))
     year = esc(str(e.get("year") or ""))
     lines = []
-    lines.append("abbr = {arXiv}")
     lines.append(f"@misc{{{citekey},")
     lines.append(f"  title = {{{title}}},")
+    lines.append("abbr = {arXiv},")
     if author: lines.append(f"  author = {{{author}}},")
     if year:   lines.append(f"  year = {year},")
     lines.append(f"  archivePrefix = {{arXiv}},")
