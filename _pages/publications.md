@@ -9,7 +9,8 @@ chart:
   echarts: true
 ---
 - [Metrics summary](#metrics-summary)
-- [Publication List](#publication-list)
+- [Preprints](#preprints)
+- [Peer-Reviewed Publications](#peer-reviewed-publications)
 
 #### Metrics summary
 
@@ -92,11 +93,20 @@ These include {{ journal_clauses | join: ", " }}.
 
 
 
-#### Publication List
+#### Preprints
 
 <!-- Bibsearch Feature -->
 
 <!-- {% include bib_search.liquid %} -->
 <div class="publications">
-{% bibliography %}
+{% bibliography --file preprints  %}
+</div>
+
+#### Peer-reviewed publications
+
+<!-- Bibsearch Feature -->
+
+<!-- {% include bib_search.liquid %} -->
+<div class="publications">
+{% bibliography --file papers  %}
 </div>

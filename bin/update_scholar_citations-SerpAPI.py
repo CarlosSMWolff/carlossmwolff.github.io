@@ -1095,6 +1095,9 @@ def bib_preprint_entry(e: dict, arxiv_id: str) -> str:
     lines = []
     lines.append(f"@misc{{{citekey},")
     lines.append(f"  title = {{{title}}},")
+    lines.append("  abbr = {arXiv},")
+    lines.append(f"  url = {{https://arxiv.org/abs/{arxiv_id}}},")
+
     if author: lines.append(f"  author = {{{author}}},")
     if year:   lines.append(f"  year = {year},")
     lines.append(f"  archivePrefix = {{arXiv}},")
