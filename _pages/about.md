@@ -33,11 +33,11 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-Hi there! 👋
+Hi there! 👋 Thanks for stopping by!
 
-I am a **Científico Titular** (Permanent Researcher) at the Spanish National Research Council [(CSIC)](https://www.csic.es/es).
+I am currently **Científico Titular** (Permanent Researcher) at the Spanish National Research Council [(CSIC)](https://www.csic.es/es).
 
-I work in **theoretical quantum physics**. As a quantum optician, my main interest is exploring quantum effects arising from *engineered* light-matter interactions (such as in cavity quantum-electrodynamics) and exploit them for the development of quantum hardware (e.g. new types of lasers, sources of quantum light, or quantum sensors). Here is a more specific list of research topics I am currently working on.
+I am a **theoretical quantum physics** specialized in the field of quantum optics. My main interest is to explore quantum effects arising from *engineered* light-matter interactions (such as in cavity quantum-electrodynamics) and exploit them for the development of quantum hardware (e.g. new types of lasers, sources of quantum light, or quantum sensors). Here is a more specific list of research topics I am currently working on.
 
 <!-- Make a list with a header "Research Topics" -->
 ### Research Topics
