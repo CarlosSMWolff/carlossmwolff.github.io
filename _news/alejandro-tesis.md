@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-Alejandro Vivas Viaña has successfully defended [his PhD thesis](https://arxiv.org/abs/2509.10672) (my first one as supervisor), at Universidad Autónoma de Madrid. 
+Alejandro Vivas Viaña has successfully defended [his PhD thesis](https://arxiv.org/abs/2509.10672) *Nonclassical Driven-dissipative dynamics in Collective Quantum Optics* (my first one as supervisor), at Universidad Autónoma de Madrid. 
 
 For the jury members, we had a lineup of great quantum optics experts, both theorist and experimentalist:
 - [Johannes Feist](https://johannesfeist.eu/) (UAM)
