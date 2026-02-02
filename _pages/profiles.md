@@ -21,7 +21,7 @@ profiles:
     image_circular: false
   - section: Former group members
     align: right
-    image: avivas_pic.jpg
+    image: avivas_pic.jpeg
     content: about_alejandrovivas.md
     image_circular: false
 ---
