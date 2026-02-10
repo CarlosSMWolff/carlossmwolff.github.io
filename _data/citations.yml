@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-09'
+  last_updated: '2026-02-10'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -572,7 +572,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 109
+    citations: 111
     author: &id007
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -1965,7 +1965,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:yB1At4FlUx8C:
-    citations: 46
+    citations: 47
     author: &id022
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -2443,7 +2443,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:g3aElNc5_aQC:
-    citations: 24
+    citations: 25
     author: &id028
     - ORCID: https://orcid.org/0000-0003-0021-6293
       authenticated-orcid: true
