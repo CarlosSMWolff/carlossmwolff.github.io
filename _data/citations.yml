@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-23'
+  last_updated: '2026-02-24'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 149
+    citations: 150
     author: &id004
     - given: Davide
       family: Caputo
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 117
+    citations: 118
     author: &id006
     - given: Wei
       family: Qin
@@ -1351,7 +1351,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:LjlpjdlvIbIC:
-    citations: 63
+    citations: 64
     author: &id015
     - given: Dario
       family: Ballarini
@@ -2364,7 +2364,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:MLfJN-KU85MC:
-    citations: 21
+    citations: 22
     author: &id027
     - ORCID: https://orcid.org/0009-0000-5336-5677
       authenticated-orcid: true
