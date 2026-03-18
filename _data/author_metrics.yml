@@ -43,7 +43,7 @@ journal_summary:
   journal: PRX Quantum
   last_author: 1
 metadata:
-  last_updated: '2026-03-17'
+  last_updated: '2026-03-18'
   source: serpapi
 metrics:
   citations:
@@ -65,4 +65,4 @@ stats:
     count: 3
     first_author: 0
     last_author: 2
-total_papers: 47
+total_papers: 20
