@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-03-19'
+  last_updated: '2026-03-20'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 245
+    citations: 246
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 240
+    citations: 241
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 197
+    citations: 198
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 120
+    citations: 121
     author: &id006
     - given: Wei
       family: Qin
@@ -1686,7 +1686,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by/3.0/
   -VPPZ8YAAAAJ:W5xh706n7nkC:
-    citations: 49
+    citations: 50
     author: &id019
     - given: C.
       family: "S\xE1nchez Mu\xF1oz"
@@ -2104,7 +2104,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:D_sINldO8mEC:
-    citations: 45
+    citations: 46
     author: &id024
     - given: B.
       family: Silva
@@ -2550,7 +2550,7 @@ papers:
     doi: null
     unique_id: -VPPZ8YAAAAJ:u5HHmVD_uO8C
   -VPPZ8YAAAAJ:ILKRHgRFtOwC:
-    citations: 17
+    citations: 18
     author: &id029
     - ORCID: https://orcid.org/0000-0002-6232-4110
       authenticated-orcid: true
