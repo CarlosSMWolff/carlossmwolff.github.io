@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-20'
+  last_updated: '2026-03-23'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 59
+    citations: 60
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 57
+    citations: 58
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -3278,7 +3278,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>Sum-frequency generation (SFG) enables the coherent upconversion of electromagnetic signals and plays a significant role in mid-infrared vibrational spectroscopy for molecular analysis. Recent research indicates that plasmonic nanocavities, which confine light to extremely small volumes, can facilitate the detection of vibrational SFG signals from individual molecules by leveraging surface-enhanced Raman scattering combined with mid-infrared laser excitation. In this article, we compute the degree of second order coherence (<jats:italic>g</jats:italic>\n                  <jats:sup>(2)</jats:sup>(0)) of the upconverted mid-infrared field under realistic parameters and accounting for the anharmonic potential that characterizes vibrational modes of individual molecules. On the one hand, we delineate the regime in which the device should operate in order to preserve the second-order coherence of the mid-infrared source,\
         \ as required in quantum applications. On the other hand, we show that an anharmonic molecular potential can lead to antibunching of the upconverted photons under coherent, Poisson-distributed mid-infrared and visible drives. Our results therefore open a path toward bright and tunable source of indistinguishable single photons by leveraging \u201Cvibrational blockade\u201D in a resonantly and parametrically driven molecule, without the need for strong light-matter coupling.</jats:p>"
   -VPPZ8YAAAAJ:lmc2jWPfTJgC:
-    citations: 6
+    citations: 7
     author: &id037
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
