@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-03-27'
+  last_updated: '2026-03-30'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 246
+    citations: 247
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 127
+    citations: 128
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -1181,7 +1181,7 @@ papers:
         delay-in-days: 0
         URL: https://opg.optica.org/policies/opg-tdm-policy.json
   -VPPZ8YAAAAJ:JQOojiI6XY0C:
-    citations: 75
+    citations: 76
     author: &id013
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 67
+    citations: 68
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -3278,7 +3278,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>Sum-frequency generation (SFG) enables the coherent upconversion of electromagnetic signals and plays a significant role in mid-infrared vibrational spectroscopy for molecular analysis. Recent research indicates that plasmonic nanocavities, which confine light to extremely small volumes, can facilitate the detection of vibrational SFG signals from individual molecules by leveraging surface-enhanced Raman scattering combined with mid-infrared laser excitation. In this article, we compute the degree of second order coherence (<jats:italic>g</jats:italic>\n                  <jats:sup>(2)</jats:sup>(0)) of the upconverted mid-infrared field under realistic parameters and accounting for the anharmonic potential that characterizes vibrational modes of individual molecules. On the one hand, we delineate the regime in which the device should operate in order to preserve the second-order coherence of the mid-infrared source,\
         \ as required in quantum applications. On the other hand, we show that an anharmonic molecular potential can lead to antibunching of the upconverted photons under coherent, Poisson-distributed mid-infrared and visible drives. Our results therefore open a path toward bright and tunable source of indistinguishable single photons by leveraging \u201Cvibrational blockade\u201D in a resonantly and parametrically driven molecule, without the need for strong light-matter coupling.</jats:p>"
   -VPPZ8YAAAAJ:lmc2jWPfTJgC:
-    citations: 7
+    citations: 8
     author: &id037
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
