@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-31'
+  last_updated: '2026-04-01'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 198
+    citations: 199
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 128
+    citations: 129
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 68
+    citations: 69
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -1598,7 +1598,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:nb7KW1ujOQ8C:
-    citations: 56
+    citations: 57
     author: &id018
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1686,7 +1686,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by/3.0/
   -VPPZ8YAAAAJ:W5xh706n7nkC:
-    citations: 50
+    citations: 51
     author: &id019
     - given: C.
       family: "S\xE1nchez Mu\xF1oz"
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 58
+    citations: 59
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -2104,7 +2104,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:D_sINldO8mEC:
-    citations: 47
+    citations: 48
     author: &id024
     - given: B.
       family: Silva
@@ -2520,7 +2520,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:9Nmd_mFXekcC:
-    citations: 21
+    citations: 22
     title: Two-photon resonance fluorescence of two interacting non-identical quantum emitters
     year: '2021'
     authors: "A Vivas-Via\xF1a, C S\xE1nchez Mu\xF1oz"
