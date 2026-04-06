@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-03'
+  last_updated: '2026-04-06'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 199
+    citations: 200
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 130
+    citations: 131
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -1181,7 +1181,7 @@ papers:
         delay-in-days: 0
         URL: https://opg.optica.org/policies/opg-tdm-policy.json
   -VPPZ8YAAAAJ:JQOojiI6XY0C:
-    citations: 76
+    citations: 77
     author: &id013
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 71
+    citations: 72
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -2218,7 +2218,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>The Hanbury Brown\u2013Twiss effect is one of the celebrated phenomenologies of modern physics that accommodates equally well classical (interferences of waves) and quantum (correlations between indistinguishable particles) interpretations. The effect was discovered in the late thirties with a basic observation of Hanbury Brown that radio-pulses from two distinct antennas generate signals on the oscilloscope that wiggle similarly to the naked eye. When Hanbury Brown and his mathematician colleague Twiss took the obvious step to propose bringing the effect in the optical range, they met with considerable opposition as single-photon interferences were deemed impossible. The Hanbury Brown\u2013Twiss effect is nowadays universally accepted and, being so fundamental, embodies many subtleties of our understanding of the wave/particle dual nature of light. Thanks to a novel experimental technique, we report here a generalized version of\
         \ the Hanbury Brown\u2013Twiss effect to include the frequency of the detected light, or, from the particle point of view, the energy of the detected photons. Our source of light is a polariton condensate, that allows high-resolution filtering of a spectrally broad source with a high degree of coherence. In addition to the known tendencies of indistinguishable photons to arrive together on the detector, we find that photons of different colors present the opposite characteristic of avoiding each others. We postulate that fermions can be similarly brought to exhibit positive (boson-like) correlations by frequency filtering.</jats:p>"
   -VPPZ8YAAAAJ:Tiz5es2fbqcC:
-    citations: 41
+    citations: 42
     author: &id025
     - given: "M\xF3nica"
       family: Benito
@@ -3793,7 +3793,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:9pM33mqn1YgC:
-    citations: 32
+    citations: 33
     author: &id042
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
