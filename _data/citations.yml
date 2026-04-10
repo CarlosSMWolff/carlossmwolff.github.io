@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-09'
+  last_updated: '2026-04-10'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 200
+    citations: 201
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -572,7 +572,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 118
+    citations: 119
     author: &id007
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
