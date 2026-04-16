@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-15'
+  last_updated: '2026-04-16'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -938,7 +938,7 @@ papers:
         intended-application: similarity-checking
       abstract: <jats:p>Polaritons reach the quantum limit, providing a new and promising platform of strongly coherent and interacting particles.</jats:p>
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
-    citations: 93
+    citations: 94
     author: &id010
     - given: "J.\u2009C."
       family: "L\xF3pez Carre\xF1o"
