@@ -516,6 +516,7 @@ for idx, art in enumerate(articles, start=1):
 
         if SKIP_EXISTING_PAPERS and existing_entry:
             # Already have this paper stored; skip any API work for it and just update citations
+            print("Paper already in database, skipping API calls and only updating citations: " + paper_id)
             skipped_existing += 1
             citation_data["papers"][paper_id] = entry
             continue

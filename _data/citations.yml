@@ -3703,30 +3703,6 @@ papers:
       sequence: additional
       affiliation: []
     unique_id: '2509.26486'
-  -VPPZ8YAAAAJ:_axFR9aDTf0C:
-    citations: null
-    title: Quantum metrology through spectral measurements in quantum optics
-    year: '2025'
-    authors: "A Vivas-Via\xF1a, CS Mu\xF1oz"
-    venue: arXiv preprint arXiv:2509.04300, 2025
-    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:_axFR9aDTf0C
-    cited_by_link: null
-    snippet: null
-    resources: null
-    author_position: last
-    is_arxiv: true
-    arxiv_id: '2509.04300'
-    doi: null
-    author:
-    - given: Alejandro
-      family: "Vivas-Via\xF1a"
-      sequence: first
-      affiliation: []
-    - given: "Carlos S\xE1nchez"
-      family: "Mu\xF1oz"
-      sequence: additional
-      affiliation: []
-    unique_id: '2509.04300'
   -VPPZ8YAAAAJ:-_dYPAW6P2MC:
     citations: 28
     author: &id041
@@ -4104,3 +4080,86 @@ papers:
         content-version: tdm
         delay-in-days: 0
         URL: http://www.springer.com/tdm
+  -VPPZ8YAAAAJ:_axFR9aDTf0C:
+    citations: null
+    author: &id045
+    - ORCID: https://orcid.org/0000-0002-0308-8736
+      authenticated-orcid: true
+      given: Alejandro
+      family: "Vivas-Via\xF1a"
+      sequence: first
+      affiliation:
+      - id:
+        - id: https://ror.org/040wg7k59
+          id-type: ROR
+          asserted-by: publisher
+        name: Chalmers University of Technology
+      - id:
+        - id: https://ror.org/009wseg80
+          id-type: ROR
+          asserted-by: publisher
+        name: Institute of Fundamental Physics IFF-CSIC
+    - ORCID: https://orcid.org/0000-0001-8775-0135
+      authenticated-orcid: true
+      given: Carlos
+      family: "S\xE1nchez Mu\xF1oz"
+      sequence: additional
+      affiliation:
+      - id:
+        - id: https://ror.org/009wseg80
+          id-type: ROR
+          asserted-by: publisher
+        name: Institute of Fundamental Physics IFF-CSIC
+    title: Quantum metrology through spectral measurements in quantum optics
+    year: '2026'
+    authors: "A Vivas-Via\xF1a, C S\xE1nchez Mu\xF1oz"
+    venue: PRX Quantum 7 (1), 010346, 2026
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:_axFR9aDTf0C
+    cited_by_link: null
+    snippet: null
+    resources: null
+    author_position: last
+    doi: 10.1103/xrgc-lrj8
+    is_arxiv: false
+    arxiv_id: null
+    unique_id: 10.1103/xrgc-lrj8
+    crossref:
+      DOI: 10.1103/xrgc-lrj8
+      type: journal-article
+      title: Quantum Metrology through Spectral Measurements in Quantum Optics
+      container_title: PRX Quantum
+      short_container_title: PRX Quantum
+      publisher: American Physical Society (APS)
+      volume: '7'
+      issue: '1'
+      article_number: '010346'
+      ISSN:
+      - 2691-3399
+      URL: https://doi.org/10.1103/xrgc-lrj8
+      issued:
+      - 2026
+      - 3
+      - 6
+      author: *id045
+      link:
+      - URL: https://link.aps.org/article/10.1103/xrgc-lrj8
+        content-type: unspecified
+        content-version: vor
+        intended-application: syndication
+      - URL: http://harvest.aps.org/v2/journals/articles/10.1103/xrgc-lrj8/fulltext
+        content-type: unspecified
+        content-version: vor
+        intended-application: similarity-checking
+      license:
+      - start:
+          date-parts:
+          - - 2026
+            - 3
+            - 6
+          date-time: '2026-03-06T00:00:00Z'
+          timestamp: 1772755200000
+        content-version: vor
+        delay-in-days: 0
+        URL: https://creativecommons.org/licenses/by/4.0/
+      abstract: <jats:p>Continuously monitored quantum systems are emerging as promising platforms for quantum metrology, where a central challenge is to identify measurement strategies that optimally extract information about unknown parameters encoded in the complex quantum state of emitted radiation. Different measurement strategies effectively access distinct temporal modes of the emitted field, and the resulting choice of mode can strongly impact the information available for parameter estimation. While a ubiquitous approach in quantum optics is to select frequency modes through spectral filtering, the metrological potential of this technique has not yet been systematically quantified. We develop a theoretical framework to assess this potential by modeling spectral detection as a cascaded quantum system, allowing us to reconstruct the full density matrix of frequency-filtered photonic modes and to compute their associated Fisher information. This framework provides a minimal yet general
+        method to benchmark the performance of spectral measurements in quantum optics, allowing to identify optimal filtering strategies in terms of frequency selection, detector linewidth, and metrological gain accessible through higher-order frequency-resolved correlations and mean-field engineering. These results lay the groundwork for identifying and designing optimal sensing strategies in practical quantum-optical platforms.</jats:p>

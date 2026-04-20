@@ -38,10 +38,10 @@ journal_summary:
   first_author: 0
   journal: PRX
   last_author: 0
-- count: 1
+- count: 2
   first_author: 0
   journal: PRX Quantum
-  last_author: 1
+  last_author: 2
 metadata:
   last_updated: '2026-04-20'
   source: serpapi
@@ -57,12 +57,12 @@ metrics:
     since_2021: 35
 stats:
   peer_reviewed:
-    count: 46
+    count: 47
     first_author: 15
-    last_author: 8
+    last_author: 9
     total_citations_from_entries: 2700
   preprints:
-    count: 3
+    count: 2
     first_author: 0
-    last_author: 2
+    last_author: 1
 total_papers: 47
