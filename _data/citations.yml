@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-04-23'
+  last_updated: '2026-04-24'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 248
+    citations: 250
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 201
+    citations: 203
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 61
+    citations: 63
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
@@ -4163,3 +4163,98 @@ papers:
         URL: https://creativecommons.org/licenses/by/4.0/
       abstract: <jats:p>Continuously monitored quantum systems are emerging as promising platforms for quantum metrology, where a central challenge is to identify measurement strategies that optimally extract information about unknown parameters encoded in the complex quantum state of emitted radiation. Different measurement strategies effectively access distinct temporal modes of the emitted field, and the resulting choice of mode can strongly impact the information available for parameter estimation. While a ubiquitous approach in quantum optics is to select frequency modes through spectral filtering, the metrological potential of this technique has not yet been systematically quantified. We develop a theoretical framework to assess this potential by modeling spectral detection as a cascaded quantum system, allowing us to reconstruct the full density matrix of frequency-filtered photonic modes and to compute their associated Fisher information. This framework provides a minimal yet general
         method to benchmark the performance of spectral measurements in quantum optics, allowing to identify optimal filtering strategies in terms of frequency selection, detector linewidth, and metrological gain accessible through higher-order frequency-resolved correlations and mean-field engineering. These results lay the groundwork for identifying and designing optimal sensing strategies in practical quantum-optical platforms.</jats:p>
+  -VPPZ8YAAAAJ:LO7wyVUgiFcC:
+    citations: null
+    author: &id046
+    - given: "C. S\xE1nchez"
+      family: "Mu\xF1oz"
+      sequence: first
+      affiliation: []
+    - given: E.
+      family: del Valle
+      sequence: additional
+      affiliation: []
+    - given: "A. Gonz\xE1lez"
+      family: Tudela
+      sequence: additional
+      affiliation: []
+    - given: K.
+      family: "M\xFCller"
+      sequence: additional
+      affiliation: []
+    - given: S.
+      family: Lichtmannecker
+      sequence: additional
+      affiliation: []
+    - given: M.
+      family: Kaniber
+      sequence: additional
+      affiliation: []
+    - given: C.
+      family: Tejedor
+      sequence: additional
+      affiliation: []
+    - given: J. J.
+      family: Finley
+      sequence: additional
+      affiliation: []
+    - given: F. P.
+      family: Laussy
+      sequence: additional
+      affiliation: []
+    title: Emitters of N-photon bundles
+    year: '2014'
+    authors: "C S\xE1nchez Mu\xF1oz, E Del Valle, AG Tudela, K M\xFCller, S Lichtmannecker, ..."
+    venue: Nature Photonics 8 (7), 550-555, 2014
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:LO7wyVUgiFcC
+    cited_by_link: null
+    snippet: null
+    resources: null
+    author_position: first
+    doi: 10.1038/nphoton.2014.114
+    is_arxiv: false
+    arxiv_id: null
+    unique_id: 10.1038/nphoton.2014.114
+    crossref:
+      DOI: 10.1038/nphoton.2014.114
+      type: journal-article
+      title: Emitters of N-photon bundles
+      container_title: Nature Photonics
+      short_container_title: Nature Photon
+      publisher: Springer Science and Business Media LLC
+      volume: '8'
+      issue: '7'
+      page: 550-555
+      ISSN:
+      - 1749-4885
+      - 1749-4893
+      URL: https://doi.org/10.1038/nphoton.2014.114
+      issued:
+      - 2014
+      - 6
+      - 1
+      author: *id046
+      link:
+      - URL: http://www.nature.com/articles/nphoton.2014.114.pdf
+        content-type: application/pdf
+        content-version: vor
+        intended-application: text-mining
+      - URL: http://www.nature.com/articles/nphoton.2014.114
+        content-type: text/html
+        content-version: vor
+        intended-application: text-mining
+      - URL: http://www.nature.com/articles/nphoton.2014.114.pdf
+        content-type: application/pdf
+        content-version: vor
+        intended-application: similarity-checking
+      license:
+      - start:
+          date-parts:
+          - - 2014
+            - 6
+            - 1
+          date-time: '2014-06-01T00:00:00Z'
+          timestamp: 1401580800000
+        content-version: tdm
+        delay-in-days: 0
+        URL: http://www.springer.com/tdm
