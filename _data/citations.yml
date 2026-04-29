@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-28'
+  last_updated: '2026-04-29'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -2729,7 +2729,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:tuHXwOkdijsC:
-    citations: 15
+    citations: 16
     author: &id031
     - ORCID: https://orcid.org/0000-0003-4200-7545
       authenticated-orcid: true
@@ -3278,7 +3278,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>Sum-frequency generation (SFG) enables the coherent upconversion of electromagnetic signals and plays a significant role in mid-infrared vibrational spectroscopy for molecular analysis. Recent research indicates that plasmonic nanocavities, which confine light to extremely small volumes, can facilitate the detection of vibrational SFG signals from individual molecules by leveraging surface-enhanced Raman scattering combined with mid-infrared laser excitation. In this article, we compute the degree of second order coherence (<jats:italic>g</jats:italic>\n                  <jats:sup>(2)</jats:sup>(0)) of the upconverted mid-infrared field under realistic parameters and accounting for the anharmonic potential that characterizes vibrational modes of individual molecules. On the one hand, we delineate the regime in which the device should operate in order to preserve the second-order coherence of the mid-infrared source,\
         \ as required in quantum applications. On the other hand, we show that an anharmonic molecular potential can lead to antibunching of the upconverted photons under coherent, Poisson-distributed mid-infrared and visible drives. Our results therefore open a path toward bright and tunable source of indistinguishable single photons by leveraging \u201Cvibrational blockade\u201D in a resonantly and parametrically driven molecule, without the need for strong light-matter coupling.</jats:p>"
   -VPPZ8YAAAAJ:lmc2jWPfTJgC:
-    citations: 8
+    citations: 9
     author: &id037
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
@@ -4258,3 +4258,67 @@ papers:
         content-version: tdm
         delay-in-days: 0
         URL: http://www.springer.com/tdm
+  -VPPZ8YAAAAJ:0izLItjtcgwC:
+    citations: null
+    title: Entanglement of two optical emitters mediated by a terahertz channel
+    year: '2026'
+    authors: "YL Fur, D Mart\xEDn-Cano, CS Mu\xF1oz"
+    venue: arXiv preprint arXiv:2604.21723, 2026
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:0izLItjtcgwC
+    cited_by_link: null
+    snippet: null
+    resources: null
+    author_position: last
+    is_arxiv: true
+    arxiv_id: '2604.21723'
+    doi: null
+    author:
+    - given: Yanis Le
+      family: Fur
+      sequence: first
+      affiliation: []
+    - given: Diego
+      family: "Mart\xEDn-Cano"
+      sequence: additional
+      affiliation: []
+    - given: "Carlos S\xE1nchez"
+      family: "Mu\xF1oz"
+      sequence: additional
+      affiliation: []
+    unique_id: '2604.21723'
+  -VPPZ8YAAAAJ:anf4URPfarAC:
+    citations: null
+    title: Deterministic generation of grid states with programmable nonlinear bosonic circuits
+    year: '2026'
+    authors: "YL Fur, J Lalueza-Pu\xE9rtolas, CS Mu\xF1oz, AM Heras, A Gonz\xE1lez-Tudela"
+    venue: arXiv preprint arXiv:2604.21824, 2026
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:anf4URPfarAC
+    cited_by_link: null
+    snippet: null
+    resources: null
+    author_position: middle
+    is_arxiv: true
+    arxiv_id: '2604.21824'
+    doi: null
+    author:
+    - given: Yanis Le
+      family: Fur
+      sequence: first
+      affiliation: []
+    - given: Javier
+      family: "Lalueza-Pu\xE9rtolas"
+      sequence: additional
+      affiliation: []
+    - given: "Carlos S\xE1nchez"
+      family: "Mu\xF1oz"
+      sequence: additional
+      affiliation: []
+    - given: "Alberto Mu\xF1oz de las"
+      family: Heras
+      sequence: additional
+      affiliation: []
+    - given: Alejandro
+      family: "Gonz\xE1lez-Tudela"
+      sequence: additional
+      affiliation: []
+    unique_id: '2604.21824'
