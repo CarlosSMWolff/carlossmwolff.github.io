@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "post-why-making-a-new-personal-website",
+        },{id: "post-creating-a-private-audiobook-server",
+        
+          title: "creating a private audiobook server",
+        
+        description: "A complete guide to building a private audiobook server with Raspberry Pi, Audiobookshelf, and Cloudflare Tunnel.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/audiobookshelf-raspberry-pi-tutorial/";
+          
+        },
+      },{id: "post-why-making-a-new-personal-website",
         
           title: "why making a new personal website?",
         
