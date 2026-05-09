@@ -5,6 +5,7 @@ date: 2025-05-04 17:00:00
 description: A complete guide to building a private audiobook server with Raspberry Pi, Audiobookshelf, and Cloudflare Tunnel.
 tags: hacking
 categories: sample-posts
+giscus_comments: true
 ---
 The following tutorial is completely written by Claude after a sucessful session of vibe-coding to setup a private audiobook server for me and my friends, which I currently serve at [audiobooks.carlossanchezmunoz.com](https://audiobooks.carlossanchezmunoz.com). 
 Not a very human text, but hey, this was useful to me, and we had to fix some initial mistakes by Claude along the way, so I guess the final recollection can be pretty useful, either for my future self or anyone interested.
