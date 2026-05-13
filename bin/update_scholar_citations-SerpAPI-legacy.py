@@ -665,34 +665,6 @@ log(f"Skipped {skipped_existing} existing papers")
 
 
 # -------------------------------------------------
-# Deduplicate by unique_id (DOI): keep the entry with the most data
-# -------------------------------------------------
-seen_unique: dict[str, str] = {}  # unique_id -> paper_id of the "best" entry
-
-def dedup_score(e: dict) -> tuple:
-    return (
-        int(e.get("citations") or 0),
-        bool(e.get("cited_by_link")),
-        bool(e.get("crossref")),
-    )
-
-for paper_id, entry in list(citation_data["papers"].items()):
-    uid = entry.get("unique_id") or paper_id
-    if uid not in seen_unique:
-        seen_unique[uid] = paper_id
-        continue
-    incumbent_id = seen_unique[uid]
-    incumbent = citation_data["papers"][incumbent_id]
-    if dedup_score(entry) > dedup_score(incumbent):
-        del citation_data["papers"][incumbent_id]
-        seen_unique[uid] = paper_id
-    else:
-        del citation_data["papers"][paper_id]
-
-log(f"After deduplication: {len(citation_data['papers'])} unique papers")
-
-
-# -------------------------------------------------
 # Write output file
 # -------------------------------------------------
 try:
