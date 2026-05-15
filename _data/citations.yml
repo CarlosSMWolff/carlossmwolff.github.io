@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-14'
+  last_updated: '2026-05-15'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 133
+    citations: 134
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -1181,7 +1181,7 @@ papers:
         delay-in-days: 0
         URL: https://opg.optica.org/policies/opg-tdm-policy.json
   -VPPZ8YAAAAJ:JQOojiI6XY0C:
-    citations: 78
+    citations: 79
     author: &id013
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
