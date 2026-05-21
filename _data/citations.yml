@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-20'
+  last_updated: '2026-05-21'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -2809,7 +2809,7 @@ papers:
       abstract: "<jats:p>We present a proposal for a tunable source of single photons operating in the terahertz (THz) regime. This scheme transforms incident visible photons into quantum THz radiation by driving a single polar quantum emitter with an optical laser, with its permanent dipole enabling dressed THz transitions enhanced by the resonant coupling to a cavity. This mechanism offers optical tunability of properties such as the frequency of the emission or its quantum statistics (ranging from antibunching to entangled multiphoton states) by modifying the intensity and frequency of the drive. We show that the implementation of this proposal is feasible with state-of-the-art photonics technology.</jats:p>\n          <jats:sec>\n            <jats:title/>\n            <jats:supplementary-material>\n              <jats:permissions>\n                <jats:copyright-statement>Published by the American Physical Society</jats:copyright-statement>\n                <jats:copyright-year>2024</jats:copyright-year>\n\
         \              </jats:permissions>\n            </jats:supplementary-material>\n          </jats:sec>"
   -VPPZ8YAAAAJ:WZBGuue-350C:
-    citations: 15
+    citations: 16
     author: &id032
     - ORCID: https://orcid.org/0000-0003-4134-809X
       authenticated-orcid: false
