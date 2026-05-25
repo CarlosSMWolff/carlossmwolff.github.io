@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-05-22'
+  last_updated: '2026-05-25'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 253
+    citations: 255
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 245
+    citations: 246
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 158
+    citations: 159
     author: &id004
     - given: Davide
       family: Caputo
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 128
+    citations: 129
     author: &id006
     - given: Wei
       family: Qin
@@ -774,7 +774,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>In nature, instances of synchronisation abound across a diverse range of environments. In the quantum regime, however, synchronisation is typically observed by identifying an appropriate parameter regime in a specific system. In this work we show that this need not be the case, identifying conditions which, when satisfied, guarantee that the individual constituents of a generic open quantum system will undergo completely synchronous limit cycles which are, to first order, robust to symmetry-breaking perturbations. We then describe how these conditions can be satisfied by the interplay between several elements: interactions, local dephasing and the presence of a strong dynamical symmetry\u2014an operator which guarantees long-time non-stationary dynamics. These elements cause the formation of entanglement and off-diagonal long-range order which drive the synchronised response of the system. To illustrate these ideas\
         \ we present two central examples: a chain of quadratically dephased spin-1s and the many-body charge-dephased Hubbard model. In both cases perfect phase-locking occurs throughout the system, regardless of the specific microscopic parameters or initial states. Furthermore, when these systems are perturbed, their nonlinear responses elicit long-lived signatures of both phase and frequency-locking.</jats:p>"
   -VPPZ8YAAAAJ:5awf1xo2G04C:
-    citations: 96
+    citations: 97
     author: &id009
     - ORCID: https://orcid.org/0000-0002-3390-2954
       authenticated-orcid: true
@@ -938,7 +938,7 @@ papers:
         intended-application: similarity-checking
       abstract: <jats:p>Polaritons reach the quantum limit, providing a new and promising platform of strongly coherent and interacting particles.</jats:p>
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
-    citations: 95
+    citations: 96
     author: &id010
     - given: "J.\u2009C."
       family: "L\xF3pez Carre\xF1o"
@@ -1013,7 +1013,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
-    citations: 86
+    citations: 87
     author: &id011
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: false
@@ -1101,7 +1101,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>Recent technological developments have made it increasingly easy to access the non-perturbative regimes of cavity quantum electrodynamics known as ultrastrong or deep strong coupling, where the light\u2013matter coupling becomes comparable to the bare modal frequencies. In this work, we address the adequacy of the broadly used single-mode cavity approximation to describe such regimes. We demonstrate that, in the non-perturbative light\u2013matter coupling regimes, the single-mode models become unphysical, allowing for superluminal signalling. Moreover, considering the specific example of the quantum Rabi model, we show that the multi-mode description of the electromagnetic field, necessary to account for light propagation at finite speed, yields physical observables that differ radically from their single-mode counterparts already for moderate values of the coupling. Our multi-mode analysis also reveals phenomena of fundamental interest\
         \ on the dynamics of the intracavity electric field, where a free photonic wavefront and a bound state of virtual photons are shown to coexist.</jats:p>"
   -VPPZ8YAAAAJ:Y5dfb0dijaUC:
-    citations: 81
+    citations: 83
     author: &id012
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1351,7 +1351,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:LjlpjdlvIbIC:
-    citations: 65
+    citations: 67
     author: &id015
     - given: Dario
       family: Ballarini
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 63
+    citations: 65
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 75
+    citations: 77
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -1686,7 +1686,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by/3.0/
   -VPPZ8YAAAAJ:W5xh706n7nkC:
-    citations: 51
+    citations: 52
     author: &id019
     - given: C.
       family: "S\xE1nchez Mu\xF1oz"
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 60
+    citations: 62
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -2809,7 +2809,7 @@ papers:
       abstract: "<jats:p>We present a proposal for a tunable source of single photons operating in the terahertz (THz) regime. This scheme transforms incident visible photons into quantum THz radiation by driving a single polar quantum emitter with an optical laser, with its permanent dipole enabling dressed THz transitions enhanced by the resonant coupling to a cavity. This mechanism offers optical tunability of properties such as the frequency of the emission or its quantum statistics (ranging from antibunching to entangled multiphoton states) by modifying the intensity and frequency of the drive. We show that the implementation of this proposal is feasible with state-of-the-art photonics technology.</jats:p>\n          <jats:sec>\n            <jats:title/>\n            <jats:supplementary-material>\n              <jats:permissions>\n                <jats:copyright-statement>Published by the American Physical Society</jats:copyright-statement>\n                <jats:copyright-year>2024</jats:copyright-year>\n\
         \              </jats:permissions>\n            </jats:supplementary-material>\n          </jats:sec>"
   -VPPZ8YAAAAJ:WZBGuue-350C:
-    citations: 16
+    citations: 17
     author: &id032
     - ORCID: https://orcid.org/0000-0003-4134-809X
       authenticated-orcid: false
@@ -3452,7 +3452,7 @@ papers:
         content-version: vor
         intended-application: similarity-checking
   -VPPZ8YAAAAJ:xtoqd-5pKcoC:
-    citations: 6
+    citations: 7
     author: &id039
     - ORCID: https://orcid.org/0009-0004-6995-3763
       authenticated-orcid: false
@@ -3574,7 +3574,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n          <jats:p>The ability to generate entangled states of light is a key primitive for quantum communication and distributed quantum computation. Continuously driven sources, including those based on spontaneous parametric downconversion, are usually probabilistic, whereas deterministic sources require accurate timing of the control fields. Here, we experimentally generate entangled photonic modes by continuously exciting a quantum emitter - a superconducting qubit - with a coherent drive, taking advantage of mode matching in the time and frequency domain. Using joint quantum state tomography and logarithmic negativity, we show that entanglement is generated between modes extracted from the two sidebands of the resonance fluorescence spectrum. Because the entangled photonic modes are perfectly orthogonal, they can be transferred into distinct quantum memories. Our approach can be utilized to distribute entanglement at a high rate in\
         \ various physical platforms, with applications in waveguide quantum electrodynamics, distributed quantum computing, and quantum networks.</jats:p>"
   -VPPZ8YAAAAJ:M7yex6snE4oC:
-    citations: 4
+    citations: 5
     author: &id040
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
@@ -3784,7 +3784,7 @@ papers:
     doi: null
     unique_id: -VPPZ8YAAAAJ:FAceZFleit8C
   -VPPZ8YAAAAJ:_axFR9aDTf0C:
-    citations: null
+    citations: 1
     author: &id042
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
@@ -3930,3 +3930,131 @@ papers:
       sequence: additional
       affiliation: []
     unique_id: '2604.21824'
+  -VPPZ8YAAAAJ:NXb4pA-qfm4C:
+    citations: 2
+    author: &id043
+    - given: Lorenzo
+      family: Dominici
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: David
+      family: Colas
+      sequence: additional
+      affiliation:
+      - name: "Univ. Aut\xF3noma de Madrid (Spain)"
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Stefano
+      family: Donati
+      sequence: additional
+      affiliation:
+      - name: "Univ. Aut\xF3noma de Madrid (Spain)"
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Galbadrakh
+      family: Dagvadorj
+      sequence: additional
+      affiliation:
+      - name: Univ. of Warwick (United Kingdom)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Antonio
+      family: Gianfrate
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Carlos
+      family: "S\xE1nchez Mu\xF1oz"
+      sequence: additional
+      affiliation:
+      - name: "Univ. Aut\xF3noma de Madrid (Spain)"
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Dario
+      family: Ballarini
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Milena
+      family: De Giorgi
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Giuseppe
+      family: Gigli
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Marzena H.
+      family: "Szyma\u0144ska"
+      sequence: additional
+      affiliation:
+      - name: Univ. College London (United Kingdom)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Fabrice P.
+      family: Laussy
+      sequence: additional
+      affiliation:
+      - name: "Univ. Aut\xF3noma de Madrid (Spain)"
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Daniele
+      family: Sanvitto
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    title: Pulse, polarization and topology shaping of polariton fluids
+    year: '2017'
+    authors: "L Dominici, D Colas, S Donati, G Dagvadorj, A Gianfrate, CS Mu\xF1oz, ..."
+    venue: Complex Light and Optical Forces XI 10120, 51-69, 2017
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:NXb4pA-qfm4C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5323885208696318272
+    snippet: null
+    resources: null
+    author_position: middle
+    doi: 10.1117/12.2250997
+    is_arxiv: false
+    arxiv_id: null
+    unique_id: 10.1117/12.2250997
+    crossref:
+      DOI: 10.1117/12.2250997
+      type: proceedings-article
+      title: Pulse, polarization and topology shaping of polariton fluids
+      container_title: SPIE Proceedings
+      publisher: SPIE
+      volume: '10120'
+      page: 101200E
+      ISSN:
+      - 0277-786X
+      URL: https://doi.org/10.1117/12.2250997
+      issued:
+      - 2017
+      - 2
+      - 27
+      author: *id043
