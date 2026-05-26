@@ -1051,7 +1051,7 @@ def make_citekey(e: dict, suffix: str) -> str:
             first_chunk = (authors.split(",")[0].strip() if authors else "unknown")
             first_author = (first_chunk.split()[-1] if first_chunk else "unknown").lower()
 
-    first_word = ((e.get("title") or "paper").split()[0]).lower()
+    first_word = re.sub(r'[^\w]', '', (e.get("title") or "paper").split()[0], flags=re.UNICODE).lower()
     year = str(e.get("year") or "yyyy")
     return f"{first_author}{first_word}{year}{suffix}"
 
