@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-05-11'
+  last_updated: '2026-05-26'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 252
+    citations: 255
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 244
+    citations: 246
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 157
+    citations: 159
     author: &id004
     - given: Davide
       family: Caputo
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 133
+    citations: 135
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 126
+    citations: 129
     author: &id006
     - given: Wei
       family: Qin
@@ -774,7 +774,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>In nature, instances of synchronisation abound across a diverse range of environments. In the quantum regime, however, synchronisation is typically observed by identifying an appropriate parameter regime in a specific system. In this work we show that this need not be the case, identifying conditions which, when satisfied, guarantee that the individual constituents of a generic open quantum system will undergo completely synchronous limit cycles which are, to first order, robust to symmetry-breaking perturbations. We then describe how these conditions can be satisfied by the interplay between several elements: interactions, local dephasing and the presence of a strong dynamical symmetry\u2014an operator which guarantees long-time non-stationary dynamics. These elements cause the formation of entanglement and off-diagonal long-range order which drive the synchronised response of the system. To illustrate these ideas\
         \ we present two central examples: a chain of quadratically dephased spin-1s and the many-body charge-dephased Hubbard model. In both cases perfect phase-locking occurs throughout the system, regardless of the specific microscopic parameters or initial states. Furthermore, when these systems are perturbed, their nonlinear responses elicit long-lived signatures of both phase and frequency-locking.</jats:p>"
   -VPPZ8YAAAAJ:5awf1xo2G04C:
-    citations: 96
+    citations: 97
     author: &id009
     - ORCID: https://orcid.org/0000-0002-3390-2954
       authenticated-orcid: true
@@ -938,7 +938,7 @@ papers:
         intended-application: similarity-checking
       abstract: <jats:p>Polaritons reach the quantum limit, providing a new and promising platform of strongly coherent and interacting particles.</jats:p>
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
-    citations: 94
+    citations: 96
     author: &id010
     - given: "J.\u2009C."
       family: "L\xF3pez Carre\xF1o"
@@ -1013,7 +1013,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
-    citations: 86
+    citations: 87
     author: &id011
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: false
@@ -1101,7 +1101,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>Recent technological developments have made it increasingly easy to access the non-perturbative regimes of cavity quantum electrodynamics known as ultrastrong or deep strong coupling, where the light\u2013matter coupling becomes comparable to the bare modal frequencies. In this work, we address the adequacy of the broadly used single-mode cavity approximation to describe such regimes. We demonstrate that, in the non-perturbative light\u2013matter coupling regimes, the single-mode models become unphysical, allowing for superluminal signalling. Moreover, considering the specific example of the quantum Rabi model, we show that the multi-mode description of the electromagnetic field, necessary to account for light propagation at finite speed, yields physical observables that differ radically from their single-mode counterparts already for moderate values of the coupling. Our multi-mode analysis also reveals phenomena of fundamental interest\
         \ on the dynamics of the intracavity electric field, where a free photonic wavefront and a bound state of virtual photons are shown to coexist.</jats:p>"
   -VPPZ8YAAAAJ:Y5dfb0dijaUC:
-    citations: 80
+    citations: 83
     author: &id012
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1181,7 +1181,7 @@ papers:
         delay-in-days: 0
         URL: https://opg.optica.org/policies/opg-tdm-policy.json
   -VPPZ8YAAAAJ:JQOojiI6XY0C:
-    citations: 78
+    citations: 79
     author: &id013
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1266,7 +1266,7 @@ papers:
         delay-in-days: 365
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
-    citations: 82
+    citations: 83
     author: &id014
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -1351,7 +1351,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:LjlpjdlvIbIC:
-    citations: 65
+    citations: 67
     author: &id015
     - given: Dario
       family: Ballarini
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 63
+    citations: 65
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 74
+    citations: 77
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -1686,7 +1686,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by/3.0/
   -VPPZ8YAAAAJ:W5xh706n7nkC:
-    citations: 51
+    citations: 52
     author: &id019
     - given: C.
       family: "S\xE1nchez Mu\xF1oz"
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 60
+    citations: 62
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -1894,7 +1894,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:ye4kPcJQO24C:
-    citations: 49
+    citations: 50
     author: &id021
     - given: "J. C. L\xF3pez"
       family: "Carre\xF1o"
@@ -1965,7 +1965,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:yB1At4FlUx8C:
-    citations: 52
+    citations: 53
     author: &id022
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -2809,7 +2809,7 @@ papers:
       abstract: "<jats:p>We present a proposal for a tunable source of single photons operating in the terahertz (THz) regime. This scheme transforms incident visible photons into quantum THz radiation by driving a single polar quantum emitter with an optical laser, with its permanent dipole enabling dressed THz transitions enhanced by the resonant coupling to a cavity. This mechanism offers optical tunability of properties such as the frequency of the emission or its quantum statistics (ranging from antibunching to entangled multiphoton states) by modifying the intensity and frequency of the drive. We show that the implementation of this proposal is feasible with state-of-the-art photonics technology.</jats:p>\n          <jats:sec>\n            <jats:title/>\n            <jats:supplementary-material>\n              <jats:permissions>\n                <jats:copyright-statement>Published by the American Physical Society</jats:copyright-statement>\n                <jats:copyright-year>2024</jats:copyright-year>\n\
         \              </jats:permissions>\n            </jats:supplementary-material>\n          </jats:sec>"
   -VPPZ8YAAAAJ:WZBGuue-350C:
-    citations: 15
+    citations: 17
     author: &id032
     - ORCID: https://orcid.org/0000-0003-4134-809X
       authenticated-orcid: false
@@ -3040,7 +3040,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:vbGhcppDl1QC:
-    citations: 11
+    citations: 12
     author: &id034
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
@@ -3113,7 +3113,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:EYYDruWGBe4C:
-    citations: 9
+    citations: 10
     author: &id035
     - given: Joseph
       family: Tindall
@@ -3452,7 +3452,7 @@ papers:
         content-version: vor
         intended-application: similarity-checking
   -VPPZ8YAAAAJ:xtoqd-5pKcoC:
-    citations: 6
+    citations: 7
     author: &id039
     - ORCID: https://orcid.org/0009-0004-6995-3763
       authenticated-orcid: false
@@ -3574,7 +3574,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n          <jats:p>The ability to generate entangled states of light is a key primitive for quantum communication and distributed quantum computation. Continuously driven sources, including those based on spontaneous parametric downconversion, are usually probabilistic, whereas deterministic sources require accurate timing of the control fields. Here, we experimentally generate entangled photonic modes by continuously exciting a quantum emitter - a superconducting qubit - with a coherent drive, taking advantage of mode matching in the time and frequency domain. Using joint quantum state tomography and logarithmic negativity, we show that entanglement is generated between modes extracted from the two sidebands of the resonance fluorescence spectrum. Because the entangled photonic modes are perfectly orthogonal, they can be transferred into distinct quantum memories. Our approach can be utilized to distribute entanglement at a high rate in\
         \ various physical platforms, with applications in waveguide quantum electrodynamics, distributed quantum computing, and quantum networks.</jats:p>"
   -VPPZ8YAAAAJ:M7yex6snE4oC:
-    citations: 4
+    citations: 5
     author: &id040
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
@@ -3703,8 +3703,8 @@ papers:
       sequence: additional
       affiliation: []
     unique_id: '2509.26486'
-  -VPPZ8YAAAAJ:-_dYPAW6P2MC:
-    citations: 28
+  -VPPZ8YAAAAJ:9pM33mqn1YgC:
+    citations: 33
     author: &id041
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -3717,10 +3717,10 @@ papers:
       sequence: additional
       affiliation: []
     title: Squeezed lasing
-    year: '2020'
-    authors: "CS Mu\xF1oz, D Jaksch"
-    venue: arXiv preprint arXiv:2008.02813, 2020
-    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=20&citation_for_view=-VPPZ8YAAAAJ:-_dYPAW6P2MC
+    year: '2021'
+    authors: "DH Jaksch, C S\xE1nchez Mu\xF1oz"
+    venue: Physical Review Letters 127 (18), 2021
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=20&citation_for_view=-VPPZ8YAAAAJ:9pM33mqn1YgC
     cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12040182741737432684,6298182515571075406
     snippet: null
     resources: null
@@ -3768,208 +3768,6 @@ papers:
         content-version: vor
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
-  -VPPZ8YAAAAJ:9pM33mqn1YgC:
-    citations: 33
-    author: &id042
-    - ORCID: https://orcid.org/0000-0001-8775-0135
-      authenticated-orcid: true
-      given: Carlos
-      family: "S\xE1nchez Mu\xF1oz"
-      sequence: first
-      affiliation: []
-    - given: Dieter
-      family: Jaksch
-      sequence: additional
-      affiliation: []
-    title: Squeezed lasing
-    year: '2021'
-    authors: "DH Jaksch, C S\xE1nchez Mu\xF1oz"
-    venue: Physical Review Letters 127 (18), 2021
-    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=20&citation_for_view=-VPPZ8YAAAAJ:9pM33mqn1YgC
-    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12040182741737432684,6298182515571075406
-    snippet: null
-    resources: null
-    author_position: first
-    doi: 10.1103/physrevlett.127.183603
-    is_arxiv: false
-    arxiv_id: null
-    unique_id: 10.1103/physrevlett.127.183603
-    crossref:
-      DOI: 10.1103/physrevlett.127.183603
-      type: journal-article
-      title: Squeezed Lasing
-      container_title: Physical Review Letters
-      short_container_title: Phys. Rev. Lett.
-      publisher: American Physical Society (APS)
-      volume: '127'
-      issue: '18'
-      article_number: '183603'
-      ISSN:
-      - 0031-9007
-      - 1079-7114
-      URL: https://doi.org/10.1103/physrevlett.127.183603
-      issued:
-      - 2021
-      - 10
-      - 29
-      author: *id042
-      link:
-      - URL: https://link.aps.org/article/10.1103/PhysRevLett.127.183603
-        content-type: unspecified
-        content-version: vor
-        intended-application: syndication
-      - URL: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.127.183603/fulltext
-        content-type: unspecified
-        content-version: vor
-        intended-application: similarity-checking
-      license:
-      - start:
-          date-parts:
-          - - 2021
-            - 10
-            - 29
-          date-time: '2021-10-29T00:00:00Z'
-          timestamp: 1635465600000
-        content-version: vor
-        delay-in-days: 0
-        URL: https://link.aps.org/licenses/aps-default-license
-  -VPPZ8YAAAAJ:_FM0Bhl9EiAC:
-    citations: null
-    author: &id043
-    - ORCID: https://orcid.org/0000-0002-8379-8921
-      authenticated-orcid: true
-      given: Yunyoung
-      family: Hwang
-      sequence: first
-      affiliation:
-      - name: Institute for Solid State Physics, University of Tokyo, Kashiwa 277-8581, Japan
-      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
-    - ORCID: https://orcid.org/0000-0002-4364-5672
-      authenticated-orcid: true
-      given: Jorge
-      family: Puebla
-      sequence: additional
-      affiliation:
-      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
-    - ORCID: https://orcid.org/0000-0002-3020-3189
-      authenticated-orcid: true
-      given: Kouta
-      family: Kondou
-      sequence: additional
-      affiliation:
-      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
-    - ORCID: https://orcid.org/0000-0002-7639-0856
-      authenticated-orcid: true
-      given: Carlos
-      family: Gonzalez-Ballestero
-      sequence: additional
-      affiliation:
-      - name: Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, A-6020 Innsbruck, Austria
-      - name: Institute for Theoretical Physics, University of Innsbruck, A-6020 Innsbruck, Austria
-    - ORCID: https://orcid.org/0000-0001-8421-4484
-      authenticated-orcid: true
-      given: Hironari
-      family: Isshiki
-      sequence: additional
-      affiliation:
-      - name: Institute for Solid State Physics, University of Tokyo, Kashiwa 277-8581, Japan
-    - ORCID: https://orcid.org/0000-0001-8775-0135
-      authenticated-orcid: true
-      given: "Carlos S\xE1nchez"
-      family: "Mu\xF1oz"
-      sequence: additional
-      affiliation:
-      - name: "Departamento de F\xEDsica Te\xF3rica de la Materia Condensada and Condensed Matter Physics Center (IFIMAC), Universidad Aut\xF3noma de Madrid, 28049 Madrid, Spain"
-    - ORCID: https://orcid.org/0000-0003-1486-0442
-      authenticated-orcid: true
-      given: Liyang
-      family: Liao
-      sequence: additional
-      affiliation:
-      - name: Institute for Solid State Physics, University of Tokyo, Kashiwa 277-8581, Japan
-    - ORCID: https://orcid.org/0009-0004-9668-0465
-      authenticated-orcid: true
-      given: Fa
-      family: Chen
-      sequence: additional
-      affiliation:
-      - name: "School of Integrated Circuits, Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology, Wuhan 430074, People\u2019s Republic of China"
-    - ORCID: https://orcid.org/0000-0003-0836-9083
-      authenticated-orcid: true
-      given: Wei
-      family: Luo
-      sequence: additional
-      affiliation:
-      - name: "School of Integrated Circuits, Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology, Wuhan 430074, People\u2019s Republic of China"
-    - ORCID: https://orcid.org/0000-0002-4237-7741
-      authenticated-orcid: true
-      given: Sadamichi
-      family: Maekawa
-      sequence: additional
-      affiliation:
-      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
-      - name: Advanced Science Research Center, Japan Atomic Energy Agency, Tokai 319-1195, Japan
-      - name: "Kavli Institute for Theoretical Sciences, University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
-    - ORCID: https://orcid.org/0000-0001-8008-1493
-      authenticated-orcid: true
-      given: Yoshichika
-      family: Otani
-      sequence: additional
-      affiliation:
-      - name: Institute for Solid State Physics, University of Tokyo, Kashiwa 277-8581, Japan
-      - name: Center for Emergent Matter Science, RIKEN, Wako-shi, Saitama, 351-0198, Japan
-    title: Strongly Coupled Spin Waves and Surface Acoustic Waves at Room Temperature
-    year: '2024'
-    authors: J Puebla, Y Hwang, K Kondou, C Gonzalez-Ballestero, H Isshiki, ...
-    venue: "\u65E5\u672C\u7269\u7406\u5B66\u4F1A\u8B1B\u6F14\u6982\u8981\u96C6 79.2, 1271-1271, 2024"
-    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:_FM0Bhl9EiAC
-    cited_by_link: null
-    snippet: null
-    resources: null
-    author_position: middle
-    doi: 10.1103/physrevlett.132.056704
-    is_arxiv: false
-    arxiv_id: null
-    unique_id: 10.1103/physrevlett.132.056704
-    crossref:
-      DOI: 10.1103/physrevlett.132.056704
-      type: journal-article
-      title: Strongly Coupled Spin Waves and Surface Acoustic Waves at Room Temperature
-      container_title: Physical Review Letters
-      short_container_title: Phys. Rev. Lett.
-      publisher: American Physical Society (APS)
-      volume: '132'
-      issue: '5'
-      article_number: '056704'
-      ISSN:
-      - 0031-9007
-      - 1079-7114
-      URL: https://doi.org/10.1103/physrevlett.132.056704
-      issued:
-      - 2024
-      - 1
-      - 31
-      author: *id043
-      link:
-      - URL: https://link.aps.org/article/10.1103/PhysRevLett.132.056704
-        content-type: unspecified
-        content-version: vor
-        intended-application: syndication
-      - URL: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.132.056704/fulltext
-        content-type: unspecified
-        content-version: vor
-        intended-application: similarity-checking
-      license:
-      - start:
-          date-parts:
-          - - 2024
-            - 1
-            - 31
-          date-time: '2024-01-31T00:00:00Z'
-          timestamp: 1706659200000
-        content-version: vor
-        delay-in-days: 0
-        URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:FAceZFleit8C:
     citations: null
     title: "La Transici\xF3n en un municipio de la Alpujarra almeriense: Beires, 1976-1983"
@@ -3985,104 +3783,9 @@ papers:
     arxiv_id: null
     doi: null
     unique_id: -VPPZ8YAAAAJ:FAceZFleit8C
-  -VPPZ8YAAAAJ:8d8msizDQcsC:
-    citations: null
-    author: &id044
-    - given: "C. S\xE1nchez"
-      family: "Mu\xF1oz"
-      sequence: first
-      affiliation: []
-    - given: E.
-      family: del Valle
-      sequence: additional
-      affiliation: []
-    - given: "A. Gonz\xE1lez"
-      family: Tudela
-      sequence: additional
-      affiliation: []
-    - given: K.
-      family: "M\xFCller"
-      sequence: additional
-      affiliation: []
-    - given: S.
-      family: Lichtmannecker
-      sequence: additional
-      affiliation: []
-    - given: M.
-      family: Kaniber
-      sequence: additional
-      affiliation: []
-    - given: C.
-      family: Tejedor
-      sequence: additional
-      affiliation: []
-    - given: J. J.
-      family: Finley
-      sequence: additional
-      affiliation: []
-    - given: F. P.
-      family: Laussy
-      sequence: additional
-      affiliation: []
-    title: Emitters of N-photon bundles
-    year: '2014'
-    authors: "C S\xE1nchez Mu\xF1oz, E Del Valle, AG Tudela, K M\xFCller, S Lichtmannecker, ..."
-    venue: Nature Photonics 8 (7), 550-555, 2014
-    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:8d8msizDQcsC
-    cited_by_link: null
-    snippet: null
-    resources: null
-    author_position: first
-    doi: 10.1038/nphoton.2014.114
-    is_arxiv: false
-    arxiv_id: null
-    unique_id: 10.1038/nphoton.2014.114
-    crossref:
-      DOI: 10.1038/nphoton.2014.114
-      type: journal-article
-      title: Emitters of N-photon bundles
-      container_title: Nature Photonics
-      short_container_title: Nature Photon
-      publisher: Springer Science and Business Media LLC
-      volume: '8'
-      issue: '7'
-      page: 550-555
-      ISSN:
-      - 1749-4885
-      - 1749-4893
-      URL: https://doi.org/10.1038/nphoton.2014.114
-      issued:
-      - 2014
-      - 6
-      - 1
-      author: *id044
-      link:
-      - URL: http://www.nature.com/articles/nphoton.2014.114.pdf
-        content-type: application/pdf
-        content-version: vor
-        intended-application: text-mining
-      - URL: http://www.nature.com/articles/nphoton.2014.114
-        content-type: text/html
-        content-version: vor
-        intended-application: text-mining
-      - URL: http://www.nature.com/articles/nphoton.2014.114.pdf
-        content-type: application/pdf
-        content-version: vor
-        intended-application: similarity-checking
-      license:
-      - start:
-          date-parts:
-          - - 2014
-            - 6
-            - 1
-          date-time: '2014-06-01T00:00:00Z'
-          timestamp: 1401580800000
-        content-version: tdm
-        delay-in-days: 0
-        URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:_axFR9aDTf0C:
-    citations: null
-    author: &id045
+    citations: 1
+    author: &id042
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
       given: Alejandro
@@ -4140,7 +3843,7 @@ papers:
       - 2026
       - 3
       - 6
-      author: *id045
+      author: *id042
       link:
       - URL: https://link.aps.org/article/10.1103/xrgc-lrj8
         content-type: unspecified
@@ -4163,101 +3866,6 @@ papers:
         URL: https://creativecommons.org/licenses/by/4.0/
       abstract: <jats:p>Continuously monitored quantum systems are emerging as promising platforms for quantum metrology, where a central challenge is to identify measurement strategies that optimally extract information about unknown parameters encoded in the complex quantum state of emitted radiation. Different measurement strategies effectively access distinct temporal modes of the emitted field, and the resulting choice of mode can strongly impact the information available for parameter estimation. While a ubiquitous approach in quantum optics is to select frequency modes through spectral filtering, the metrological potential of this technique has not yet been systematically quantified. We develop a theoretical framework to assess this potential by modeling spectral detection as a cascaded quantum system, allowing us to reconstruct the full density matrix of frequency-filtered photonic modes and to compute their associated Fisher information. This framework provides a minimal yet general
         method to benchmark the performance of spectral measurements in quantum optics, allowing to identify optimal filtering strategies in terms of frequency selection, detector linewidth, and metrological gain accessible through higher-order frequency-resolved correlations and mean-field engineering. These results lay the groundwork for identifying and designing optimal sensing strategies in practical quantum-optical platforms.</jats:p>
-  -VPPZ8YAAAAJ:LO7wyVUgiFcC:
-    citations: null
-    author: &id046
-    - given: "C. S\xE1nchez"
-      family: "Mu\xF1oz"
-      sequence: first
-      affiliation: []
-    - given: E.
-      family: del Valle
-      sequence: additional
-      affiliation: []
-    - given: "A. Gonz\xE1lez"
-      family: Tudela
-      sequence: additional
-      affiliation: []
-    - given: K.
-      family: "M\xFCller"
-      sequence: additional
-      affiliation: []
-    - given: S.
-      family: Lichtmannecker
-      sequence: additional
-      affiliation: []
-    - given: M.
-      family: Kaniber
-      sequence: additional
-      affiliation: []
-    - given: C.
-      family: Tejedor
-      sequence: additional
-      affiliation: []
-    - given: J. J.
-      family: Finley
-      sequence: additional
-      affiliation: []
-    - given: F. P.
-      family: Laussy
-      sequence: additional
-      affiliation: []
-    title: Emitters of N-photon bundles
-    year: '2014'
-    authors: "C S\xE1nchez Mu\xF1oz, E Del Valle, AG Tudela, K M\xFCller, S Lichtmannecker, ..."
-    venue: Nature Photonics 8 (7), 550-555, 2014
-    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:LO7wyVUgiFcC
-    cited_by_link: null
-    snippet: null
-    resources: null
-    author_position: first
-    doi: 10.1038/nphoton.2014.114
-    is_arxiv: false
-    arxiv_id: null
-    unique_id: 10.1038/nphoton.2014.114
-    crossref:
-      DOI: 10.1038/nphoton.2014.114
-      type: journal-article
-      title: Emitters of N-photon bundles
-      container_title: Nature Photonics
-      short_container_title: Nature Photon
-      publisher: Springer Science and Business Media LLC
-      volume: '8'
-      issue: '7'
-      page: 550-555
-      ISSN:
-      - 1749-4885
-      - 1749-4893
-      URL: https://doi.org/10.1038/nphoton.2014.114
-      issued:
-      - 2014
-      - 6
-      - 1
-      author: *id046
-      link:
-      - URL: http://www.nature.com/articles/nphoton.2014.114.pdf
-        content-type: application/pdf
-        content-version: vor
-        intended-application: text-mining
-      - URL: http://www.nature.com/articles/nphoton.2014.114
-        content-type: text/html
-        content-version: vor
-        intended-application: text-mining
-      - URL: http://www.nature.com/articles/nphoton.2014.114.pdf
-        content-type: application/pdf
-        content-version: vor
-        intended-application: similarity-checking
-      license:
-      - start:
-          date-parts:
-          - - 2014
-            - 6
-            - 1
-          date-time: '2014-06-01T00:00:00Z'
-          timestamp: 1401580800000
-        content-version: tdm
-        delay-in-days: 0
-        URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:0izLItjtcgwC:
     citations: null
     title: Entanglement of two optical emitters mediated by a terahertz channel
@@ -4322,3 +3930,131 @@ papers:
       sequence: additional
       affiliation: []
     unique_id: '2604.21824'
+  -VPPZ8YAAAAJ:NXb4pA-qfm4C:
+    citations: 2
+    author: &id043
+    - given: Lorenzo
+      family: Dominici
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: David
+      family: Colas
+      sequence: additional
+      affiliation:
+      - name: "Univ. Aut\xF3noma de Madrid (Spain)"
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Stefano
+      family: Donati
+      sequence: additional
+      affiliation:
+      - name: "Univ. Aut\xF3noma de Madrid (Spain)"
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Galbadrakh
+      family: Dagvadorj
+      sequence: additional
+      affiliation:
+      - name: Univ. of Warwick (United Kingdom)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Antonio
+      family: Gianfrate
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Carlos
+      family: "S\xE1nchez Mu\xF1oz"
+      sequence: additional
+      affiliation:
+      - name: "Univ. Aut\xF3noma de Madrid (Spain)"
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Dario
+      family: Ballarini
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Milena
+      family: De Giorgi
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Giuseppe
+      family: Gigli
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Marzena H.
+      family: "Szyma\u0144ska"
+      sequence: additional
+      affiliation:
+      - name: Univ. College London (United Kingdom)
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Fabrice P.
+      family: Laussy
+      sequence: additional
+      affiliation:
+      - name: "Univ. Aut\xF3noma de Madrid (Spain)"
+      role:
+      - role: author
+        vocabulary: crossref
+    - given: Daniele
+      family: Sanvitto
+      sequence: additional
+      affiliation:
+      - name: Istituto di Fotonica e Nanotecnologie, CNR (Italy)
+      role:
+      - role: author
+        vocabulary: crossref
+    title: Pulse, polarization and topology shaping of polariton fluids
+    year: '2017'
+    authors: "L Dominici, D Colas, S Donati, G Dagvadorj, A Gianfrate, CS Mu\xF1oz, ..."
+    venue: Complex Light and Optical Forces XI 10120, 51-69, 2017
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:NXb4pA-qfm4C
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5323885208696318272
+    snippet: null
+    resources: null
+    author_position: middle
+    doi: 10.1117/12.2250997
+    is_arxiv: false
+    arxiv_id: null
+    unique_id: 10.1117/12.2250997
+    crossref:
+      DOI: 10.1117/12.2250997
+      type: proceedings-article
+      title: Pulse, polarization and topology shaping of polariton fluids
+      container_title: SPIE Proceedings
+      publisher: SPIE
+      volume: '10120'
+      page: 101200E
+      ISSN:
+      - 0277-786X
+      URL: https://doi.org/10.1117/12.2250997
+      issued:
+      - 2017
+      - 2
+      - 27
+      author: *id043
