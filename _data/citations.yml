@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-05-29'
+  last_updated: '2026-06-01'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 255
+    citations: 257
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 65
+    citations: 66
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
@@ -1686,7 +1686,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by/3.0/
   -VPPZ8YAAAAJ:W5xh706n7nkC:
-    citations: 52
+    citations: 53
     author: &id019
     - given: C.
       family: "S\xE1nchez Mu\xF1oz"
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 62
+    citations: 63
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -2285,7 +2285,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:j8SEvjWlNXcC:
-    citations: 36
+    citations: 37
     author: &id026
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -3784,7 +3784,7 @@ papers:
     doi: null
     unique_id: -VPPZ8YAAAAJ:FAceZFleit8C
   -VPPZ8YAAAAJ:_axFR9aDTf0C:
-    citations: 1
+    citations: 2
     author: &id042
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
