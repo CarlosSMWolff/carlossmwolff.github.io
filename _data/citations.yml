@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-01'
+  last_updated: '2026-06-02'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 246
+    citations: 247
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 159
+    citations: 160
     author: &id004
     - given: Davide
       family: Caputo
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 130
+    citations: 131
     author: &id006
     - given: Wei
       family: Qin
@@ -572,7 +572,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 120
+    citations: 121
     author: &id007
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -1013,7 +1013,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
-    citations: 87
+    citations: 88
     author: &id011
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: false
@@ -1101,7 +1101,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>Recent technological developments have made it increasingly easy to access the non-perturbative regimes of cavity quantum electrodynamics known as ultrastrong or deep strong coupling, where the light\u2013matter coupling becomes comparable to the bare modal frequencies. In this work, we address the adequacy of the broadly used single-mode cavity approximation to describe such regimes. We demonstrate that, in the non-perturbative light\u2013matter coupling regimes, the single-mode models become unphysical, allowing for superluminal signalling. Moreover, considering the specific example of the quantum Rabi model, we show that the multi-mode description of the electromagnetic field, necessary to account for light propagation at finite speed, yields physical observables that differ radically from their single-mode counterparts already for moderate values of the coupling. Our multi-mode analysis also reveals phenomena of fundamental interest\
         \ on the dynamics of the intracavity electric field, where a free photonic wavefront and a bound state of virtual photons are shown to coexist.</jats:p>"
   -VPPZ8YAAAAJ:Y5dfb0dijaUC:
-    citations: 83
+    citations: 84
     author: &id012
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 66
+    citations: 67
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
@@ -1598,7 +1598,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:nb7KW1ujOQ8C:
-    citations: 57
+    citations: 58
     author: &id018
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1965,7 +1965,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:yB1At4FlUx8C:
-    citations: 53
+    citations: 54
     author: &id022
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -2443,7 +2443,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:g3aElNc5_aQC:
-    citations: 28
+    citations: 29
     author: &id028
     - ORCID: https://orcid.org/0000-0003-0021-6293
       authenticated-orcid: true
