@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-04'
+  last_updated: '2026-06-05'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -1266,7 +1266,7 @@ papers:
         delay-in-days: 365
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
-    citations: 83
+    citations: 84
     author: &id014
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
