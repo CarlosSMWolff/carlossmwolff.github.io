@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-06-05'
+  last_updated: '2026-06-08'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 257
+    citations: 258
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -1351,7 +1351,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:LjlpjdlvIbIC:
-    citations: 67
+    citations: 68
     author: &id015
     - given: Dario
       family: Ballarini
@@ -3704,7 +3704,7 @@ papers:
       affiliation: []
     unique_id: '2509.26486'
   -VPPZ8YAAAAJ:9pM33mqn1YgC:
-    citations: 33
+    citations: 34
     author: &id041
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
