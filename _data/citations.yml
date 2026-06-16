@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-06-15'
+  last_updated: '2026-06-16'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 259
+    citations: 260
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -774,7 +774,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>In nature, instances of synchronisation abound across a diverse range of environments. In the quantum regime, however, synchronisation is typically observed by identifying an appropriate parameter regime in a specific system. In this work we show that this need not be the case, identifying conditions which, when satisfied, guarantee that the individual constituents of a generic open quantum system will undergo completely synchronous limit cycles which are, to first order, robust to symmetry-breaking perturbations. We then describe how these conditions can be satisfied by the interplay between several elements: interactions, local dephasing and the presence of a strong dynamical symmetry\u2014an operator which guarantees long-time non-stationary dynamics. These elements cause the formation of entanglement and off-diagonal long-range order which drive the synchronised response of the system. To illustrate these ideas\
         \ we present two central examples: a chain of quadratically dephased spin-1s and the many-body charge-dephased Hubbard model. In both cases perfect phase-locking occurs throughout the system, regardless of the specific microscopic parameters or initial states. Furthermore, when these systems are perturbed, their nonlinear responses elicit long-lived signatures of both phase and frequency-locking.</jats:p>"
   -VPPZ8YAAAAJ:5awf1xo2G04C:
-    citations: 97
+    citations: 98
     author: &id009
     - ORCID: https://orcid.org/0000-0002-3390-2954
       authenticated-orcid: true
@@ -938,7 +938,7 @@ papers:
         intended-application: similarity-checking
       abstract: <jats:p>Polaritons reach the quantum limit, providing a new and promising platform of strongly coherent and interacting particles.</jats:p>
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
-    citations: 96
+    citations: 97
     author: &id010
     - given: "J.\u2009C."
       family: "L\xF3pez Carre\xF1o"
@@ -1101,7 +1101,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>Recent technological developments have made it increasingly easy to access the non-perturbative regimes of cavity quantum electrodynamics known as ultrastrong or deep strong coupling, where the light\u2013matter coupling becomes comparable to the bare modal frequencies. In this work, we address the adequacy of the broadly used single-mode cavity approximation to describe such regimes. We demonstrate that, in the non-perturbative light\u2013matter coupling regimes, the single-mode models become unphysical, allowing for superluminal signalling. Moreover, considering the specific example of the quantum Rabi model, we show that the multi-mode description of the electromagnetic field, necessary to account for light propagation at finite speed, yields physical observables that differ radically from their single-mode counterparts already for moderate values of the coupling. Our multi-mode analysis also reveals phenomena of fundamental interest\
         \ on the dynamics of the intracavity electric field, where a free photonic wavefront and a bound state of virtual photons are shown to coexist.</jats:p>"
   -VPPZ8YAAAAJ:Y5dfb0dijaUC:
-    citations: 85
+    citations: 86
     author: &id012
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -3040,7 +3040,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:vbGhcppDl1QC:
-    citations: 12
+    citations: 13
     author: &id034
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
@@ -3278,7 +3278,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>Sum-frequency generation (SFG) enables the coherent upconversion of electromagnetic signals and plays a significant role in mid-infrared vibrational spectroscopy for molecular analysis. Recent research indicates that plasmonic nanocavities, which confine light to extremely small volumes, can facilitate the detection of vibrational SFG signals from individual molecules by leveraging surface-enhanced Raman scattering combined with mid-infrared laser excitation. In this article, we compute the degree of second order coherence (<jats:italic>g</jats:italic>\n                  <jats:sup>(2)</jats:sup>(0)) of the upconverted mid-infrared field under realistic parameters and accounting for the anharmonic potential that characterizes vibrational modes of individual molecules. On the one hand, we delineate the regime in which the device should operate in order to preserve the second-order coherence of the mid-infrared source,\
         \ as required in quantum applications. On the other hand, we show that an anharmonic molecular potential can lead to antibunching of the upconverted photons under coherent, Poisson-distributed mid-infrared and visible drives. Our results therefore open a path toward bright and tunable source of indistinguishable single photons by leveraging \u201Cvibrational blockade\u201D in a resonantly and parametrically driven molecule, without the need for strong light-matter coupling.</jats:p>"
   -VPPZ8YAAAAJ:lmc2jWPfTJgC:
-    citations: 9
+    citations: 10
     author: &id037
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
@@ -3574,7 +3574,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n          <jats:p>The ability to generate entangled states of light is a key primitive for quantum communication and distributed quantum computation. Continuously driven sources, including those based on spontaneous parametric downconversion, are usually probabilistic, whereas deterministic sources require accurate timing of the control fields. Here, we experimentally generate entangled photonic modes by continuously exciting a quantum emitter - a superconducting qubit - with a coherent drive, taking advantage of mode matching in the time and frequency domain. Using joint quantum state tomography and logarithmic negativity, we show that entanglement is generated between modes extracted from the two sidebands of the resonance fluorescence spectrum. Because the entangled photonic modes are perfectly orthogonal, they can be transferred into distinct quantum memories. Our approach can be utilized to distribute entanglement at a high rate in\
         \ various physical platforms, with applications in waveguide quantum electrodynamics, distributed quantum computing, and quantum networks.</jats:p>"
   -VPPZ8YAAAAJ:M7yex6snE4oC:
-    citations: 5
+    citations: 6
     author: &id040
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
