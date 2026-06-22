@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-06-19'
+  last_updated: '2026-06-22'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 260
+    citations: 261
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -650,7 +650,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:tKAzc9rXhukC:
-    citations: 109
+    citations: 110
     author: &id008
     - ORCID: https://orcid.org/0000-0003-1335-8637
       authenticated-orcid: false
@@ -1101,7 +1101,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>Recent technological developments have made it increasingly easy to access the non-perturbative regimes of cavity quantum electrodynamics known as ultrastrong or deep strong coupling, where the light\u2013matter coupling becomes comparable to the bare modal frequencies. In this work, we address the adequacy of the broadly used single-mode cavity approximation to describe such regimes. We demonstrate that, in the non-perturbative light\u2013matter coupling regimes, the single-mode models become unphysical, allowing for superluminal signalling. Moreover, considering the specific example of the quantum Rabi model, we show that the multi-mode description of the electromagnetic field, necessary to account for light propagation at finite speed, yields physical observables that differ radically from their single-mode counterparts already for moderate values of the coupling. Our multi-mode analysis also reveals phenomena of fundamental interest\
         \ on the dynamics of the intracavity electric field, where a free photonic wavefront and a bound state of virtual photons are shown to coexist.</jats:p>"
   -VPPZ8YAAAAJ:Y5dfb0dijaUC:
-    citations: 86
+    citations: 87
     author: &id012
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 68
+    citations: 70
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
@@ -2364,7 +2364,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:MLfJN-KU85MC:
-    citations: 25
+    citations: 26
     author: &id027
     - ORCID: https://orcid.org/0009-0000-5336-5677
       authenticated-orcid: true
@@ -3187,7 +3187,7 @@ papers:
       abstract: "<jats:p>Recently, several studies involving open quantum systems which\npossess a strong symmetry have observed that every individual trajectory\nin the Monte Carlo unravelling of the master equation will dynamically\nselect a specific symmetry sector to \u2018freeze\u2019 into in the long-time\nlimit. This phenomenon has been termed \u2018dissipative freezing\u2019, and in\nthis paper we argue, by presenting several simple mathematical\nperspectives on the problem, that it is a general consequence of the\npresence of a strong symmetry in an open system with only a few\nexceptions. Using a number of example systems we illustrate these\narguments, uncovering an explicit relationship between the spectral\nproperties of the Liouvillian in off-diagonal symmetry sectors and the\ntime it takes for freezing to occur. In the limiting case that\neigenmodes with purely imaginary eigenvalues are manifest in these\nsectors, freezing fails to occur. Such modes indicate the preservation\n\
         of information and coherences between symmetry sectors of the system and\ncan lead to phenomena such as non-stationarity and synchronisation. The\nabsence of freezing at the level of a single quantum trajectory provides\na simple, computationally efficient way of identifying these traceless\nmodes.</jats:p>"
   -VPPZ8YAAAAJ:ruyezt5ZtCIC:
-    citations: 10
+    citations: 11
     author: &id036
     - given: Fatemeh
       family: Moradi Kalarde
