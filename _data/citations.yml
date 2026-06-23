@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-22'
+  last_updated: '2026-06-23'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 202
+    citations: 203
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -3278,7 +3278,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>Sum-frequency generation (SFG) enables the coherent upconversion of electromagnetic signals and plays a significant role in mid-infrared vibrational spectroscopy for molecular analysis. Recent research indicates that plasmonic nanocavities, which confine light to extremely small volumes, can facilitate the detection of vibrational SFG signals from individual molecules by leveraging surface-enhanced Raman scattering combined with mid-infrared laser excitation. In this article, we compute the degree of second order coherence (<jats:italic>g</jats:italic>\n                  <jats:sup>(2)</jats:sup>(0)) of the upconverted mid-infrared field under realistic parameters and accounting for the anharmonic potential that characterizes vibrational modes of individual molecules. On the one hand, we delineate the regime in which the device should operate in order to preserve the second-order coherence of the mid-infrared source,\
         \ as required in quantum applications. On the other hand, we show that an anharmonic molecular potential can lead to antibunching of the upconverted photons under coherent, Poisson-distributed mid-infrared and visible drives. Our results therefore open a path toward bright and tunable source of indistinguishable single photons by leveraging \u201Cvibrational blockade\u201D in a resonantly and parametrically driven molecule, without the need for strong light-matter coupling.</jats:p>"
   -VPPZ8YAAAAJ:lmc2jWPfTJgC:
-    citations: 10
+    citations: 11
     author: &id037
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
