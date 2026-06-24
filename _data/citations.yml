@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-23'
+  last_updated: '2026-06-24'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -2218,7 +2218,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>The Hanbury Brown\u2013Twiss effect is one of the celebrated phenomenologies of modern physics that accommodates equally well classical (interferences of waves) and quantum (correlations between indistinguishable particles) interpretations. The effect was discovered in the late thirties with a basic observation of Hanbury Brown that radio-pulses from two distinct antennas generate signals on the oscilloscope that wiggle similarly to the naked eye. When Hanbury Brown and his mathematician colleague Twiss took the obvious step to propose bringing the effect in the optical range, they met with considerable opposition as single-photon interferences were deemed impossible. The Hanbury Brown\u2013Twiss effect is nowadays universally accepted and, being so fundamental, embodies many subtleties of our understanding of the wave/particle dual nature of light. Thanks to a novel experimental technique, we report here a generalized version of\
         \ the Hanbury Brown\u2013Twiss effect to include the frequency of the detected light, or, from the particle point of view, the energy of the detected photons. Our source of light is a polariton condensate, that allows high-resolution filtering of a spectrally broad source with a high degree of coherence. In addition to the known tendencies of indistinguishable photons to arrive together on the detector, we find that photons of different colors present the opposite characteristic of avoiding each others. We postulate that fermions can be similarly brought to exhibit positive (boson-like) correlations by frequency filtering.</jats:p>"
   -VPPZ8YAAAAJ:Tiz5es2fbqcC:
-    citations: 42
+    citations: 43
     author: &id025
     - given: "M\xF3nica"
       family: Benito
