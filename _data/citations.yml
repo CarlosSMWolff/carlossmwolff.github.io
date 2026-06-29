@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-26'
+  last_updated: '2026-06-29'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 248
+    citations: 249
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 159
+    citations: 162
     author: &id004
     - given: Davide
       family: Caputo
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 134
+    citations: 135
     author: &id006
     - given: Wei
       family: Qin
@@ -572,7 +572,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 121
+    citations: 122
     author: &id007
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -650,7 +650,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:tKAzc9rXhukC:
-    citations: 110
+    citations: 111
     author: &id008
     - ORCID: https://orcid.org/0000-0003-1335-8637
       authenticated-orcid: false
@@ -1351,7 +1351,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:LjlpjdlvIbIC:
-    citations: 67
+    citations: 68
     author: &id015
     - given: Dario
       family: Ballarini
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 63
+    citations: 64
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -3452,7 +3452,7 @@ papers:
         content-version: vor
         intended-application: similarity-checking
   -VPPZ8YAAAAJ:xtoqd-5pKcoC:
-    citations: 7
+    citations: 8
     author: &id039
     - ORCID: https://orcid.org/0009-0004-6995-3763
       authenticated-orcid: false
