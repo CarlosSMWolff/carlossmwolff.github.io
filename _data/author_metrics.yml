@@ -10,9 +10,9 @@ citations_per_year:
   '2021': 260
   '2022': 277
   '2023': 280
-  '2024': 431
+  '2024': 430
   '2025': 563
-  '2026': 365
+  '2026': 375
 journal_summary:
 - count: 1
   first_author: 1
@@ -43,12 +43,12 @@ journal_summary:
   journal: PRX Quantum
   last_author: 2
 metadata:
-  last_updated: '2026-07-10'
+  last_updated: '2026-07-13'
   source: serpapi
 metrics:
   citations:
-    all: 2882
-    since_2021: 2180
+    all: 2892
+    since_2021: 2189
   h_index:
     all: 28
     since_2021: 26
@@ -60,9 +60,9 @@ stats:
     count: 45
     first_author: 13
     last_author: 9
-    total_citations_from_entries: 2810
+    total_citations_from_entries: 2819
   preprints:
     count: 4
     first_author: 0
     last_author: 2
-total_papers: 48
+total_papers: 49

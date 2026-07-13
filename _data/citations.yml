@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-07-10'
+  last_updated: '2026-07-13'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 263
+    citations: 262
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 249
+    citations: 251
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -572,7 +572,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 123
+    citations: 126
     author: &id007
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -2285,7 +2285,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:j8SEvjWlNXcC:
-    citations: 36
+    citations: 37
     author: &id026
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -2443,7 +2443,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:g3aElNc5_aQC:
-    citations: 30
+    citations: 31
     author: &id028
     - ORCID: https://orcid.org/0000-0003-0021-6293
       authenticated-orcid: true
@@ -2654,7 +2654,7 @@ papers:
         delay-in-days: 365
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:L7CI7m0gUJcC:
-    citations: 20
+    citations: 21
     author: &id030
     - given: Shahram
       family: Panahiyan
@@ -2809,7 +2809,7 @@ papers:
       abstract: "<jats:p>We present a proposal for a tunable source of single photons operating in the terahertz (THz) regime. This scheme transforms incident visible photons into quantum THz radiation by driving a single polar quantum emitter with an optical laser, with its permanent dipole enabling dressed THz transitions enhanced by the resonant coupling to a cavity. This mechanism offers optical tunability of properties such as the frequency of the emission or its quantum statistics (ranging from antibunching to entangled multiphoton states) by modifying the intensity and frequency of the drive. We show that the implementation of this proposal is feasible with state-of-the-art photonics technology.</jats:p>\n          <jats:sec>\n            <jats:title/>\n            <jats:supplementary-material>\n              <jats:permissions>\n                <jats:copyright-statement>Published by the American Physical Society</jats:copyright-statement>\n                <jats:copyright-year>2024</jats:copyright-year>\n\
         \              </jats:permissions>\n            </jats:supplementary-material>\n          </jats:sec>"
   -VPPZ8YAAAAJ:WZBGuue-350C:
-    citations: 17
+    citations: 18
     author: &id032
     - ORCID: https://orcid.org/0000-0003-4134-809X
       authenticated-orcid: false
@@ -3187,7 +3187,7 @@ papers:
       abstract: "<jats:p>Recently, several studies involving open quantum systems which\npossess a strong symmetry have observed that every individual trajectory\nin the Monte Carlo unravelling of the master equation will dynamically\nselect a specific symmetry sector to \u2018freeze\u2019 into in the long-time\nlimit. This phenomenon has been termed \u2018dissipative freezing\u2019, and in\nthis paper we argue, by presenting several simple mathematical\nperspectives on the problem, that it is a general consequence of the\npresence of a strong symmetry in an open system with only a few\nexceptions. Using a number of example systems we illustrate these\narguments, uncovering an explicit relationship between the spectral\nproperties of the Liouvillian in off-diagonal symmetry sectors and the\ntime it takes for freezing to occur. In the limiting case that\neigenmodes with purely imaginary eigenvalues are manifest in these\nsectors, freezing fails to occur. Such modes indicate the preservation\n\
         of information and coherences between symmetry sectors of the system and\ncan lead to phenomena such as non-stationarity and synchronisation. The\nabsence of freezing at the level of a single quantum trajectory provides\na simple, computationally efficient way of identifying these traceless\nmodes.</jats:p>"
   -VPPZ8YAAAAJ:ruyezt5ZtCIC:
-    citations: 11
+    citations: 12
     author: &id036
     - given: Fatemeh
       family: Moradi Kalarde
