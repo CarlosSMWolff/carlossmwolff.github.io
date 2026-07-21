@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-20'
+  last_updated: '2026-07-21'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -3704,7 +3704,7 @@ papers:
       affiliation: []
     unique_id: '2509.26486'
   -VPPZ8YAAAAJ:9pM33mqn1YgC:
-    citations: 34
+    citations: 35
     author: &id041
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
