@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-23'
+  last_updated: '2026-07-24'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 141
+    citations: 142
     author: &id006
     - given: Wei
       family: Qin
@@ -1013,7 +1013,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
-    citations: 88
+    citations: 89
     author: &id011
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: false
@@ -1686,7 +1686,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by/3.0/
   -VPPZ8YAAAAJ:W5xh706n7nkC:
-    citations: 53
+    citations: 54
     author: &id019
     - given: C.
       family: "S\xE1nchez Mu\xF1oz"
@@ -2104,7 +2104,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:D_sINldO8mEC:
-    citations: 48
+    citations: 49
     author: &id024
     - given: B.
       family: Silva
