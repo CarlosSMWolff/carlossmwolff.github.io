@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-07-31'
+  last_updated: '2026-08-03'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 264
+    citations: 267
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 256
+    citations: 255
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 204
+    citations: 198
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 163
+    citations: 164
     author: &id004
     - given: Davide
       family: Caputo
@@ -572,7 +572,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
   -VPPZ8YAAAAJ:z_wVstp3MssC:
-    citations: 127
+    citations: 125
     author: &id007
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -650,7 +650,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:tKAzc9rXhukC:
-    citations: 112
+    citations: 111
     author: &id008
     - ORCID: https://orcid.org/0000-0003-1335-8637
       authenticated-orcid: false
@@ -774,7 +774,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>In nature, instances of synchronisation abound across a diverse range of environments. In the quantum regime, however, synchronisation is typically observed by identifying an appropriate parameter regime in a specific system. In this work we show that this need not be the case, identifying conditions which, when satisfied, guarantee that the individual constituents of a generic open quantum system will undergo completely synchronous limit cycles which are, to first order, robust to symmetry-breaking perturbations. We then describe how these conditions can be satisfied by the interplay between several elements: interactions, local dephasing and the presence of a strong dynamical symmetry\u2014an operator which guarantees long-time non-stationary dynamics. These elements cause the formation of entanglement and off-diagonal long-range order which drive the synchronised response of the system. To illustrate these ideas\
         \ we present two central examples: a chain of quadratically dephased spin-1s and the many-body charge-dephased Hubbard model. In both cases perfect phase-locking occurs throughout the system, regardless of the specific microscopic parameters or initial states. Furthermore, when these systems are perturbed, their nonlinear responses elicit long-lived signatures of both phase and frequency-locking.</jats:p>"
   -VPPZ8YAAAAJ:5awf1xo2G04C:
-    citations: 100
+    citations: 99
     author: &id009
     - ORCID: https://orcid.org/0000-0002-3390-2954
       authenticated-orcid: true
@@ -938,7 +938,7 @@ papers:
         intended-application: similarity-checking
       abstract: <jats:p>Polaritons reach the quantum limit, providing a new and promising platform of strongly coherent and interacting particles.</jats:p>
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
-    citations: 98
+    citations: 100
     author: &id010
     - given: "J.\u2009C."
       family: "L\xF3pez Carre\xF1o"
@@ -1013,7 +1013,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
-    citations: 89
+    citations: 87
     author: &id011
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: false
@@ -1101,7 +1101,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>Recent technological developments have made it increasingly easy to access the non-perturbative regimes of cavity quantum electrodynamics known as ultrastrong or deep strong coupling, where the light\u2013matter coupling becomes comparable to the bare modal frequencies. In this work, we address the adequacy of the broadly used single-mode cavity approximation to describe such regimes. We demonstrate that, in the non-perturbative light\u2013matter coupling regimes, the single-mode models become unphysical, allowing for superluminal signalling. Moreover, considering the specific example of the quantum Rabi model, we show that the multi-mode description of the electromagnetic field, necessary to account for light propagation at finite speed, yields physical observables that differ radically from their single-mode counterparts already for moderate values of the coupling. Our multi-mode analysis also reveals phenomena of fundamental interest\
         \ on the dynamics of the intracavity electric field, where a free photonic wavefront and a bound state of virtual photons are shown to coexist.</jats:p>"
   -VPPZ8YAAAAJ:Y5dfb0dijaUC:
-    citations: 88
+    citations: 87
     author: &id012
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1181,7 +1181,7 @@ papers:
         delay-in-days: 0
         URL: https://opg.optica.org/policies/opg-tdm-policy.json
   -VPPZ8YAAAAJ:JQOojiI6XY0C:
-    citations: 80
+    citations: 81
     author: &id013
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1266,7 +1266,7 @@ papers:
         delay-in-days: 365
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
-    citations: 85
+    citations: 84
     author: &id014
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 78
+    citations: 77
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -1598,7 +1598,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:nb7KW1ujOQ8C:
-    citations: 60
+    citations: 62
     author: &id018
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1686,7 +1686,7 @@ papers:
         delay-in-days: 0
         URL: http://creativecommons.org/licenses/by/3.0/
   -VPPZ8YAAAAJ:W5xh706n7nkC:
-    citations: 54
+    citations: 55
     author: &id019
     - given: C.
       family: "S\xE1nchez Mu\xF1oz"
@@ -1894,7 +1894,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:ye4kPcJQO24C:
-    citations: 50
+    citations: 51
     author: &id021
     - given: "J. C. L\xF3pez"
       family: "Carre\xF1o"
@@ -2037,7 +2037,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:evX43VCCuoAC:
-    citations: 45
+    citations: 46
     author: &id023
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -2104,7 +2104,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:D_sINldO8mEC:
-    citations: 49
+    citations: 48
     author: &id024
     - given: B.
       family: Silva
@@ -2218,7 +2218,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>The Hanbury Brown\u2013Twiss effect is one of the celebrated phenomenologies of modern physics that accommodates equally well classical (interferences of waves) and quantum (correlations between indistinguishable particles) interpretations. The effect was discovered in the late thirties with a basic observation of Hanbury Brown that radio-pulses from two distinct antennas generate signals on the oscilloscope that wiggle similarly to the naked eye. When Hanbury Brown and his mathematician colleague Twiss took the obvious step to propose bringing the effect in the optical range, they met with considerable opposition as single-photon interferences were deemed impossible. The Hanbury Brown\u2013Twiss effect is nowadays universally accepted and, being so fundamental, embodies many subtleties of our understanding of the wave/particle dual nature of light. Thanks to a novel experimental technique, we report here a generalized version of\
         \ the Hanbury Brown\u2013Twiss effect to include the frequency of the detected light, or, from the particle point of view, the energy of the detected photons. Our source of light is a polariton condensate, that allows high-resolution filtering of a spectrally broad source with a high degree of coherence. In addition to the known tendencies of indistinguishable photons to arrive together on the detector, we find that photons of different colors present the opposite characteristic of avoiding each others. We postulate that fermions can be similarly brought to exhibit positive (boson-like) correlations by frequency filtering.</jats:p>"
   -VPPZ8YAAAAJ:Tiz5es2fbqcC:
-    citations: 43
+    citations: 42
     author: &id025
     - given: "M\xF3nica"
       family: Benito
@@ -2285,7 +2285,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:j8SEvjWlNXcC:
-    citations: 37
+    citations: 38
     author: &id026
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -2443,7 +2443,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:g3aElNc5_aQC:
-    citations: 31
+    citations: 30
     author: &id028
     - ORCID: https://orcid.org/0000-0003-0021-6293
       authenticated-orcid: true
@@ -2520,7 +2520,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:9Nmd_mFXekcC:
-    citations: 22
+    citations: 24
     title: Two-photon resonance fluorescence of two interacting non-identical quantum emitters
     year: '2021'
     authors: "A Vivas-Via\xF1a, C S\xE1nchez Mu\xF1oz"
@@ -2941,7 +2941,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n               <jats:p>We present an inference method utilizing artificial neural networks for parameter estimation of a quantum probe monitored through a single continuous measurement. Unlike existing approaches focusing on the diffusive signals generated by continuous weak measurements, our method harnesses quantum correlations in discrete photon-counting data characterized by quantum jumps. We benchmark the precision of this method against Bayesian inference, which is optimal in the sense of information retrieval. By using numerical experiments on a two-level quantum system, we demonstrate that our approach can achieve a similar optimal performance as Bayesian inference, while drastically reducing computational costs. Additionally, the method exhibits robustness against the presence of imperfections in both measurement and training data. This approach offers a promising and computationally efficient tool for quantum parameter estimation\
         \ with photon-counting data, relevant for applications such as quantum sensing or quantum imaging, as well as robust calibration tasks in laboratory-based settings.</jats:p>"
   -VPPZ8YAAAAJ:9yKSN-GCB0IC:
-    citations: 12
+    citations: 13
     author: &id033
     - given: M.
       family: Maragkou
@@ -3187,7 +3187,7 @@ papers:
       abstract: "<jats:p>Recently, several studies involving open quantum systems which\npossess a strong symmetry have observed that every individual trajectory\nin the Monte Carlo unravelling of the master equation will dynamically\nselect a specific symmetry sector to \u2018freeze\u2019 into in the long-time\nlimit. This phenomenon has been termed \u2018dissipative freezing\u2019, and in\nthis paper we argue, by presenting several simple mathematical\nperspectives on the problem, that it is a general consequence of the\npresence of a strong symmetry in an open system with only a few\nexceptions. Using a number of example systems we illustrate these\narguments, uncovering an explicit relationship between the spectral\nproperties of the Liouvillian in off-diagonal symmetry sectors and the\ntime it takes for freezing to occur. In the limiting case that\neigenmodes with purely imaginary eigenvalues are manifest in these\nsectors, freezing fails to occur. Such modes indicate the preservation\n\
         of information and coherences between symmetry sectors of the system and\ncan lead to phenomena such as non-stationarity and synchronisation. The\nabsence of freezing at the level of a single quantum trajectory provides\na simple, computationally efficient way of identifying these traceless\nmodes.</jats:p>"
   -VPPZ8YAAAAJ:ruyezt5ZtCIC:
-    citations: 11
+    citations: 12
     author: &id036
     - given: Fatemeh
       family: Moradi Kalarde
@@ -3704,7 +3704,7 @@ papers:
       affiliation: []
     unique_id: '2509.26486'
   -VPPZ8YAAAAJ:9pM33mqn1YgC:
-    citations: 36
+    citations: 37
     author: &id041
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
