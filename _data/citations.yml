@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-13'
+  last_updated: '2026-08-14'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 257
+    citations: 258
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 166
+    citations: 167
     author: &id004
     - given: Davide
       family: Caputo
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 144
+    citations: 145
     author: &id006
     - given: Wei
       family: Qin
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 69
+    citations: 70
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -2364,7 +2364,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:MLfJN-KU85MC:
-    citations: 26
+    citations: 27
     author: &id027
     - ORCID: https://orcid.org/0009-0000-5336-5677
       authenticated-orcid: true
@@ -3452,7 +3452,7 @@ papers:
         content-version: vor
         intended-application: similarity-checking
   -VPPZ8YAAAAJ:xtoqd-5pKcoC:
-    citations: 9
+    citations: 10
     author: &id039
     - ORCID: https://orcid.org/0009-0004-6995-3763
       authenticated-orcid: false
@@ -4058,3 +4058,18 @@ papers:
       - 2
       - 27
       author: *id043
+  -VPPZ8YAAAAJ:a9-T7VOCCH8C:
+    citations: null
+    title: 'Mathematica codes: Quantum metrology through spectral measurements in quantum optics'
+    year: '2026'
+    authors: "A Vivas-Via\xF1a, C S\xE1nchez Mu\xF1oz"
+    venue: Zenodo, 2026
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:a9-T7VOCCH8C
+    cited_by_link: null
+    snippet: null
+    resources: null
+    author_position: last
+    is_arxiv: false
+    arxiv_id: null
+    doi: null
+    unique_id: -VPPZ8YAAAAJ:a9-T7VOCCH8C
