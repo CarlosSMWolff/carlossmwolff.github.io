@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-14'
+  last_updated: '2026-08-17'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 199
+    citations: 200
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 145
+    citations: 146
     author: &id006
     - given: Wei
       family: Qin
@@ -938,7 +938,7 @@ papers:
         intended-application: similarity-checking
       abstract: <jats:p>Polaritons reach the quantum limit, providing a new and promising platform of strongly coherent and interacting particles.</jats:p>
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
-    citations: 101
+    citations: 102
     author: &id010
     - given: "J.\u2009C."
       family: "L\xF3pez Carre\xF1o"
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 70
+    citations: 71
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
