@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-08-27'
+  last_updated: '2026-08-28'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 269
+    citations: 271
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 72
+    citations: 73
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
