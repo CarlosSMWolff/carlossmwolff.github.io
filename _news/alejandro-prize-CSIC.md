@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Alejandro Vivas was awarded the [IV Premio Tesis Doctoral Relevante del CSIC](https://eventos.corp.csic.es/event/150/).
+title: Alejandro Vivas was awarded the IV Premio Tesis Doctoral Relevante del CSIC.
 date: 2026-09-09 
 inline: false
 related_posts: false
