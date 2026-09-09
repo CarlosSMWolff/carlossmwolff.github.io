@@ -10,9 +10,9 @@ My first PhD student, Alejandro Vivas Viaña, has been awarded another prize for
 
 Congratulations, Alejandro!
 
-<img src="{{ '/assets/img/personal/tesis-prize.jpg' | relative_url }}"
+<img src="{{ '/assets/img/personal/tesis-prize.jpeg' | relative_url }}"
      width="350">
 
-<img src="{{ '/assets/img/personal/tesis-prize.jpg' | relative_url }}"
+<img src="{{ '/assets/img/personal/csic-premios.jpg' | relative_url }}"
      alt="CSIC president Eloísa del Pino with the awardees, and myself (representing Alejandro)"
      width="350">
