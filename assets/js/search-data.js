@@ -90,7 +90,12 @@ ninja.data = [{
           section: "News",},{id: "news-this-week-the-team-is-at-quantum-matter-2026-in-barcelona",
           title: 'This week, the team is at Quantum Matter 2026 in Barcelona.',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-alejandro-vivas-was-awarded-the-iv-premio-tesis-doctoral-relevante-del-csic-https-eventos-corp-csic-es-event-150",
+          title: 'Alejandro Vivas was awarded the [IV Premio Tesis Doctoral Relevante del CSIC](https://eventos.corp.csic.es/event/150/).',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/alejandro-prize-CSIC/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
