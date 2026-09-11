@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-09-10'
+  last_updated: '2026-09-11'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 271
+    citations: 272
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
