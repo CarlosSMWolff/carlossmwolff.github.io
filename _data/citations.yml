@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-17'
+  last_updated: '2026-09-18'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -1266,7 +1266,7 @@ papers:
         delay-in-days: 365
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
-    citations: 87
+    citations: 88
     author: &id014
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 81
+    citations: 82
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 76
+    citations: 77
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -3784,7 +3784,7 @@ papers:
     doi: null
     unique_id: -VPPZ8YAAAAJ:FAceZFleit8C
   -VPPZ8YAAAAJ:_axFR9aDTf0C:
-    citations: 2
+    citations: 3
     author: &id042
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
