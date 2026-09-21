@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-09-18'
+  last_updated: '2026-09-21'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 272
+    citations: 273
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 261
+    citations: 262
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 141
+    citations: 142
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -938,7 +938,7 @@ papers:
         intended-application: similarity-checking
       abstract: <jats:p>Polaritons reach the quantum limit, providing a new and promising platform of strongly coherent and interacting particles.</jats:p>
   -VPPZ8YAAAAJ:xtRiw3GOFMkC:
-    citations: 103
+    citations: 104
     author: &id010
     - given: "J.\u2009C."
       family: "L\xF3pez Carre\xF1o"
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 82
+    citations: 84
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -3187,7 +3187,7 @@ papers:
       abstract: "<jats:p>Recently, several studies involving open quantum systems which\npossess a strong symmetry have observed that every individual trajectory\nin the Monte Carlo unravelling of the master equation will dynamically\nselect a specific symmetry sector to \u2018freeze\u2019 into in the long-time\nlimit. This phenomenon has been termed \u2018dissipative freezing\u2019, and in\nthis paper we argue, by presenting several simple mathematical\nperspectives on the problem, that it is a general consequence of the\npresence of a strong symmetry in an open system with only a few\nexceptions. Using a number of example systems we illustrate these\narguments, uncovering an explicit relationship between the spectral\nproperties of the Liouvillian in off-diagonal symmetry sectors and the\ntime it takes for freezing to occur. In the limiting case that\neigenmodes with purely imaginary eigenvalues are manifest in these\nsectors, freezing fails to occur. Such modes indicate the preservation\n\
         of information and coherences between symmetry sectors of the system and\ncan lead to phenomena such as non-stationarity and synchronisation. The\nabsence of freezing at the level of a single quantum trajectory provides\na simple, computationally efficient way of identifying these traceless\nmodes.</jats:p>"
   -VPPZ8YAAAAJ:ruyezt5ZtCIC:
-    citations: 13
+    citations: 14
     author: &id036
     - given: Fatemeh
       family: Moradi Kalarde
@@ -3784,7 +3784,7 @@ papers:
     doi: null
     unique_id: -VPPZ8YAAAAJ:FAceZFleit8C
   -VPPZ8YAAAAJ:_axFR9aDTf0C:
-    citations: 3
+    citations: 4
     author: &id042
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
