@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-09-21'
+  last_updated: '2026-09-22'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 273
+    citations: 272
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -1181,7 +1181,7 @@ papers:
         delay-in-days: 0
         URL: https://opg.optica.org/policies/opg-tdm-policy.json
   -VPPZ8YAAAAJ:JQOojiI6XY0C:
-    citations: 81
+    citations: 82
     author: &id013
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
