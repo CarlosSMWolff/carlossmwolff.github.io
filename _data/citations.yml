@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-30'
+  last_updated: '2026-10-01'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 154
+    citations: 155
     author: &id006
     - given: Wei
       family: Qin
@@ -3784,7 +3784,7 @@ papers:
     doi: null
     unique_id: -VPPZ8YAAAAJ:FAceZFleit8C
   -VPPZ8YAAAAJ:_axFR9aDTf0C:
-    citations: 4
+    citations: 5
     author: &id042
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
