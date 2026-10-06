@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-10-05'
+  last_updated: '2026-10-06'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 272
+    citations: 273
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -1266,7 +1266,7 @@ papers:
         delay-in-days: 365
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
-    citations: 89
+    citations: 90
     author: &id014
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 79
+    citations: 80
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -3113,7 +3113,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:EYYDruWGBe4C:
-    citations: 13
+    citations: 14
     author: &id035
     - given: Joseph
       family: Tindall
