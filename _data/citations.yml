@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-10-09'
+  last_updated: '2026-10-12'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
-    citations: 273
+    citations: 274
     author: &id001
     - given: "C. S\xE1nchez"
       family: "Mu\xF1oz"
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 201
+    citations: 202
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 172
+    citations: 173
     author: &id004
     - given: Davide
       family: Caputo
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 143
+    citations: 145
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 156
+    citations: 158
     author: &id006
     - given: Wei
       family: Qin
@@ -1013,7 +1013,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:WqliGbK-hY8C:
-    citations: 87
+    citations: 88
     author: &id011
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: false
@@ -1101,7 +1101,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title><jats:p>Recent technological developments have made it increasingly easy to access the non-perturbative regimes of cavity quantum electrodynamics known as ultrastrong or deep strong coupling, where the light\u2013matter coupling becomes comparable to the bare modal frequencies. In this work, we address the adequacy of the broadly used single-mode cavity approximation to describe such regimes. We demonstrate that, in the non-perturbative light\u2013matter coupling regimes, the single-mode models become unphysical, allowing for superluminal signalling. Moreover, considering the specific example of the quantum Rabi model, we show that the multi-mode description of the electromagnetic field, necessary to account for light propagation at finite speed, yields physical observables that differ radically from their single-mode counterparts already for moderate values of the coupling. Our multi-mode analysis also reveals phenomena of fundamental interest\
         \ on the dynamics of the intracavity electric field, where a free photonic wavefront and a bound state of virtual photons are shown to coexist.</jats:p>"
   -VPPZ8YAAAAJ:Y5dfb0dijaUC:
-    citations: 90
+    citations: 91
     author: &id012
     - given: Carlos
       family: "S\xE1nchez Mu\xF1oz"
@@ -1266,7 +1266,7 @@ papers:
         delay-in-days: 365
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
-    citations: 90
+    citations: 91
     author: &id014
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -1450,7 +1450,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:sSrBHYA8nusC:
-    citations: 75
+    citations: 76
     title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
     year: '2015'
     authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Munoz, C Navarrete-Benlloch, ..."
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 85
+    citations: 86
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 80
+    citations: 81
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -2285,7 +2285,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:j8SEvjWlNXcC:
-    citations: 41
+    citations: 40
     author: &id026
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
