@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-20'
+  last_updated: '2026-10-21'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 173
+    citations: 174
     author: &id004
     - given: Davide
       family: Caputo
@@ -2285,7 +2285,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:j8SEvjWlNXcC:
-    citations: 41
+    citations: 40
     author: &id026
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
