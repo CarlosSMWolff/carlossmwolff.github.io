@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-30'
+  last_updated: '2026-11-02'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -177,7 +177,7 @@ papers:
         delay-in-days: 0
         URL: https://creativecommons.org/licenses/by/4.0/
   -VPPZ8YAAAAJ:XiSMed-E-HIC:
-    citations: 204
+    citations: 206
     author: &id003
     - given: Kai
       family: "M\xFCller"
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 144
+    citations: 145
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -3187,7 +3187,7 @@ papers:
       abstract: "<jats:p>Recently, several studies involving open quantum systems which\npossess a strong symmetry have observed that every individual trajectory\nin the Monte Carlo unravelling of the master equation will dynamically\nselect a specific symmetry sector to \u2018freeze\u2019 into in the long-time\nlimit. This phenomenon has been termed \u2018dissipative freezing\u2019, and in\nthis paper we argue, by presenting several simple mathematical\nperspectives on the problem, that it is a general consequence of the\npresence of a strong symmetry in an open system with only a few\nexceptions. Using a number of example systems we illustrate these\narguments, uncovering an explicit relationship between the spectral\nproperties of the Liouvillian in off-diagonal symmetry sectors and the\ntime it takes for freezing to occur. In the limiting case that\neigenmodes with purely imaginary eigenvalues are manifest in these\nsectors, freezing fails to occur. Such modes indicate the preservation\n\
         of information and coherences between symmetry sectors of the system and\ncan lead to phenomena such as non-stationarity and synchronisation. The\nabsence of freezing at the level of a single quantum trajectory provides\na simple, computationally efficient way of identifying these traceless\nmodes.</jats:p>"
   -VPPZ8YAAAAJ:ruyezt5ZtCIC:
-    citations: 14
+    citations: 15
     author: &id036
     - given: Fatemeh
       family: Moradi Kalarde
