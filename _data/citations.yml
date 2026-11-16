@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-11-13'
+  last_updated: '2026-11-16'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -98,7 +98,7 @@ papers:
         delay-in-days: 0
         URL: http://www.springer.com/tdm
   -VPPZ8YAAAAJ:fEOibwPWpKIC:
-    citations: 267
+    citations: 268
     author: &id002
     - ORCID: https://orcid.org/0000-0003-1145-7279
       authenticated-orcid: true
@@ -413,7 +413,7 @@ papers:
         delay-in-days: 0
         URL: https://www.springer.com/tdm
   -VPPZ8YAAAAJ:NJ774b8OgUMC:
-    citations: 145
+    citations: 146
     author: &id005
     - given: A.
       family: "Gonz\xE1lez-Tudela"
@@ -2443,7 +2443,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:g3aElNc5_aQC:
-    citations: 31
+    citations: 32
     author: &id028
     - ORCID: https://orcid.org/0000-0003-0021-6293
       authenticated-orcid: true
@@ -3574,7 +3574,7 @@ papers:
       abstract: "<jats:title>Abstract</jats:title>\n          <jats:p>The ability to generate entangled states of light is a key primitive for quantum communication and distributed quantum computation. Continuously driven sources, including those based on spontaneous parametric downconversion, are usually probabilistic, whereas deterministic sources require accurate timing of the control fields. Here, we experimentally generate entangled photonic modes by continuously exciting a quantum emitter - a superconducting qubit - with a coherent drive, taking advantage of mode matching in the time and frequency domain. Using joint quantum state tomography and logarithmic negativity, we show that entanglement is generated between modes extracted from the two sidebands of the resonance fluorescence spectrum. Because the entangled photonic modes are perfectly orthogonal, they can be transferred into distinct quantum memories. Our approach can be utilized to distribute entanglement at a high rate in\
         \ various physical platforms, with applications in waveguide quantum electrodynamics, distributed quantum computing, and quantum networks.</jats:p>"
   -VPPZ8YAAAAJ:M7yex6snE4oC:
-    citations: 8
+    citations: 9
     author: &id040
     - ORCID: https://orcid.org/0000-0002-0308-8736
       authenticated-orcid: true
@@ -4088,3 +4088,18 @@ papers:
     arxiv_id: null
     doi: null
     unique_id: -VPPZ8YAAAAJ:umqufdRvDiIC
+  -VPPZ8YAAAAJ:6ZxmRoH8BuwC:
+    citations: 10
+    title: Deterministic Generation of Photon Pairs within the Bad Cavity Limit
+    year: '2016'
+    authors: "Y Chang, A Gonz\xE1lez-Tudela, C S\xE1nchez-Mu\xF1oz, C Navarrete-Benlloch, ..."
+    venue: 'Phys. Rev. Lett. 117 (arXiv: 1510.07307), 2016'
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:6ZxmRoH8BuwC
+    cited_by_link: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=694734622721255117
+    snippet: null
+    resources: null
+    author_position: middle
+    is_arxiv: true
+    arxiv_id: '1510.07307'
+    doi: null
+    unique_id: '1510.07307'
