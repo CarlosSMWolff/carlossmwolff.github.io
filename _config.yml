@@ -225,6 +225,10 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "blog/2026/squeezed-lasing" # unlisted explainer page (static HTML): keep it out of the sitemap
+    values:
+      sitemap: false
 
 sass:
   style: compressed
@@ -235,7 +239,7 @@ sass:
 
 jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier
-  exclude: ["robots.txt", "assets/js/search/*.js"]
+  exclude: ["robots.txt", "assets/js/search/*.js", "blog/2026/squeezed-lasing/index.html"]
 
 # -----------------------------------------------------------------------------
 # Terser
