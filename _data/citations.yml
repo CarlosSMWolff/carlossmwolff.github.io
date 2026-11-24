@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-11-23'
+  last_updated: '2026-11-24'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -286,7 +286,7 @@ papers:
         delay-in-days: 365
         URL: http://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:eMMeJKvmdy0C:
-    citations: 175
+    citations: 174
     author: &id004
     - given: Davide
       family: Caputo
@@ -480,7 +480,7 @@ papers:
         delay-in-days: 0
         URL: https://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:oNZyr7d5Mn4C:
-    citations: 160
+    citations: 161
     author: &id006
     - given: Wei
       family: Qin
@@ -1266,7 +1266,7 @@ papers:
         delay-in-days: 365
         URL: https://link.aps.org/licenses/aps-default-accepted-manuscript-license
   -VPPZ8YAAAAJ:ZfRJV9d4-WMC:
-    citations: 93
+    citations: 95
     author: &id014
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -1525,7 +1525,7 @@ papers:
     author: *id016
     unique_id: 10.1103/PhysRevLett.117.203602
   -VPPZ8YAAAAJ:hMsQuOkrut0C:
-    citations: 86
+    citations: 87
     author: &id017
     - ORCID: https://orcid.org/0000-0002-7716-8173
       authenticated-orcid: true
@@ -1757,7 +1757,7 @@ papers:
         delay-in-days: 0
         URL: http://link.aps.org/licenses/aps-default-license
   -VPPZ8YAAAAJ:kz9GbA2Ns4gC:
-    citations: 87
+    citations: 88
     author: &id020
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: true
@@ -3704,7 +3704,7 @@ papers:
       affiliation: []
     unique_id: '2509.26486'
   -VPPZ8YAAAAJ:9pM33mqn1YgC:
-    citations: 39
+    citations: 40
     author: &id041
     - ORCID: https://orcid.org/0000-0001-8775-0135
       authenticated-orcid: true
@@ -4103,3 +4103,27 @@ papers:
     arxiv_id: '1510.07307'
     doi: null
     unique_id: '1510.07307'
+  -VPPZ8YAAAAJ:_5tno0g5mFcC:
+    citations: null
+    title: Squeezed Cooling and Lasing with Cold Atoms in Cavity-QED
+    year: '2026'
+    authors: "RG de Diego, CS Mu\xF1oz"
+    venue: arXiv preprint arXiv:2611.24743, 2026
+    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-VPPZ8YAAAAJ&cstart=40&citation_for_view=-VPPZ8YAAAAJ:_5tno0g5mFcC
+    cited_by_link: null
+    snippet: null
+    resources: null
+    author_position: last
+    is_arxiv: true
+    arxiv_id: '2611.24743'
+    doi: null
+    author:
+    - given: Rodrigo Grande de
+      family: Diego
+      sequence: first
+      affiliation: []
+    - given: "Carlos S\xE1nchez"
+      family: "Mu\xF1oz"
+      sequence: additional
+      affiliation: []
+    unique_id: '2611.24743'
