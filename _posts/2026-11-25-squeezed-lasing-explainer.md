@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Squeezed lasing in atomic cavity QED
+title: squeezed lasing in atomic cavity QED
 date: 2026-11-25 12:00:00
-description: A scroll-driven explainer of our proposal for a laser that emits squeezed light, using cold rubidium atoms in an optical cavity.
+description: An interactive explanation on our design of a squeezed laser using cold rubidium atoms in an optical cavity.
 tags: quantum-optics cavity-QED squeezed-light
 categories: research
 redirect: /blog/2026/squeezed-lasing/
