@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-11-24'
+  last_updated: '2026-11-25'
   source: serpapi
 papers:
   -VPPZ8YAAAAJ:bFI3QPDXJZMC:
@@ -3375,7 +3375,7 @@ papers:
       abstract: "<jats:p>Two nonidentical quantum emitters, when placed within a cavity and coherently excited at the two-photon resonance, can reach stationary states of nearly maximal entanglement. In Vivas-Via\xF1a, Mart\xEDn-Cano, and S\xE1nchez Mu\xF1oz [], we introduce a frequency-resolved Purcell effect stabilizing entangled <a:math xmlns:a=\"http://www.w3.org/1998/Math/MathML\"><a:mi>W</a:mi></a:math> states among strongly interacting quantum emitters embedded in a cavity. Here we delve deeper into a specific configuration with a particularly rich phenomenology: two interacting quantum emitters under coherent excitation at the two-photon resonance. This scenario yields two resonant cavity frequencies where the combination of two-photon driving and Purcell-enhanced decay stabilizes the system into the subradiant and superradiant states, respectively. By considering the case of nondegenerate emitters and exploring the parameter space of the system, we show that this mechanism is merely\
         \ one among a complex family of phenomena that can generate both stationary and metastable entanglement when driving the emitters at the two-photon resonance. We provide a global perspective of this landscape of mechanisms and contribute analytical characterizations and insights into these phenomena, establishing connections with previous reports in the literature and discussing how some of these effects can be optically detected.</jats:p>\n          <jats:sec>\n            <jats:title/>\n            <jats:supplementary-material>\n              <jats:permissions>\n                <jats:copyright-statement>Published by the American Physical Society</jats:copyright-statement>\n                <jats:copyright-year>2024</jats:copyright-year>\n              </jats:permissions>\n            </jats:supplementary-material>\n          </jats:sec>"
   -VPPZ8YAAAAJ:k8Z6L05lTy4C:
-    citations: 5
+    citations: 6
     author: &id038
     - ORCID: https://orcid.org/0000-0002-8379-8921
       authenticated-orcid: false
