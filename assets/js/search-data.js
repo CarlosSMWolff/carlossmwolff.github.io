@@ -106,7 +106,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/alejandro-prize-CSIC/";
-            },},{id: "projects-project-1",
+            },},{id: "news-our-new-paper-squeezed-cooling-and-lasing-with-cold-atoms-in-cavity-qed-with-rodrigo-grande-de-diego-is-out-on-arxiv-read-the-story-with-interactive-figures-in-this-blog-post",
+          title: 'Our new paper Squeezed cooling and lasing with cold atoms in cavity-QED, with...',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
