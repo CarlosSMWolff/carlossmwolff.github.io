@@ -9,4 +9,4 @@ redirect: /blog/2026/squeezed-lasing/
 read_time: 10 # the explainer is a standalone page, so the word count of this stub says nothing
 ---
 
-This post is an interactive, scroll-driven page: [Squeezed lasing in atomic cavity QED](/blog/2026/squeezed-lasing/).
+An interactive post to learn about our last paper on squeezed lasing: [Squeezed lasing in atomic cavity QED](/blog/2026/squeezed-lasing/).
