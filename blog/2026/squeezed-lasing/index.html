@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="robots" content="noindex, nofollow">   <!-- unlisted for now: remove when the page is announced -->
 <title>Squeezed lasing with cold atoms | Carlos Sánchez Muñoz</title>
 <meta name="description" content="How two Raman lasers couple rubidium atoms to a squeezed cavity mode, and how that lets the atoms cool the cavity into a squeezed vacuum and lase into squeezed light, with no nonlinear crystal.">
 <script>
@@ -49,6 +48,13 @@ mjx-container[display="true"] { margin: 0.6em 0 !important; overflow-x: auto; ov
         color: var(--af-muted); padding-top: 6px; }
 .ctrl label { min-width: 11em; text-align: right; }
 .ctrl input { width: min(320px, 55%); accent-color: var(--af-accent); }
+/* temperature slider: cold blue -> hot red */
+.ctrl.thermo input { -webkit-appearance: none; appearance: none; height: 8px; border-radius: 4px; cursor: pointer;
+                     background: linear-gradient(90deg, #2b6cd6, #8a5bc4 50%, #d9442f); }
+.ctrl.thermo input::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%;
+                     background: var(--af-bg); border: 2px solid var(--af-text); }
+.ctrl.thermo label { min-width: 0; width: 15em; white-space: nowrap; font-variant-numeric: tabular-nums; }   /* fixed width: the slider must not move while dragged */
+.ctrl.thermo input::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--af-bg); border: 2px solid var(--af-text); }
 
 .steps { grid-column: 1; grid-row: 1; padding-block: 18vh 22vh; }
 .step { padding-bottom: 25vh; }
@@ -237,48 +243,52 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
 <main>
   <header class="af-container af-post-header">
     <p class="af-post-tags">Quantum optics · cavity QED · squeezed light</p>
-    <h1 class="af-post-title">A laser that lases into squeezed light</h1>
-    <p class="af-lead">We propose a squeezed laser made of rubidium atoms in an optical cavity, with no nonlinear crystal and no injected squeezed light. Two Raman lasers make the atoms talk to a squeezed version of the cavity light, so that ordinary cooling and ordinary lasing come out squeezed.</p>
-    <p class="af-post-meta">Carlos Sánchez Muñoz · IFF-CSIC · 8 min read · Scroll to advance the figures</p>
+    <h1 class="af-post-title">Squeezed lasing in atomic cavity QED</h1>
+    <p class="af-lead"> The squeezed laser is a unique source that combines coherence and sub-vacuum fluctuations in a single device. 
+      We have just proposed the first optical implementation of this device that does not require squeezing to be injected from an external environment, 
+      using rubidium atoms trapped inside a cavity. </p>
+    <p class="af-post-meta">Carlos Sánchez Muñoz · IFF-CSIC · 10 min read · Scroll to advance the figures</p>
     <div class="legend-line"><span><i class="sw c1"></i>cavity light and its quantum noise</span><span><i class="sw c2"></i>drive lasers and laser light</span></div>
   </header>
 
   <!-- ===================== PART 1 ===================== -->
   <section class="prose af-container">
     <span class="label">Part 1</span>
-    <h2>Light as a noisy wave</h2>
-    <p>Every light source is noisy, and quantum mechanics puts a floor under that noise. Squeezed light pushes the noise below the floor in one direction, at the price of more noise in another. To see what that means, start from the classical picture of a light wave and add the quantum noise step by step.</p>
+    <h2>Light is a noisy wave</h2>
+    <p>Light is an electromagnetic wave. As such, it suffers from the quantum noise enforced by Heisenberg's uncertainty principle into any quantum-mechanical object. Even vacuum (a state with absolutely no photons) features a minimum, unavoidable amount of noise, meaning the electromagnetic field fluctuates, even in its quietest state, no matter what we do.</p>
+    <p>Squeezing is our only way to tame this noise and trick it to decrease along one quadrature of the field, at the price of getting more noise in another.</p>
+    <p>Let's go deeper into these ideas.</p>
   </section>
 
-  <section class="scrolly af-container" aria-label="Light as a noisy wave">
+  <section class="scrolly af-container" aria-label="Light is a noisy wave">
     <div class="fig" aria-hidden="true">
       <canvas></canvas>
       <div class="ctrl" hidden><label>parameter</label><input type="range" min="0" max="1" step="0.01" value="0.5"></div>
       <p class="takeaway-strip"></p>
     </div>
     <div class="steps">
-      <article class="step" data-scene="p1a"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="p1a" data-hold="1.3" data-span="0.3 0.88"><div class="pin"><div class="card"><span class="num"></span>
         <h3>A wave is the shadow of a rotating point</h3>
-        <p>Take the light at a single frequency \(\omega\). Picture its electric field as the shadow of a point going round a circle at that frequency. The point's horizontal position, recorded over time below the circle, is the oscillating field \(E(t)\).</p>
-        <p>The radius of the circle is the amplitude of the wave. Where the point sits at a given instant sets its phase.</p>
+        <p>Take the light in one mode of a cavity, at a single frequency \(\omega\). It is described by two oscillating quantities, the electric field \(E(t)\) and the magnetic field \(B(t)\), a quarter of a period out of step: when one peaks, the other vanishes. Picture them as the two shadows of a single point going round a circle at frequency \(\omega\). The point's horizontal position, recorded over time below the circle, is \(E(t)\); its vertical position, recorded to the right, is \(B(t)\). That is why the <em>whole</em> field is a point in a plane: it takes two numbers to describe it.</p>
+        <p>The radius of the circle is the amplitude of the wave. Where the point sits at a given instant sets its phase. From now on we keep only the electric field, the shadow that a detector usually records.</p>
       </div></div></article>
 
-      <article class="step" data-scene="p1b" data-hold="1.5"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="p1b" data-hold="1.5" data-span="0.03 0.92"><div class="pin"><div class="card"><span class="num"></span>
         <h3>Quantum noise: the point becomes a cloud</h3>
         <p>Quantum mechanics does not allow a sharp point. Measure the same light many times and each run lands somewhere slightly different. Every dot is one measurement, and together the dots fill a fuzzy cloud that rotates with the point.</p>
         <p>The shadow of the cloud is a noisy wave: a band of uncertainty around the oscillation, equally thick at all times.</p>
       </div></div></article>
 
-      <article class="step" data-scene="p1c" data-hold="1.1"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="p1c" data-hold="1.1" data-span="0.08 0.82"><div class="pin"><div class="card"><span class="num"></span>
         <h3>Stop the rotation</h3>
         <p>The rotation itself is the same for all light at frequency \(\omega\) and carries no information. So we watch from a frame that turns along with the light, and the cloud stops.</p>
-        <p>The centre of the cloud now has fixed coordinates, the field quadratures \(X\) and \(P\), with \(E(t)=X\cos\omega t+P\sin\omega t\). We choose the frame so the cloud comes to rest on the \(X\) axis: \(X\) is then the amplitude and \(P=0\). This still plane is phase space. The cloud's width is the vacuum noise, \(\Delta X=\Delta P=1\). With no light at all, the same cloud sits at the origin.</p>
+        <p>The centre of the cloud now has fixed coordinates, the field quadratures \(X\) and \(P\). Together they fix both the electric and the magnetic field, with \(E(t)=X\cos\omega t+P\sin\omega t\). We choose the frame so the cloud comes to rest on the \(X\) axis: \(X\) is then the amplitude and \(P=0\). This still plane is phase space. The cloud's width is the vacuum noise, \(\Delta X=\Delta P=1\). With no light at all, the same cloud sits at the origin.</p>
       </div></div></article>
 
-      <article class="step" data-scene="p1d" data-hold="1.8"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="p1d" data-hold="1.8" data-span="0.03 0.94"><div class="pin"><div class="card"><span class="num"></span>
         <h3>Squeezing: reshaping the cloud</h3>
         <p>Heisenberg's principle limits only the product, \(\Delta X\,\Delta P\ge 1\). A squeezed state uses that freedom. The cloud is pressed to \(\Delta X=e^{-r}\), below the vacuum width, and stretched to \(\Delta P=e^{r}\). The number \(r\) is the squeezing parameter.</p>
-        <p>Let the rotation run again and the shadow shows what this means in time. The wave is quieter than vacuum at its crests and noisier at its zero crossings. A measurement that reads only \(X\) sees less noise than any classical light allows.</p>
+        <p>Let the rotation run again, and see what the shadow tells us about the time evolution. The wave is quieter than vacuum at the peaks, and noisier than vacuum at the zeros. A measurement that reads only \(X\) sees less noise than any classical light allows! This is useful, very useful, for applications like metrology, where the noise limits the precision of our measurements (think of detecting gravitational waves).</p>
       </div></div></article>
 
     </div>
@@ -289,9 +299,18 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
     <p>An ordinary laser emits a round cloud far from the origin of phase space. Its phase drifts slowly, so over long times the cloud smears around a ring. A squeezed laser would emit a squeezed cloud instead. It is bright like a laser and keeps a laser's long coherence time, but it also has the narrow noise in \(X\). Its phase drifts too, while the squeezed axis stays where it is.</p>
     <div class="wide-fig" aria-hidden="true"><canvas class="wfig" data-scene="laser"></canvas>
       <p class="af-caption">Sketch in phase space. The cloud moves away from the vacuum (dashed circle) as the laser turns on; the faint copies show its phase drifting over long times.</p></div>
-    <h3>Why that is hard to build</h3>
-    <p>Squeezed light is already a working resource in precision measurement; it improves gravitational-wave detectors, for example. It is usually made with an optical parametric oscillator (OPO), a nonlinear crystal inside a cavity. An OPO gives squeezed light but no bright beam of its own: push it above threshold and the squeezing collapses. Bright squeezed beams are therefore made by adding a separate laser and locking the two together. (Inside the OPO cavity, the squeezing is also capped at 3 dB, half the vacuum noise.)</p>
-    <p>A squeezed laser would give squeezing and a bright, coherent beam from one device. The idea has been proposed before (Navarrete-Benlloch, García-Ripoll and Porras 2014; Sánchez Muñoz and Jaksch 2021), but optical versions still needed squeezed light injected from outside. In the scheme below, the atoms do everything. The figure shows what such a beam looks like in time.</p>
+    <h3>We know how to generate squeezing, but there are limitations</h3>
+    <p>Squeezed light is usually made with an optical parametric oscillator (OPO), a nonlinear crystal inside a cavity. An OPO gives squeezed light but no bright beam of its own: push it above threshold and the squeezing collapses. Bright squeezed beams are therefore made by adding a separate laser and locking the two together.</p>
+    <div class="wide-fig" aria-hidden="true"><canvas class="wfig" data-scene="opo"></canvas>
+      <div class="ctrl"><label>pump power</label><input type="range" min="0" max="2" step="0.005" value="0.5"></div>
+      <p class="af-caption">Sketch of a degenerate OPO; the pump power sweeps by itself until you drag the slider. Below threshold, the noise of the light inside the cavity follows the textbook result \(\Delta X^2=1/(1+\sqrt{P/P_\text{th}})\): at most 3 dB below vacuum, reached only at threshold. Above threshold the field becomes bright, picking one of two opposite phases, and the squeezing in \(X\) is lost (schematic).</p></div>
+    <p>The OPO also has practical demands. Its heart is a nonlinear crystal that splits pump photons at frequency \(2\omega\) into pairs of photons at \(\omega\). The effect is weak, so the crystal needs a strong pump and has to sit inside a cavity. The crystal is small, about a centimetre long, but it must be <em>phase-matched</em>: the pump and the light it creates have to travel through the crystal in step. If they drift apart, the light made further along cancels the light made earlier, and the OPO never turns on. Keeping them in step takes a carefully engineered crystal, held at a precisely controlled temperature.</p>
+    <div class="wide-fig tall" aria-hidden="true"><canvas class="wfig" data-scene="phasematch"></canvas>
+      <div class="ctrl thermo"><label>crystal temperature</label><input type="range" min="102" max="112" step="0.01" value="107"></div>
+      <p class="af-caption">The slider is the crystal's temperature (it sweeps by itself until you drag it). Temperature changes how fast light travels in the crystal, by a different amount for the pump and for the light at \(\omega\) (right). Only where the two speeds are equal do the waves stay in step: the light at \(\omega\) keeps growing and the OPO can turn on. Away from it, the light grows and fades again, and almost nothing comes out. Numbers for a 1 cm crystal of magnesium-doped lithium niobate turning 532 nm pump light into 1064 nm light, where temperature alone does the matching, at about 107 °C as measured for this crystal; the slopes of the speed curves are approximate. Squeezing experiments today mostly use periodically poled crystals, where the poling makes up the remaining speed difference, but they are tuned with temperature in the same way.</p></div>
+    <p>Another limitation of OPOs is that single-photon emission caps the intracavity squeezing at 3 dB, half the vacuum noise.</p>
+    <h3>The promise of something different</h3>
+    <p>A squeezed laser would give squeezing and a bright, coherent beam from one device. The idea has been proposed before (<a href="https://arxiv.org/abs/1402.0374">Navarrete-Benlloch, García-Ripoll and Porras 2014</a>; <a href="https://arxiv.org/abs/2008.02813">Sánchez Muñoz and Jaksch 2021</a>), but optical versions still needed squeezed light injected from outside. The figure shows what such a beam looks like in time.</p>
     <div class="wide-fig" aria-hidden="true"><canvas class="wfig" data-scene="field"></canvas>
       <p class="af-caption">Sketch of the electric field over a few optical cycles, for an ideal, phase-locked beam. The shaded band is the quantum noise. Top: ordinary laser. Bottom: squeezed laser with \(r=0.8\).</p></div>
   </section>
@@ -299,46 +318,47 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
   <!-- ===================== PART 2 ===================== -->
   <section class="prose af-container">
     <span class="label">Part 2</span>
-    <h2>Coupling atoms to a squeezed mode</h2>
+    <h2>A squeezed laser with trapped atoms</h2>
+    <p>In the new scheme that we propose, the atoms do everything. No injection of squeezing from the outside, no fundamental limit to intracavity squeezing, no need of a nonlinear crystal, and coherence created autonomously.</p>
     <p>The setup is a standard cavity-QED experiment: cold \(^{87}\)Rb atoms trapped in an optical cavity. Two ground states of the atom, \(|g\rangle\) and \(|e\rangle\) (6.8 GHz apart), make a two-level atom. The cavity mode is the light we want to squeeze. Its operator \(\hat a^\dagger\) adds a photon and \(\hat a\) removes one.</p>
     <p>The atoms sit in two clouds. Both clouds are lit from the side by the same two Raman lasers, \(\Omega_r\) and \(\Omega_s\). These two lasers are the heart of the scheme. The next four steps show how they make every atom interact with a <em>squeezed</em> version of the cavity mode.</p>
     <div class="wide-fig" aria-hidden="true"><canvas class="wfig" data-scene="setup"></canvas>
       <p class="af-caption">Sketch of the setup. The cooling and gain clouds play different roles in Part 3.</p></div>
   </section>
 
-  <section class="scrolly af-container" aria-label="Coupling atoms to a squeezed mode">
+  <section class="scrolly af-container" aria-label="A squeezed laser with trapped atoms">
     <div class="fig" aria-hidden="true">
       <canvas></canvas>
       <div class="ctrl" hidden><label>parameter</label><input type="range" min="0" max="1" step="0.01" value="0.5"></div>
       <p class="takeaway-strip"></p>
     </div>
     <div class="steps">
-      <article class="step" data-scene="rb87" data-hold="1.6"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="rb87" data-hold="1.6" data-span="0 0.9"><div class="pin"><div class="card"><span class="num"></span>
         <h3>Inside one rubidium atom</h3>
         <p>Zoom into one atom. In \(^{87}\)Rb the ground state \(5^2S_{1/2}\) is split into two hyperfine levels, \(F=1\) and \(F=2\), 6.8 GHz apart. The excited state of the D1 line, \(5^2P_{1/2}\) (795 nm), is split into \(F'=1\) and \(F'=2\), 0.8 GHz apart. A weak magnetic field separates each level into Zeeman sublevels \(m_F\).</p>
         <p>The scheme uses four of them. \(|g\rangle=|F{=}1,m_F{=}{-1}\rangle\) and \(|e\rangle=|F{=}2,m_F{=}{-2}\rangle\) form the two-level atom. \(|r\rangle\) and \(|s\rangle\), in \(F'=1\) and \(F'=2\), are the excited states that the Raman lasers pass near. The polarizations of the lasers and the cavity keep the atom inside this set.</p>
       </div></div></article>
 
-      <article class="step" data-scene="path1" data-hold="2.1"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="path1" data-hold="2.1" data-span="0 0.9"><div class="pin"><div class="card"><span class="num"></span>
         <h3>Path 1: drop and emit</h3>
         <p>The laser \(\Omega_r\) is tuned so that an atom in \(|e\rangle\) can absorb a laser photon and emit a cavity photon, ending in \(|g\rangle\). The excited state \(|r\rangle\) is never really occupied: the laser misses it by about 2 GHz, so the atom only passes through a <em>virtual</em> level. This is a Raman transition.</p>
-        <p>In the bookkeeping, the atom loses its energy and the cavity gains a photon: \(\hat\sigma\hat a^\dagger\), with \(\hat\sigma=|g\rangle\langle e|\). The reverse process, \(\hat\sigma^\dagger\hat a\), happens too. This is the familiar exchange of energy between an atom and light.</p>
+        <p>In this process, the atom loses its energy and the cavity gains a photon: \(\hat\sigma\hat a^\dagger\), with \(\hat\sigma=|g\rangle\langle e|\). This is a coherent, reversible process: \(\hat\sigma^\dagger\hat a\) happens too. This is the familiar exchange of energy between an atom and light.</p>
       </div></div></article>
 
-      <article class="step" data-scene="path2" data-hold="1.6"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="path2" data-hold="1.6" data-span="0 0.87"><div class="pin"><div class="card"><span class="num"></span>
         <h3>Path 2: rise and emit</h3>
         <p>The second laser, \(\Omega_s\), opens a stranger path. An atom in \(|g\rangle\) absorbs a laser photon, passes near \(|s\rangle\) and emits a cavity photon, but it ends in \(|e\rangle\). The atom is excited <em>and</em> a photon is created. The laser photon pays for both.</p>
-        <p>Without the laser this process, \(\hat\sigma^\dagger\hat a^\dagger\), would not conserve energy and would be negligible. Here the laser makes it resonant, and the power of \(\Omega_s\) sets its strength. Its reverse, \(\hat\sigma\hat a\), takes the atom down while a photon disappears.</p>
+        <p>Without the laser, this process, \(\hat\sigma^\dagger\hat a^\dagger\), would not conserve energy and would be negligible. Here the laser makes it resonant, and the power of \(\Omega_s\) sets its strength. Its reverse, \(\hat\sigma\hat a\), takes the atom down while a photon disappears.</p>
       </div></div></article>
 
       <article class="step" data-scene="both" data-ctrl="1" data-label="Ωs / 2Ωr" data-min="0" data-max="0.85" data-step="0.005" data-value="0.66"><div class="pin"><div class="card"><span class="num"></span>
         <h3>Both paths at once</h3>
-        <p>With both lasers on, sort the four processes by what the atom does. When the atom drops (\(\hat\sigma\)), the cavity either gains a photon (path 1, strength \(\lambda_r\)) or loses one (path 2, strength \(\lambda_{cr}\)):</p>
+        <p>With both lasers on, once the atom decays (\(\hat\sigma\)), the cavity simultaneously gains a photon (path 1, strength \(\lambda_r\)) and loses one (path 2, strength \(\lambda_{cr}\)):</p>
         \[\hat H=\hat\sigma\,\big(\lambda_r\,\hat a^\dagger+\lambda_{cr}\,\hat a\big)+\text{h.c.}\]
-        <p>So the atom does not trade photons with \(\hat a\) but with a fixed blend of \(\hat a^\dagger\) and \(\hat a\). Writing \(\lambda_{cr}/\lambda_r=\tanh r\), the blend is \(g_0\,\hat a_s^\dagger\), where</p>
+        <p>This strange exchange means the atom does not trade photons with \(\hat a\), but something else, a fixed blend of \(\hat a^\dagger\) and \(\hat a\). Writing \(\lambda_{cr}/\lambda_r=\tanh r\), the blend is \(g_0\,\hat a_s^\dagger\), where</p>
         \[\hat a_s=\hat a\cosh r+\hat a^\dagger\sinh r .\]
         <p>The ratio of the two laser amplitudes, \(\Omega_s/2\Omega_r=\tanh r\), sets \(r\). Drag it. (The figure shows the atom dropping; when it rises, the same happens in reverse.)</p>
-        <p>This \(\hat a_s\) is a Bogoliubov transformation of \(\hat a\). Because \(\cosh^2 r-\sinh^2 r=1\), it is still a perfectly good photon mode, with its own vacuum and coherent states, and its quadratures are rescaled copies of the real ones: \(X_s=e^{r}X\), \(P_s=e^{-r}P\). So the vacuum of \(\hat a_s\) is a squeezed vacuum of the real light, and a coherent state of \(\hat a_s\) is a bright squeezed state. Anything ordinary the atoms do to \(\hat a_s\) turns into squeezing.</p>
+        <p>This \(\hat a_s\) is a well-known object, the Bogoliubov transformation of \(\hat a\). The transformation is unitary, and it connects the basis states (photon-number states, AKA Fock states) to a different class of states, squeezed Fock states. These states are copies of the original basis states, but their quadratures (coordinate axes in phase space) are rescaled copies of the real ones: \(X_s=e^{r}X\), \(P_s=e^{-r}P\), thereby squeezing fluctuations along the \(X\) axis, and enlarging them along \(P\) (here the axes are chosen arbitrarily; they are fixed by our Raman laser phases). Because \(\cosh^2 r-\sinh^2 r=1\), \(\hat a_s\) is still a perfectly good photon mode, with its own vacuum and coherent states. The vacuum of \(\hat a_s\) is a squeezed vacuum of the real light, and a coherent state of \(\hat a_s\) is a bright squeezed state. Anything ordinary the atoms do to \(\hat a_s\) turns into squeezing.</p>
       </div></div></article>
 
     </div>
@@ -348,10 +368,10 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
   <section class="prose af-container">
     <span class="label">Part 3</span>
     <h2>Cooling and lasing in the squeezed basis</h2>
-    <p>We now have an ordinary atom–light interaction in which the cavity mode is replaced by \(\hat a_s\). The rest of the scheme borrows two standard recipes from quantum optics: drain a mode and it relaxes to its vacuum; pump atoms that emit into it and it lases. Applied to \(\hat a_s\), the first gives squeezed vacuum and the second gives squeezed laser light.</p>
+    <p>We now have an ordinary atom–light interaction in which the cavity mode is replaced by \(\hat a_s\). The rest of the scheme borrows two standard recipes from quantum optics: drain a mode of its energy and it will relax to its vacuum; pump atoms that emit into that same mode, and at some critical pumping, it will lase by stimulated emission. Applied to \(\hat a_s\), the first gives squeezed vacuum and the second gives squeezed laser light.</p>
     <h3>Squeezed cooling: a squeezed buffer</h3>
-    <p>Start with the cooling cloud alone. Its atoms take excitations from \(\hat a_s\). A third laser, \(\Omega_b\), lets them hand those excitations on to a second cavity mode \(\hat b\) that leaks out very fast. Excitations only go one way: out. Together, the cooling atoms and \(\hat b\) form a <em>squeezed buffer</em>, a cold bath that only sees \(\hat a_s\). It drains \(\hat a_s\) at a rate \(\tilde\kappa\) to its vacuum, which is a squeezed vacuum of the real light.</p>
-    <p>How many cooling atoms does it take? The rate \(\tilde\kappa\) grows with the number of cooling atoms, \(N_c\), and then levels off. It competes with the cavity's ordinary loss through its mirror, \(\kappa\). That loss removes single photons of \(\hat a\), not of \(\hat a_s\), and lets plain vacuum noise back in. With too few cooling atoms the mirror wins; the buffer needs \(\tilde\kappa/\kappa\gg e^{2r}-1\). Too many atoms cause a different problem. The scheme relies on the excited states \(|r\rangle\) and \(|s\rangle\) staying virtual, far detuned from the lasers. But the atoms couple to the cavity collectively, with strength \(g_r\sqrt N\). Once that is no longer small next to the 2 GHz detuning, the excited levels start to fill, the atoms emit ordinary photons in random directions, and the mechanism breaks down. For the paper's parameters this sets \(N\ll10^5\). In the sweet spot in between, the paper finds up to about 9 dB of squeezing inside the cavity, well past the 3 dB of an OPO.</p>
+    <p>Start with the cooling cloud alone. Its atoms take excitations from \(\hat a_s\). A third laser, \(\Omega_b\), lets them hand those excitations on to a second cavity resonance of the mirrors, \(\hat b\), that leaks out very fast. Excitations only go one way: out. Together, the cooling atoms and \(\hat b\) form a <em>squeezed buffer</em>, a cold bath that only sees \(\hat a_s\). It drains \(\hat a_s\) at a rate \(\tilde\kappa\) to its vacuum, which is a squeezed vacuum of the real light.</p>
+    <p>This implementation leads to a basic question: how many cooling atoms does it take for it to work? The rate \(\tilde\kappa\) grows with the number of cooling atoms, \(N_c\). It competes with the cavity's ordinary loss through its mirror, \(\kappa\). That loss removes single photons of \(\hat a\), not of \(\hat a_s\), and lets plain vacuum noise back in. With too few cooling atoms the mirror wins; the buffer needs \(\tilde\kappa/\kappa\gg e^{2r}-1\). Too many atoms cause a different problem. The scheme relies on the excited states \(|r\rangle\) and \(|s\rangle\) staying virtual, far detuned from the lasers. But the atoms couple to the cavity collectively, with strength \(g_r\sqrt N\). Once that is no longer small next to the 2 GHz detuning, the excited levels start to fill, the atoms emit ordinary photons in random directions, and the mechanism breaks down. For the paper's parameters this sets \(N\ll10^5\). In the sweet spot in between, the paper finds up to about 9 dB of squeezing inside the cavity, well past the 3 dB of an OPO.</p>
   </section>
 
   <section class="scrolly af-container" aria-label="Cooling and lasing">
@@ -368,22 +388,30 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
         <p class="af-caption">The curve and the Wigner widths are computed from the paper's formulas with its Table I parameters and \(r=0.8\), neglecting the small frequency shift of \(\hat a_s\). Zones: \(\tilde\kappa/\kappa<e^{2r}-1\) (yellow) and \(12\cosh^2 r\,N g_r^2/\Delta_r^2>0.1\) (red). The photon streams and level diagram are sketches.</p>
       </div></div></article>
 
-      <article class="step" data-scene="lase" data-hold="2"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="pump" data-hold="1.8" data-span="0.05 0.85"><div class="pin"><div class="card"><span class="num"></span>
+        <h3>Pumping the gain atoms</h3>
+        <p>Now pump the second cloud, the gain atoms, into \(|e\rangle\) with weak repumping lasers.</p>
+        <p>Two repumpers do the job, both on the D1 line: one drives \(F=1\to F'=2\), the other \(F=2\to F'=1\). After each absorption the atom falls back by spontaneous emission to a random ground sublevel, and the cycle repeats. The beams are polarized so that they contain only \(\pi\) and \(\sigma^-\) light, which can keep \(m_F\) or lower it, never raise it. The only ground sublevel that neither repumper can excite is \(|e\rangle=|F{=}2,m_F{=}{-2}\rangle\): there is no excited level for it to go to. It is a <em>dark state</em>, and the population piles up there.</p>
+        <p>This repumping scheme has to be designed carefully, with the correct polarizations, so that the repumpers take the atom to \(|e\rangle\) even when it has left the two Zeeman sublevels that we chose as our two-level system. The repumpers are also kept weak, so the excited states stay nearly empty. Seen from the two-level atom, the net effect is an incoherent pump from \(|g\rangle\) to \(|e\rangle\).</p>
+      </div></div></article>
+
+      <article class="step" data-scene="lase" data-hold="2" data-span="0 0.82"><div class="pin"><div class="card"><span class="num"></span>
         <h3>Cooling plus gain: lasing</h3>
-        <p>Now pump the second cloud, the gain atoms, into \(|e\rangle\) with weak repumping lasers. Through the same Raman coupling they emit into \(\hat a_s\), and the emission is stimulated. For them the squeezed buffer is just the cavity's loss. Once the gain beats that loss, \(\hat a_s\) lases.</p>
+        <p>Through the same Raman coupling, these gain atoms couple to \(\hat a_s\) and experience stimulated emission. They see the squeezed buffer as just the cavity's loss. Once the gain beats that loss, \(\hat a_s\) lases.</p>
         <p>A laser settles into a coherent state of its own mode. Here that mode is \(\hat a_s\), so the real light is a bright displaced squeezed state. It is a beam with its own carrier, a laser-like coherence time and noise below vacuum in \(X\), and it leaves through the cavity mirror.</p>
       </div></div></article>
 
-      <article class="step" data-scene="drift" data-hold="1.5"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="drift" data-hold="1.5" data-span="0 0.82"><div class="pin"><div class="card"><span class="num"></span>
         <h3>A slowly drifting carrier</h3>
         <p>The cavity now holds a bright squeezed state. Like any laser, its phase is not fixed: it drifts slowly and randomly, so over long times the carrier wanders along a ring. The squeezed axis, set by the Raman lasers, does not move.</p>
         <p>The drift is slow, because the laser line is much narrower than the cavity's decay rates. Over any time shorter than the coherence time \(1/\Delta\nu\), where \(\Delta\nu\) is the linewidth, the carrier is effectively frozen relative to the ellipse, and the field keeps its quiet crests.</p>
       </div></div></article>
 
-      <article class="step" data-scene="spec" data-hold="1.7"><div class="pin"><div class="card"><span class="num"></span>
+      <article class="step" data-scene="spec" data-hold="1.7" data-span="0 0.78"><div class="pin"><div class="card"><span class="num"></span>
         <h3>The spectrum of squeezing</h3>
         <p>A homodyne detector reads the noise in \(X\) at each sideband frequency \(\nu\) around the reference set by the Raman lasers; 0 dB is the vacuum. In the lasing phase, two kinds of features appear.</p>
-        <p>At \(\nu\approx0\) sits a narrow, <em>atom-like</em> peak: the laser's own carrier. It carries excess noise from the slow phase drift. It is narrow because the drift is slow, a hallmark of superradiant lasing, where the coherence is stored in the atoms. To each side, <em>cavity-like</em> sidebands about \(\kappa+\tilde\kappa\) wide dip below the vacuum. That is the squeezing, locked to the carrier.</p>
+        <p>At \(\nu\approx0\) sits a narrow peak: the laser's own carrier. This is <em>atom-like</em>, because the laser has a superradiant component: a big part of the coherence is stored in the atoms, not the light, and that locks the laser at a frequency set by the atoms (making it robust to cavity fluctuations). Here, that atomic frequency is, in practice, set by the average of the Raman drives.</p>
+        <p>This lasing peak carries excess noise, which comes from the slow phase drift. It is narrow because the drift is exceptionally slow, a hallmark of lasing. To each side, <em>cavity-like</em> sidebands about \(\kappa+\tilde\kappa\) wide dip below the vacuum. That is the squeezing, locked to the carrier.</p>
       </div></div></article>
     </div>
   </section>
@@ -511,13 +539,13 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
     for (let i = 0; i <= n * f; i++) { const s = i / n * L, w = amp * Math.sin(s * k + (o.ph || 0)) * Math.min(1, s / 10, (L - s) / 10);
       pts.push([x0 + s * Math.cos(ang) - w * Math.sin(ang), y0 + s * Math.sin(ang) + w * Math.cos(ang)]); }
     path(pts, col, o.lw ?? 2, o.alpha ?? 1);
-    if (f >= 1 && !o.noHead) head(x1, y1, ang, col, o.alpha ?? 1, 9);
+    if (f >= 1 && !o.noHead) head(x1, y1, ang, col, o.alpha ?? 1, o.h ?? 9);
   }
-  function packet(x, y, ang, col, len = 34, a = 1) {   // a short travelling wave packet centred at (x,y)
+  function packet(x, y, ang, col, len = 34, a = 1, amp = 6, lw = 2.25) {   // a short travelling wave packet centred at (x,y)
     const pts = [];
-    for (let i = 0; i <= 30; i++) { const s = (i / 30 - 0.5) * len, env = Math.exp(-((s / (len * 0.3)) ** 2)), w = 6 * env * Math.sin(s * 0.5);
+    for (let i = 0; i <= 30; i++) { const s = (i / 30 - 0.5) * len, env = Math.exp(-((s / (len * 0.3)) ** 2)), w = amp * env * Math.sin(s * 0.5);
       pts.push([x + s * Math.cos(ang) - w * Math.sin(ang), y + s * Math.sin(ang) + w * Math.cos(ang)]); }
-    path(pts, col, 2.25, a);
+    path(pts, col, lw, a);
   }
   function dot(x, y, r, col, a = 1) { ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, y, r, 0, 2 * Math.PI); ctx.fill(); ctx.restore(); }
   function ring(x, y, r, col, lw = 1.5, a = 1, dash = []) { ctx.save(); ctx.globalAlpha = a; ctx.strokeStyle = col; ctx.lineWidth = lw; ctx.setLineDash(dash); ctx.beginPath(); ctx.arc(x, y, r, 0, 2 * Math.PI); ctx.stroke(); ctx.restore(); }
@@ -590,6 +618,26 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
     ell(cx, cy, sc * sx, sc * sp, C.c1, { fill: 0, lw: 1.5 });
     if (labels) { text('$X$', cx + half - 2, cy - 5, { align: 'right', size: fsz() - 1 }); text('$P$', cx + 5, cy - half + fsz(), { size: fsz() - 1 }); }
   }
+  // rate-equation sketch of the repumping (step 10): ground sublevels (F,m); pi and sigma- repumpers on F=1->F'=2 and
+  // F=2->F'=1, then spontaneous decay to (F,m'+q), q in {-1,0,1}, equal weights. Starts in |g> = (1,-1); dark state (2,-2).
+  const PUMP = (() => {
+    const G = []; for (let m = -1; m <= 1; m++) G.push([1, m]); for (let m = -2; m <= 2; m++) G.push([2, m]);
+    const idx = Object.fromEntries(G.map((g, i) => [g.join(','), i]));
+    const T = G.map(() => G.map(() => 0));   // T[i][j]: rate i -> j
+    G.forEach(([F, m], i) => {
+      const Fp = F === 1 ? 2 : 1;
+      for (const q of [0, -1]) { const mp = m + q; if (Math.abs(mp) > Fp) continue;
+        const dest = []; for (const d of [-1, 0, 1]) for (const Fg of [1, 2]) if (Math.abs(mp + d) <= Fg) dest.push(idx[Fg + ',' + (mp + d)]);
+        dest.forEach(j => { T[i][j] += 1 / dest.length; }); }
+    });
+    const all = [], dt = 0.02, NS = 3000; let v = G.map(g => (g[0] === 1 && g[1] === -1 ? 1 : 0));
+    for (let s = 0; s <= NS; s++) {
+      all.push(Object.fromEntries(G.map((g, i) => [g.join(','), v[i]])));
+      const nv = v.slice(); G.forEach((_, i) => T[i].forEach((r, j) => { if (i !== j) { nv[i] -= r * v[i] * dt; nv[j] += r * v[i] * dt; } })); v = nv;
+    }
+    return Array.from({ length: 101 }, (_, k) => all[Math.round(NS * (k / 100) ** 2)]);
+  })();
+  const pumpPop = u => PUMP[Math.min(PUMP.length - 1, Math.round(u * (PUMP.length - 1)))];
   // ---------- scenes. Signature (p, t): p in [0,1] from scroll, t seconds (0 if reduced motion).
 
   // Part 1: one continuous phase-space picture. stage 1: rotating point and its shadow E(t); 2: noise cloud with
@@ -606,11 +654,14 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
     if (fr > 0) { const tg = Math.round(ang / (2 * Math.PI)) * 2 * Math.PI; ang += (tg - ang) * Math.min(1, dt * 5 * fr); }
     const rot = (u, v, a) => [u * Math.cos(a) + v * Math.sin(a), -u * Math.sin(a) + v * Math.cos(a)];
     // layout: phase plane on top, the shadow E(t) below it with time running downwards, same horizontal scale
-    const side = Math.min(W - 8, H * 0.56), ext = 6.6, s = side / (2 * ext), cx = W / 2, cy = f + 10 + side / 2;
+    // step 1 opens with both shadows: E(t) below the plane and B(t) to its right; scrolling drops B and recentres the plane
+    const kB = stage === 1 ? 1 - ease(seg(p, 0.4, 0.85)) : 0;
+    const side0 = Math.min(W - 8, H * 0.56), side1 = Math.min(W * 0.56, H * 0.5), side = side0 + (side1 - side0) * kB;
+    const ext = 6.6, s = side / (2 * ext), cx = W / 2 + (4 + side / 2 - W / 2) * kB, cy = f + 10 + side / 2;
     const PX = h => cx + h * s, PY = v => cy - v * s, ty0 = cy + side / 2 + 8, ty1 = H - f - 6;
     path([[PX(-ext), cy], [PX(ext), cy]], C.rule, 1); path([[cx, PY(ext)], [cx, PY(-ext)]], C.rule, 1);
     text('$X$', PX(ext) - 2, cy - 7, { align: 'right' }); text('$P$', cx + 7, PY(ext) + f, {});
-    const title = stage === 1 ? 'the field is the shadow of a rotating point' : stage === 2 ? 'each dot = one measurement (sketch)'
+    const title = stage === 1 ? (kB > 0.5 ? 'two shadows of one point: $E$ and $B$' : 'keep one shadow: the electric field $E(t)$') : stage === 2 ? 'each dot = one measurement (sketch)'
       : stage === 3 ? (fr > 0.5 ? 'rotating frame: the cloud stops, and so does E(t)' : 'switching to the rotating frame…')
       : p > 0.7 ? 'lab frame again: quiet crests, noisy zero crossings' : `noise in $X$: ${dBof(r).toFixed(1)} dB below vacuum`;
     text(title, 4, f + 2, { color: C.text, weight: 500 });
@@ -664,6 +715,19 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
     }
     path(band.map(([y, h]) => [PX(h), y]), C.c1, 2.25);
     dot(mx, ty0, 3.5, C.c1);
+    if (kB > 0.6) text('electric', PX(-ext) + 2, ty0 + f + 2, { alpha: seg(kB, 0.6, 1) });
+    // magnetic shadow: the point's vertical position, time running to the right
+    if (kB > 0) {
+      const bx0 = cx + side / 2 + 10, bx1 = W - 6;
+      path([[mx, my], [bx0, my]], C.muted, 1, 0.7 * kB, [2, 4]);
+      path([[bx0, cy], [bx1, cy]], C.rule, 1, kB);
+      text('$B(t)$', bx0 + 4, PY(ext) + f, { alpha: kB });
+      text('magnetic', bx0 + 4, PY(ext) + 2 * f + 4, { alpha: kB });
+      text('time →', bx1, PY(-M[0]) + f + 8, { align: 'right', alpha: kB });
+      const wB = W - 6 - (4 + side1 + 10), nb = 160, bpts = [];   // fixed time scale: the trace slides out instead of squeezing
+      for (let i = 0; i <= nb; i++) { const tau = tauMax * i / nb, a = ang - wE * tau, xb = bx0 + wB * i / nb; if (xb > bx1) break; bpts.push([xb, PY(-M[0] * Math.sin(a) + M[1] * Math.cos(a))]); }
+      path(bpts, C.c1, 2.25, kB); dot(bx0, my, 3.5, C.c1, kB);
+    }
   }
   const CYC = 2.5;   // optical cycles shown in time traces
   const scenes = {
@@ -1067,6 +1131,193 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
         if (exc > 0.02) dot(lx + lw2 * 1.6, ry - 5, 2 + 5 * exc, C.red, Math.min(1, 0.3 + exc));
       }
     },
+    // ----- wide figure: OPO, squeezing grows towards threshold then collapses above it (slider auto-sweeps until touched)
+    opo(p, t) {
+      const f = fsz(), cv = ctx.canvas;
+      if (slider && !cv._touched && !reduce) slider.value = (1 - Math.cos(t * 0.3)).toFixed(3);
+      const P = slider ? +slider.value : 0.5, below = P < 1, eps = Math.sqrt(Math.min(P, 1));
+      setLabel(`pump power P / P_th = ${P.toFixed(2)}`);
+      const nar = W < 640, [A, B] = nar ? [[0, 0, W, H * 0.42], [0, H * 0.42, W, H * 0.58]] : [[0, 0, W * 0.5, H], [W * 0.5 + 8, 0, W * 0.5 - 8, H]];
+      // ---- the device: cavity, crystal, pump in, light out
+      const [x, y, w, h] = A, cy = y + h * 0.55, xl = x + w * 0.2, xr = x + w * 0.78, mh = Math.min(h * 0.45, 90);
+      for (const [xm, sg] of [[xl, 1], [xr, -1]]) path(Array.from({ length: 21 }, (_, j) => { const u = (j / 20 - 0.5) * 2; return [xm + sg * 8 * u * u, cy + u * mh / 2]; }), C.text, 3.5);
+      const cw = (xr - xl) * 0.36, cxm = (xl + xr) / 2;
+      ctx.save(); ctx.fillStyle = C.muted; ctx.globalAlpha = 0.18; ctx.fillRect(cxm - cw / 2, cy - mh * 0.22, cw, mh * 0.44); ctx.restore();
+      path([[cxm - cw / 2, cy - mh * 0.22], [cxm + cw / 2, cy - mh * 0.22], [cxm + cw / 2, cy + mh * 0.22], [cxm - cw / 2, cy + mh * 0.22], [cxm - cw / 2, cy - mh * 0.22]], C.muted, 1.25);
+      text('nonlinear crystal', cxm, cy - mh * 0.22 - 7, { align: 'center' });
+      const pa = 0.35 + 0.65 * Math.min(P / 2, 1);
+      wavy(x + 4, cy, xl - 6, cy, C.c2, 1, { lw: 1 + 2.5 * Math.min(P, 2) / 2, amp: 4, k: 0.6, ph: -5 * t, alpha: pa });
+      text('pump $2\\omega$', x + 4, cy - 14, { color: C.c2, weight: 500 });
+      // output at omega: faint squeezed vacuum below threshold, a bright beam above
+      // the photons leave in pairs: twin wave packets flying out side by side; above threshold they merge into a beam
+      const ob = below ? 0 : Math.min(1, (P - 1) * 2), ox1 = Math.min(x + w - 4, xr + 110), ox0 = xr + 10, T = reduce ? 0.35 : t;
+      const sep = Math.min(16, mh * 0.2);
+      if (ob > 0) for (const sg of [-1, 1]) wavy(ox0, cy + sg * sep, ox1, cy + sg * sep, C.c1, 1, { lw: 1.5 + 1.5 * ob, amp: 3.5, k: 0.5, ph: -5 * T, alpha: 0.75 * ob, h: 8 });
+      const np = 3, rate = 0.35 + 0.65 * eps;
+      for (let i = 0; i < np; i++) {
+        const ph = T * 0.45 + i / np, u = ph % 1, n = Math.floor(ph), on = (Math.abs(Math.sin(n * 91.7 + i * 47.3) * 9973) % 1) < rate;
+        if (!on) continue;
+        const px = ox0 + 12 + (ox1 - ox0 - 24) * u, pa = Math.min(1, u * 6, (1 - u) * 6) * (1 - 0.8 * ob);
+        for (const sg of [-1, 1]) packet(px, cy + sg * sep, 0, C.c1, 28, pa, 5, 2.25);
+        path([[px, cy - sep + 7], [px, cy + sep - 7]], C.c1, 1, pa * 0.6, [2, 2]);   // a faint tie: the two are born together
+      }
+      textIn('photon pairs at $\\omega$', ox1, cy + mh / 2 + f + 2, x + 2, x + w - 2, { align: 'right', color: C.c1, weight: 500 });
+      if (!nar) textIn(below ? 'squeezed vacuum, no carrier' : 'a bright beam', ox1, cy + mh / 2 + 2 * f + 7, x + 2, x + w - 2, { align: 'right', color: C.c1 });
+      text(below ? 'below threshold' : 'above threshold', x + 4, y + f + 2, { color: C.text, weight: 500 });
+      // ---- phase space of the light inside the cavity
+      const ps = phase(B, 6.2, { title: 'light inside the cavity', extX: 6.2 });
+      ring(ps.cx, ps.cy, ps.s, C.muted, 1.25, 1, [4, 4]);
+      if (below) {
+        const vx = 1 / (1 + eps), vp = Math.min(1 / Math.max(1 - eps, 1e-3), 30);
+        ell(ps.cx, ps.cy, ps.s * Math.sqrt(vx), Math.min(ps.s * Math.sqrt(vp), ps.box[3] / 2 - 2), C.c1, { fill: 0.22, lw: 2 });
+        const db = 10 * Math.log10(1 / vx);
+        textIn(`noise in $X$: ${db.toFixed(1)} dB below vacuum${P > 0.97 ? ' (the 3 dB cap)' : ''}`, ps.cx, B[1] + B[3] - 4, B[0] + 2, B[0] + B[2] - 2, { align: 'center', color: C.c1, weight: 500 });
+      } else {
+        const u = P - 1, al = 4.3 * Math.sqrt(u / (1 + u)), vx = 1 - 0.5 * Math.exp(-4 * u), vp = 1 + 10 * Math.exp(-6 * u);
+        for (const sg of [1, -1]) ell(ps.cx, ps.P(sg * al), ps.s * Math.sqrt(vx), Math.min(ps.s * Math.sqrt(vp), ps.box[3] / 2 - 2), C.c2, { fill: 0.22, lw: 2, alpha: sg > 0 ? 1 : 0.45 });
+        textIn(vx > 0.9 ? 'bright, but the squeezing in $X$ is gone' : nar ? 'bright; squeezing in $X$ collapses' : 'bright field appears; squeezing in $X$ collapses', ps.cx, B[1] + B[3] - 4, B[0] + 2, B[0] + B[2] - 2, { align: 'center', color: C.c2, weight: 500 });
+        textIn('two possible phases', ps.cx + ps.s * 1.3 + 4, ps.P(al) + 4, B[0] + 2, B[0] + B[2] - 2, {});
+      }
+      text('(sketch)', W - 6, nar ? f + 2 : H - 6, { align: 'right' });
+    },
+    // ----- wide figure: phase matching by temperature (MgO:LiNbO3, 1064 nm o-ray / 532 nm e-ray, noncritical).
+    // Indices near the matching point T0: n = n0 + (dn/dT)(T - T0); dn_e/dT(532) - dn_o/dT(1064) ~ 3.5e-5 /K (approximate),
+    // giving a ~1.3 K wide window for L = 1 cm. Mismatch over the crystal: dk L = 2 pi * 2 (n_e - n_o) L / lambda.
+    // The generated light's envelope is |int_0^z e^{i dk z'} dz'|.
+    phasematch(p, t) {
+      const f = fsz(), cv = ctx.canvas, nar = W < 640, T = reduce ? 0 : t;
+      const T0 = 107, n0 = 2.2238, dno = 0.4e-5, dne = 3.9e-5, Lc = 1e-2, lam = 1.064e-6, cK = 299792.458;
+      if (slider && !cv._touched && !reduce) slider.value = (T0 + 5 * Math.sin(t * 0.28) ** 3).toFixed(2);   // lingers near T0
+      const Tc = slider ? +slider.value : T0, no = n0 + dno * (Tc - T0), ne = n0 + dne * (Tc - T0);
+      const dk = 2 * Math.PI * 2 * (ne - no) * Lc / lam;
+      const A = z => Math.abs(dk) < 1e-6 ? z : Math.abs(2 * Math.sin(dk * z / 2) / dk), out = A(1);
+      const glow = ease(seg(out, 0.8, 0.99)), pulse = 0.75 + 0.25 * Math.sin(5 * T);
+      setLabel(`crystal temperature: ${Tc.toFixed(1)} °C`);
+      // temperature colour, cold blue -> hot red (same as the slider)
+      const u = clamp((Tc - 102) / 10);
+      const lerp3 = (c0, c1, v) => c0.map((x, k) => Math.round(x + (c1[k] - x) * v));
+      const tcol = u < 0.5 ? lerp3([43, 108, 214], [138, 91, 196], u * 2) : lerp3([138, 91, 196], [217, 68, 47], u * 2 - 1);
+      const tcss = `rgb(${tcol.join(',')})`;
+      // ---- layout: crystal (+ output) left, speed plot right; stacked on phones
+      const [CB, PB] = nar ? [[0, 0, W, H * 0.5], [0, H * 0.5 + 8, W, H * 0.5 - 8]] : [[0, 0, W * 0.6, H], [W * 0.64, 0, W * 0.36, H]];
+      const [bx, by, bw, bh] = CB;
+      const x0 = bx + (nar ? 8 : bw * 0.14), x1 = bx + bw * 0.74, X = z => x0 + z * (x1 - x0);
+      const cy = by + bh * 0.5, ch = Math.min(bh * 0.6, 200), amp = ch * 0.27;
+      // glow behind the crystal when matched
+      if (glow > 0) { ctx.save(); const g = ctx.createRadialGradient((x0 + x1) / 2, cy, 10, (x0 + x1) / 2, cy, (x1 - x0) * 0.75);
+        g.addColorStop(0, C.c1); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.globalAlpha = 0.28 * glow * pulse; ctx.fillStyle = g;
+        ctx.fillRect(bx, by, bw, bh); ctx.restore(); }
+      ctx.save(); ctx.fillStyle = tcss; ctx.globalAlpha = 0.2; ctx.fillRect(x0, cy - ch / 2, x1 - x0, ch); ctx.restore();
+      path([[x0, cy - ch / 2], [x1, cy - ch / 2], [x1, cy + ch / 2], [x0, cy + ch / 2], [x0, cy - ch / 2]], tcss, 1.5);
+      text(`nonlinear crystal, ${Tc.toFixed(1)} °C`, (x0 + x1) / 2, cy - ch / 2 - 8, { align: 'center', color: tcss, weight: 500 });
+      const py = cy - ch * 0.3;
+      path(Array.from({ length: 400 }, (_, i) => { const z = i / 399; return [X(z), py + 5 * Math.sin(2 * Math.PI * 24 * z - 6 * T)]; }), C.c2, 1.5);
+      if (!nar) { wavy(bx + 4, py, x0 - 6, py, C.c2, 1, { lw: 1.5, amp: 5, k: 0.6, ph: -6 * T }); text('pump $2\\omega$', bx + 4, py - 12, { color: C.c2, weight: 500 }); }
+      else text('pump $2\\omega$', X(0) + 4, cy - ch / 2 + f + 2, { color: C.c2, weight: 500, size: f - 1 });
+      const yc = cy + ch * 0.17, sig = [], envU = [], envD = [];
+      for (let i = 0; i <= 500; i++) { const z = i / 500, a = amp * A(z);
+        sig.push([X(z), yc - a * Math.sin(2 * Math.PI * 12 * z - 3 * T + dk * z / 2)]); envU.push([X(z), yc - a]); envD.push([X(z), yc + a]); }
+      path(envU, C.c1, 1, 0.35, [3, 3]); path(envD, C.c1, 1, 0.35, [3, 3]);
+      ctx.save(); ctx.shadowColor = C.c1; ctx.shadowBlur = 18 * glow * pulse; path(sig, C.c1, 2.25);
+      const ox0 = x1 + 8, ox1 = bx + bw - 6;
+      if (out > 0.04) { const np = 4, sep = 13, Tp = reduce ? 0.3 : t;
+        for (let i = 0; i < np; i++) {
+          const ph = Tp * 0.4 + i / np, v = ph % 1, n = Math.floor(ph), on = (Math.abs(Math.sin(n * 91.7 + i * 47.3) * 9973) % 1) < 0.25 + 0.75 * out;
+          if (!on) continue;
+          const px = ox0 + 14 + (ox1 - ox0 - 28) * v, pa = Math.min(1, v * 6, (1 - v) * 6) * (0.3 + 0.7 * out);
+          for (const sg of [-1, 1]) packet(px, yc + sg * sep, 0, C.c1, 28, pa, 5, 2.25);
+          path([[px, yc - sep + 7], [px, yc + sep - 7]], C.c1, 1, pa * 0.6, [2, 2]);
+        } }
+      ctx.restore();
+      wrapUp('down-converted photon pairs at $\\omega$', (ox0 + ox1) / 2, yc - 30, ox1 - ox0, { color: C.c1, weight: 500, size: f - 1, alpha: 0.45 + 0.55 * out });
+      text('light at $\\omega$', X(0) + 4, cy + ch / 2 - 6, { color: C.c1, weight: 500, size: f - 1 });
+      const ok = glow > 0.5, msg = ok ? 'speeds equal: the light keeps growing, the OPO turns on' : out > 0.3 ? 'speeds nearly equal: much less comes out' : 'speeds differ: what is made is undone, no OPO';
+      wrapUp(msg, (x0 + bx + bw) / 2, cy + ch / 2 + f + 10, bw - 16, { color: ok ? C.c1 : C.text, weight: 500 });
+      // ---- speeds vs temperature
+      const [qx, qy, qw, qh] = PB, ax0 = qx + (nar ? 52 : 58), ax1 = qx + qw - 8, ay0 = qy + f + 26, ay1 = qy + qh - f - 14;
+      const vo = TT => cK / (n0 + dno * (TT - T0)), ve = TT => cK / (n0 + dne * (TT - T0));
+      const vmin = ve(112), vmax = ve(102), VX = TT => ax0 + (TT - 102) / 10 * (ax1 - ax0), VY = v => ay1 - (v - vmin) / (vmax - vmin) * (ay1 - ay0);
+      path([[ax0, ay0], [ax0, ay1], [ax1, ay1]], C.rule, 1);
+      text('speed in the crystal (km/s)', qx + 4, qy + f + 4, { color: C.text });
+      for (const v of [Math.ceil(vmin / 2) * 2, Math.round((vmin + vmax) / 2), Math.floor(vmax / 2) * 2]) {
+        path([[ax0 - 4, VY(v)], [ax0, VY(v)]], C.muted, 1); text(v.toLocaleString('en-US'), ax0 - 6, VY(v) + 4, { align: 'right', size: f - 2 }); }
+      for (const TT of [102, 107, 112]) text(`${TT} °C`, VX(TT), ay1 + f + 4, { align: TT === 112 ? 'right' : TT === 102 ? 'left' : 'center', size: f - 2 });
+      // matched window shading (|dk L| < pi)
+      const win = 1 / (2 * 2 * (dne - dno) * Lc / lam);
+      ctx.save(); ctx.fillStyle = C.c1; ctx.globalAlpha = 0.08 + 0.12 * glow; ctx.fillRect(VX(T0 - win), ay0, VX(T0 + win) - VX(T0 - win), ay1 - ay0); ctx.restore();
+      path([[VX(102), VY(ve(102))], [VX(112), VY(ve(112))]], C.c2, 2.25);
+      path([[VX(102), VY(vo(102))], [VX(112), VY(vo(112))]], C.c1, 2.25);
+      textIn('pump $2\\omega$', VX(103.2) + 10, VY(ve(103.2)) + 4, ax0 + 2, ax1, { color: C.c2, weight: 500, size: f - 1 });
+      textIn('light at $\\omega$', VX(111.7), VY(vo(111.7)) - 8, ax0, ax1, { align: 'right', color: C.c1, weight: 500, size: f - 1 });
+      // where we are
+      path([[VX(Tc), ay0 - 4], [VX(Tc), ay1]], tcss, 2);
+      dot(VX(Tc), VY(ve(Tc)), 4, C.c2); dot(VX(Tc), VY(vo(Tc)), 4, C.c1);
+      const dv = Math.abs(ve(Tc) - vo(Tc));
+      textIn(glow > 0.5 ? 'equal speeds' : `differ by ${dv.toFixed(1)} km/s`, VX(Tc), ay0 - 8, qx + 2, qx + qw - 2, { align: 'center', color: tcss, weight: 500, size: f - 1 });
+      if (glow > 0) { ctx.save(); ctx.shadowColor = C.c1; ctx.shadowBlur = 14 * glow * pulse; dot(VX(T0), VY(vo(T0)), 6, C.c1, glow); ctx.restore(); }
+    },
+    // ----- step: repumping the gain atoms into the dark state |e>
+    pump(p, t) {
+      const f = fsz(), nar = W < 520, T = reduce ? 0 : t;
+      const colw = Math.min(W * 0.13, 70), lw = colw * 0.66, xm = W / 2, top = f + 34;
+      const yE2 = top + H * 0.02, yE1 = top + H * 0.13, yG2 = H * 0.5, yG1 = H * 0.64;
+      const LX = m => xm + m * colw;
+      const rows = [['$F\'=2$', yE2, 2], ['$F\'=1$', yE1, 1], ['$F=2$', yG2, 2], ['$F=1$', yG1, 1]];
+      rows.forEach(([lab, yy, F]) => { for (let m = -F; m <= F; m++) path([[LX(m) - lw / 2, yy], [LX(m) + lw / 2, yy]], C.text, 2);
+        text(lab, LX(-2) - lw / 2 - 8, yy + 5, { align: 'right' }); });
+      for (let m = -2; m <= 2; m++) text(`${m}`, LX(m), H * 0.695 + f, { align: 'center', size: f - 1 });
+      text('$m_F$', LX(2) + lw / 2 + 6, H * 0.695 + f, {});
+      // repumper arrows (pi and sigma-): F=1 -> F'=2 and F=2 -> F'=1
+      const pop = pumpPop(seg(p, 0.08, 0.84));
+      const lines = [];
+      for (let m = -1; m <= 1; m++) for (const q of [0, -1]) lines.push([m, yG1, m + q, yE2, pop['1,' + m], -7]);
+      for (let m = -2; m <= 2; m++) for (const q of [0, -1]) if (Math.abs(m + q) <= 1) lines.push([m, yG2, m + q, yE1, pop['2,' + m], 7]);
+      lines.forEach(([m0, y0, m1, y1, pp, off]) => {   // lasers: straight, an arrowhead at both ends
+        const x0 = LX(m0) + off, xx1 = LX(m1) + off, al = 0.3 + 0.5 * Math.min(1, pp * 3), ang = Math.atan2(y1 - y0 + 6, xx1 - x0);
+        const pl = [[x0, y0 - 3], [xx1, y1 + 3]], gl = 0.75 + 0.25 * Math.sin(T * 1.7 + m0 + m1 * 0.6);   // soft halo, breathing slightly
+        path(pl, C.c2, 9, 0.07 * al * gl); path(pl, C.c2, 5, 0.13 * al * gl); path(pl, C.c2, 2, al);
+        head(xx1, y1 + 3, ang, C.c2, al, 8); head(x0, y0 - 3, ang + Math.PI, C.c2, al, 8);
+        if (pp > 0.02) { const u = (T * 0.8 + m0 * 0.13 + (m1 - m0) * 0.31) % 1; dot(x0 + (xx1 - x0) * u, y0 - 3 + (y1 - y0 + 6) * u, 2.6, C.c2, Math.min(1, pp * 4) * Math.sin(Math.PI * u)); }
+      });
+      // spontaneous emission: a photon packet flying from an excited sublevel to a ground sublevel (m_F changes by 0 or ±1),
+      // appearing and fading; they die out once everything sits in the dark state
+      const act = clamp((1 - pop['2,-2']) * 3);
+      for (const [yy, F] of [[yE2, 2], [yE1, 1]]) for (let m = -F; m <= F; m++) {
+        const ph = T * 0.4 + m * 0.37 + F * 0.21 + 2, u = ph % 1, n = Math.floor(ph);
+        const h1 = Math.abs(Math.sin(n * 12.9898 + m * 78.233 + F * 37.719) * 43758.5453) % 1, h2 = (h1 * 7.31) % 1;
+        const F2 = h2 < 0.5 ? 2 : 1, m2 = clamp(m + Math.floor(h1 * 3) - 1, -F2, F2);
+        const xa = LX(m) + lw * 0.3, ya = yy + 6, xb = LX(m2) + lw * 0.3, yb = (F2 === 2 ? yG2 : yG1) - 8, v = ease(clamp((u - 0.08) / 0.84));
+        packet(xa + (xb - xa) * v, ya + (yb - ya) * v, Math.atan2(yb - ya, xb - xa), C.c1, 26, Math.min(1, u * 8, (1 - u) * 8) * act, 4.5, 1.75);
+      }
+      // the dark state: nowhere to go
+      const ex = LX(-2);
+      path([[ex - 8, yE1 - 6], [ex + 8, yE1 + 6]], C.red, 1.5, 0.8); path([[ex - 8, yE1 + 6], [ex + 8, yE1 - 6]], C.red, 1.5, 0.8);
+      path([[ex, yG2 - 4], [ex, yE1 + 9]], C.red, 1, 0.5, [3, 3]);
+      textIn(nar ? 'no level: dark' : 'no level to go to: dark state', ex - 12, yE1 + 4 + (yG2 - yE1) * 0.45, 2, W - 2, { align: 'right', color: C.red });
+      // populations of the ground sublevels
+      const rmax = Math.min(colw * 0.42, 22);
+      for (let m = -2; m <= 2; m++) { const v = pop['2,' + m]; if (v > 0.003) dot(LX(m), yG2 - 2 - rmax * Math.sqrt(v), rmax * Math.sqrt(v), C.c1, 0.85); }
+      for (let m = -1; m <= 1; m++) { const v = pop['1,' + m]; if (v > 0.003) dot(LX(m), yG1 - 2 - rmax * Math.sqrt(v), rmax * Math.sqrt(v), C.c1, 0.85); }
+      text('$|e\\rangle$', LX(-2) + lw / 2 + 4, yG2 + f + 2, { color: C.text, weight: 500 });
+      text('$|g\\rangle$', LX(-1) + lw / 2 + 4, yG1 + f + 2, { color: C.text, weight: 500 });
+      // legend: lasers (two-headed, straight) and spontaneous emission (one-way, wiggly)
+      const leg = [['repumping lasers ($\\pi$, $\\sigma^-$)', C.c2], ['emitted photon', C.c1]], iw = 28;
+      const lws = leg.map(l => iw + 6 + tw(l[0], { weight: 500 })), tot = lws[0] + 22 + lws[1];
+      leg.forEach(([lab, col], i) => {
+        const xi = nar ? W / 2 - lws[i] / 2 : W / 2 - tot / 2 + (i ? lws[0] + 22 : 0), yi = f + 2 + (nar ? i * (f + 5) : 0), ym = yi - f * 0.32;
+        if (i === 0) { path([[xi + 3, ym], [xi + iw - 3, ym]], col, 5, 0.15); path([[xi + 3, ym], [xi + iw - 3, ym]], col, 2); head(xi + iw, ym, 0, col, 1, 7); head(xi, ym, Math.PI, col, 1, 7); }
+        else packet(xi + iw / 2, ym, 0, col, 26, 1, 4.5, 1.75);
+        text(lab, xi + iw + 6, yi, { color: col, weight: 500 });
+      });
+      // the net effect, as a population bar
+      const by = H * (H < 420 ? 0.83 : 0.8), bx0 = W * 0.12, bx1 = W * 0.88, pe = pop['2,-2'];
+      ctx.save(); ctx.fillStyle = C.c1; ctx.globalAlpha = 0.25; ctx.fillRect(bx0, by, (bx1 - bx0), 12); ctx.globalAlpha = 0.85; ctx.fillRect(bx0, by, (bx1 - bx0) * pe, 12); ctx.restore();
+      text(`${nar ? '' : 'as time passes, '}atoms pumped into $|e\\rangle$: ${Math.round(100 * pe)}%`, W / 2, by - 8, { align: 'center', color: C.text });
+      text('0%', bx0 - 6, by + 11, { align: 'right' }); text('100%', bx1 + 6, by + 11, {});
+      text('scroll = time', W / 2, by + 12 + f + 5, { align: 'center' });
+      text('net effect: an incoherent pump $|g\\rangle\\to|e\\rangle$', W / 2, by + 12 + 2 * f + 13, { align: 'center', color: C.c1, weight: 500 });
+      text('(sketch)', W - 6, H - 4, { align: 'right' });
+    },
     lase(p, t) { chainScene(p, t, true); },
   };
 
@@ -1080,7 +1331,11 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
     return g;
   }
   // draw fn() on an offscreen layer and composite it with opacity a
-  const layerCv = document.createElement('canvas');
+  // Offscreen layers live (hidden) in the page so their text is rasterized like the visible canvas
+  // (they inherit the page's font smoothing); a detached canvas shifts the glyphs by a fraction of a pixel.
+  const mkLayer = () => { const c = document.createElement('canvas'); c.setAttribute('aria-hidden', 'true');
+    c.style.cssText = 'position:absolute;left:0;top:0;width:0;height:0;visibility:hidden;pointer-events:none'; document.body.appendChild(c); return c; };
+  const layerCv = mkLayer();
   function layer(a, fn, lc = layerCv) {
     if (a <= 0.001) return;
     const main = ctx, cv = main.canvas; lc.width = cv.width; lc.height = cv.height; lc._dpr = cv._dpr;
@@ -1088,7 +1343,8 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
     try { fn(); } finally { ctx = main; }
     ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = a; ctx.drawImage(lc, 0, 0); ctx.restore();
   }
-  const fadeCv = document.createElement('canvas'), FADE = 0.5;   // crossfade between steps, in seconds
+  const SEAMLESS = new Set(['rb87>path1', 'path1>rb87']);   // consecutive steps that share a frame: no crossfade
+  const fadeCv = mkLayer(), FADE = 0.5;   // crossfade between steps, in seconds
   // Raman path animation: level diagram (top) and cavity cartoon (bottom)
   function ramanPath(p, t, which) {
     // path 1 opens on the last frame of step 5 and morphs the four highlighted sublevels into this diagram
@@ -1106,7 +1362,7 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
       const X0 = lerp(sx, lx), Y0 = lerp(sy, ly), L0 = lerp(G0.lw, lw), al = lerp(1, on ? 1 : 0.25);
       if (mo < 1) path([[X0, Y0], [X0 + L0, Y0]], C.c1, 3.5, al * (1 - mo));
       path([[X0, Y0], [X0 + L0, Y0]], C.text, 2.5, al * mo);
-      const lab = `$|${k}\\rangle$`, tx = lerp(sx + G0.lw / 2 - tw(lab) / 2, lx + lw + 6), ty = lerp(sy - 8, ly + 5);
+      const lab = `$|${k}\\rangle$`, tx = lerp(sx + G0.lw / 2 - tw(lab, { size: f + 2, weight: 500 }) / 2, lx + lw + 6), ty = lerp(sy - 8, ly + 5);
       if (mo < 1) text(lab, tx, ty, { color: C.c1, weight: 500, size: f + 2 * (1 - mo), alpha: 1 - mo });
       text(lab, tx, ty, { color: C.text, alpha: mo * (on ? 1 : 0.3) });
     });
@@ -1235,7 +1491,10 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
   wfigs.forEach(cv => { const box = cv.parentElement; cv._slider = box.querySelector('input'); cv._label = box.querySelector('.ctrl label');
     if (cv._slider) cv._slider.addEventListener('input', () => { cv._touched = true; }); });
   const HOLD_SCALE = 1 / 1.5;   // scroll 1.5x faster than the template: held animations need less scrolling
-  const holdOf = s => parseFloat(s.dataset.hold || 0) * HOLD_SCALE;
+  // data-span="a b": the part of the scene's 0..1 timeline where something actually changes. Scroll is mapped onto
+  // that window only, and the pin is shortened to match, so the card unpins as soon as the animation ends.
+  const spanOf = s => (s.dataset.span || '0 1').split(' ').map(Number);
+  const holdOf = s => { const [a, b] = spanOf(s); return parseFloat(s.dataset.hold || 0) * HOLD_SCALE * (b - a); };
   const isMobile = () => matchMedia('(max-width: 860px)').matches;
   const navH = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--af-nav-h')) || 57;
 
@@ -1270,7 +1529,7 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
       for (const s of S.steps) if (s.querySelector('.pin').getBoundingClientRect().top < start) active = s;
       if (S.steps[0].querySelector('.pin').getBoundingClientRect().top < start) gcur = S;
       const card = active.querySelector('.card'), r = active.querySelector('.pin').getBoundingClientRect();
-      if (holdOf(active)) S.prog = clamp((+card.dataset.pinTop - r.top) / (holdOf(active) * vh));
+      if (holdOf(active)) { const [a, b] = spanOf(active); S.prog = a + (b - a) * clamp((+card.dataset.pinTop - r.top) / (holdOf(active) * vh)); }
       else { const rc = card.getBoundingClientRect(); S.prog = clamp((start - rc.top) / Math.max(1, start - end + rc.height)); }
       if (active !== S.cur) { if (S.cur) S.cur.classList.remove('active'); S.cur = active; cfgSlider(S, active); }
       S.cur.classList.add('active');
@@ -1288,7 +1547,7 @@ blockquote { border-left: 5px solid var(--af-accent); margin: 1.5em 0; padding: 
       if (!visible(S.sec)) continue;
       bind(S.cv); slider = S.slider; ctrlLabel = S.label; stepEl = S.cur; ctx.clearRect(0, 0, W, H);
       const name = S.cur.dataset.scene, tt = (now - t0) / 1000;
-      if (S.drawnScene && S.drawnScene !== name && !reduce) S.fade = { scene: S.drawnScene, p: S.drawnP, t0: tt };
+      if (S.drawnScene && S.drawnScene !== name && !reduce && !SEAMLESS.has(S.drawnScene + '>' + name)) S.fade = { scene: S.drawnScene, p: S.drawnP, t0: tt };
       try {
         if (S.fade && tt - S.fade.t0 < FADE) {   // crossfade from the previous step's last frame
           const u = ease((tt - S.fade.t0) / FADE), old = S.fade;
