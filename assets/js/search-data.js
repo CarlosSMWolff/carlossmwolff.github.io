@@ -39,9 +39,9 @@ ninja.data = [{
           },
         },{id: "post-squeezed-lasing-in-atomic-cavity-qed",
         
-          title: "Squeezed lasing in atomic cavity QED",
+          title: "squeezed lasing in atomic cavity QED",
         
-        description: "A scroll-driven explainer of our proposal for a laser that emits squeezed light, using cold rubidium atoms in an optical cavity.",
+        description: "An interactive explanation on our design of a squeezed laser using cold rubidium atoms in an optical cavity.",
         section: "Posts",
         handler: () => {
           
