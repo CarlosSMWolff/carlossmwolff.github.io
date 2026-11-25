@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "post-creating-a-private-audiobook-server",
+        },{id: "post-squeezed-lasing-in-atomic-cavity-qed",
+        
+          title: "Squeezed lasing in atomic cavity QED",
+        
+        description: "A scroll-driven explainer of our proposal for a laser that emits squeezed light, using cold rubidium atoms in an optical cavity.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/squeezed-lasing/";
+          
+        },
+      },{id: "post-creating-a-private-audiobook-server",
         
           title: "creating a private audiobook server",
         
