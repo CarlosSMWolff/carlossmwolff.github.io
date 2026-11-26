@@ -1,6 +1,11 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
 {% assign parts = include.path | split: '.' %}
 {% assign ext = parts.last %}
+{% comment %} With cache_bust, the responsive .webp URLs get the same content hash as the <img> src, so a replaced picture is not served from a stale browser/CDN cache. {% endcomment %}
+{% assign srcset_bust = '' %}
+{% if include.cache_bust %}
+  {% assign srcset_bust = include.path | relative_url | bust_file_cache | split: '?' | last | prepend: '?' %}
+{% endif %}
 
 <figure
   {% if include.slot %}
@@ -18,7 +23,7 @@
         <source
           class="responsive-img-srcset"
           {% if ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff' %}
-            srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
+            srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp{{ srcset_bust }} {{ i }}w,{% endfor %}"
             type="image/webp"
           {% else %}
             srcset="{{ include.path | relative_url }}"
